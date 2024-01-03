@@ -13,7 +13,7 @@ export default function TechnologyProductSpecSection() {
               The Bluetooth signal created on your phone can be accessed by
               anyone in a 5-10m radius. Wi-R on the other hand, confines the
               signal around the surface. Someone sitting on your next table
-              doesn't even have access to the signal.
+              doesn&apos;t even have access to the signal.
             </p>
             <div className="flex gap-12">
               <span className=" text-itextgrey">Traditional Wireless</span>

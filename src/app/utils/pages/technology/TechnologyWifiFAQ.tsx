@@ -23,7 +23,7 @@ export default function TechnologyWifiFAQ() {
     },
     {
       key: "4",
-      label: "How did you solve a problem incumbents couldn't?",
+      label: "How did you solve a problem incumbents couldn&apos;t?",
       children: <p>{text}</p>,
     },
     {
