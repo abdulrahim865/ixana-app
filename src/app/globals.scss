@@ -1,0 +1,56 @@
+.transition1 {
+  @apply transition-all duration-1000 ease-in-out;
+}
+.Pbutton {
+  @apply transition1 flex gap-3 items-center pl-5 pr-1 py-1.5 text-white rounded-full bg-ilightblack border border-solid border-ilightblack hover:border-ibtnorange;
+}
+.primary-chip {
+  @apply flex px-3 py-1 text-xs text-black rounded-full bg-ibtnorange;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+:where(.css-dev-only-do-not-override-i46qwz).ant-collapse {
+  background: transparent;
+  border: none;
+}
+
+:where(.css-dev-only-do-not-override-i46qwz).ant-collapse
+  .ant-collapse-content {
+  border: none;
+}
+:where(.css-dev-only-do-not-override-i46qwz).ant-collapse
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-arrow {
+  background: rgba(241, 241, 241, 1);
+  padding: 6px;
+  border-radius: 6px;
+}
+:not(.ant-collapse-item-active)
+  .ant-collapse-expand-icon
+  span.anticon.anticon-right.ant-collapse-arrow
+  svg {
+  transform: rotate(-90deg);
+}
+span.ant-collapse-header-text {
+  font-size: 18px;
+}
+.ant-collapse-content-box {
+  @apply text-xs;
+}
