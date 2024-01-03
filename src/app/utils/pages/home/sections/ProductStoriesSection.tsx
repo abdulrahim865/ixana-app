@@ -24,7 +24,7 @@ export default function ProductStoriesSection() {
       items: 1,
     },
   };
-  const carousel = useRef<Carousel>();
+  const carousel = useRef<Carousel>(null);
   return (
     <div
       className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] min-h-[100vh] grow bg-cover bg-no-repeat lg:ml-24 bg-left-top px-12 py-12 gap-20"
