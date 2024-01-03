@@ -54,11 +54,11 @@ export default function HomeBreakThrough() {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-12 basis-1/2">
-        <span className="text-sm font-light lg:w-[200px] ">
+      <div className="flex flex-col items-center gap-12 md:flex-row basis-1/2">
+        <span className="text-sm font-light lg:w-[200px] text-center ">
           Charging-free diabetes management systems
         </span>
-        <span className="text-sm font-light lg:w-[200px] ">
+        <span className="text-sm font-light lg:w-[200px] text-center ">
           Give AI eyes, ears
         </span>
       </div>

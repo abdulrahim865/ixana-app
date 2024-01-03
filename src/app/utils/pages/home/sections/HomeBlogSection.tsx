@@ -6,11 +6,11 @@ export default function HomeBlogSection() {
     <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center my-24  px-12 lg:px-0">
       <div className="flex flex-col items-center gap-12">
         <span className="primary-chip">Our mission</span>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-3">
           <h2 className="flex text-4xl font-light max-w-[800px] text-center">
             Insights from ours Blogs, Papers and News
           </h2>
-          <span className="text-sm text-iblack">
+          <span className="text-sm text-center text-iblack">
             Dive in to learn more about Ixana’s technology and progress
           </span>
         </div>

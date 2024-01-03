@@ -27,12 +27,12 @@ export default function ProductStoriesSection() {
   const carousel = useRef<Carousel>(null);
   return (
     <div
-      className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] min-h-[100vh] grow bg-cover bg-no-repeat lg:ml-24 bg-left-top px-12 py-12 gap-20"
+      className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] min-h-[850px] md:min-h-[100vh] grow bg-cover bg-no-repeat lg:ml-24 bg-left-top px-12 py-12 gap-20"
       style={{
         backgroundImage: "url(/assets/home/stories-lines.svg)",
       }}
     >
-      <div className="flex justify-between">
+      <div className="flex flex-col justify-between md:flex-row">
         <h2 className="pt-5 text-4xl ">Stories from the Ixana Experience</h2>
         <div className="flex gap-3">
           <button

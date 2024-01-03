@@ -2,16 +2,16 @@ import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 
 export default function HomeWatchDemo() {
   return (
-    <div className="flex min-h-[60vh] w-full relative">
+    <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row">
       <div
-        className="flex bg-no-repeat bg-contain basis-1/2"
+        className="flex bg-no-repeat bg-contain grow md:basis-1/2"
         style={{
           backgroundImage: "url(/assets/home/ixana-waves.svg)",
           backgroundPositionY: "50%",
         }}
       ></div>
       <div
-        className="flex rotate-180 bg-no-repeat bg-contain basis-1/2"
+        className="flex rotate-180 bg-no-repeat bg-contain grow md:basis-1/2"
         style={{
           backgroundImage: "url(/assets/home/ixana-waves.svg)",
           backgroundPositionY: "50%",

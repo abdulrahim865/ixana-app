@@ -17,13 +17,15 @@ export default function Home() {
       <PNavBar isHomeView />
       <HomeTopMainView />
       <HomeWatchDemo />
-      <HomeLearnMoreSection />
-      <ProductSpecSection />
-      <ProductFeaturesSection />
-      <ProductStoriesSection />
+      <div className="flex flex-col w-full px-6 md:px-0">
+        <HomeLearnMoreSection />
+        <ProductSpecSection />
+        <ProductFeaturesSection />
+        <ProductStoriesSection />
 
-      <HomeBreakThrough />
-      <HomeOurMission />
+        <HomeBreakThrough />
+        <HomeOurMission />
+      </div>
       <HomeOurMissionHighlighted />
       <HomeBlogSection />
       <PFooter />
