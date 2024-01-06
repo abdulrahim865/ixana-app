@@ -14,7 +14,7 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar />
       <TechnologyTopHeader />
-      <div className="flex flex-col px-12 md:px-0">
+      <div className="flex flex-col items-center px-12 md:px-0">
         <TechnologyInnovation />
         <TechnologyProductSpecSection />
         <TechnologyWhyWifi />

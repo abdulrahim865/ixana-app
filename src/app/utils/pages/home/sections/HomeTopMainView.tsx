@@ -10,7 +10,7 @@ export default function HomeTopMainView() {
           "linear-gradient(180deg, #D4D3D2 0%, rgba(255, 255, 255, 0.49) 56.97%, rgba(212, 211, 210, 0.38) 104.41%)",
       }}
     >
-      <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col-reverse items-start gap-5 md:items-end md:flex-row ">
+      <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col-reverse items-start gap-5 md:items-center md:flex-row ">
         <Image
           src="/assets/home/headphonesremoved.png"
           alt="Head Phones Ixana"
@@ -20,7 +20,7 @@ export default function HomeTopMainView() {
           priority
         />
 
-        <div className="relative flex flex-col-reverse items-center justify-center h-auto h-full md:items-start basis-1/2 md:flex-col">
+        <div className="relative flex flex-col-reverse items-center justify-center h-full md:h-auto md:items-start basis-1/2 md:flex-col">
           <Image
             src="/assets/home/ixana-drawing.svg"
             className="absolute -bottom-32 md:bottom-[initial] left-0 md:top-0 md:-left-28 -z-10"

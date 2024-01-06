@@ -4,7 +4,7 @@ import { Pbutton, ToprightArrow } from "../../components/Pbutton";
 export const TechnologyProducts = () => {
   return (
     <div
-      className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-12 lg:px-0"
+      className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-12 lg:px-0 mb-12"
       style={{
         background:
           "url(/assets/technology/product-bg-1.svg) no-repeat left bottom, url(/assets/technology/product-bg-2.svg) no-repeat top right, linear-gradient(180deg, #E4E5E7 -45.62%, #FFF 100%)",
@@ -24,8 +24,8 @@ export const TechnologyProducts = () => {
           Learn more
         </div>
 
-        <div className="flex flex-col gap-5 md:flex-row">
-          <div className="flex flex-col items-center gap-9">
+        <div className="flex flex-col gap-3 mt-9 md:flex-row">
+          <div className="flex flex-col items-center gap-5">
             <Image
               src="/assets/technology/products/chip.png"
               alt="Headset"
@@ -36,13 +36,30 @@ export const TechnologyProducts = () => {
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/location.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/extra.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
             </div>
             <Pbutton text="Contact us" icon={<ToprightArrow />} />
           </div>
-          <div className="flex flex-col items-center gap-9">
+          <div className="flex flex-col items-center gap-5">
             <Image
               src="/assets/technology/products/chip.png"
               alt="Headset"
@@ -53,13 +70,30 @@ export const TechnologyProducts = () => {
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/location.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/extra.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
             </div>
             <Pbutton text="Contact us" icon={<ToprightArrow />} />
           </div>
-          <div className="flex flex-col items-center gap-9">
+          <div className="flex flex-col items-center gap-5">
             <Image
               src="/assets/technology/products/chip.png"
               alt="Headset"
@@ -70,9 +104,26 @@ export const TechnologyProducts = () => {
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
-              <span className="text-xs">Wi-R USB-C Smartphone Plugin</span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/location.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
+              <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
+                <Image
+                  src="/assets/home/icons/extra.svg"
+                  alt="Ixana icon"
+                  width={20}
+                  height={20}
+                  priority
+                />
+                Wi-R USB-C Smartphone Plugin
+              </span>
             </div>
             <Pbutton text="Contact us" icon={<ToprightArrow />} />
           </div>

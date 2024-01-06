@@ -15,7 +15,7 @@ export default function TechnologyWhyWifi() {
             priority
           />
           <div className="flex flex-col items-start basis-[50%] lg:basis-[40%] justify-center gap-8">
-            <h2 className="text-4xl font-light ">
+            <h2 className="text-2xl font-light lg:text-4xl ">
               A Quantum Leap in Energy Efficiency over Bluetooth and Wi-Fi
             </h2>
             <p className="text-xs font-light max-w-96">
