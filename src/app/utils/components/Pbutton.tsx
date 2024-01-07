@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import Image from "next/image";
 
@@ -7,6 +8,7 @@ export type IbtnType = {
   uiType?: string;
   wrapperClass?: string;
   size?: string;
+  onClick?: () => void;
 };
 
 export const PlayIcon = () => (
@@ -34,7 +36,8 @@ export const Pbutton = ({
   icon,
   size = "xs",
   wrapperClass = "",
-  uiType = "medium",
+  uiType = "ghost",
+  onClick,
 }: IbtnType) => {
   const getWrapperClasss = () => {
     switch (size) {
@@ -47,7 +50,10 @@ export const Pbutton = ({
     }
   };
   return (
-    <button className={`Pbutton ${getWrapperClasss()} ${wrapperClass}`}>
+    <button
+      className={`Pbutton ${getWrapperClasss()} ${wrapperClass}`}
+      onClick={(e) => onClick && onClick()}
+    >
       <span>{text}</span>
       {icon}
     </button>

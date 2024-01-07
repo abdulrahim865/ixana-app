@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HomeTopMainView() {
   return (
     <div
-      className=" overflow-hidden relative flex flex-col w-full min-h-[600px] md:min-h-[100vh] grow  "
+      className=" overflow-hidden relative flex flex-col w-full min-h-[600px] md:min-h-[100vh] grow mt-14 lg:mt-0  "
       style={{
         backgroundImage:
           "linear-gradient(180deg, #D4D3D2 0%, rgba(255, 255, 255, 0.49) 56.97%, rgba(212, 211, 210, 0.38) 104.41%)",
@@ -30,8 +30,8 @@ export default function HomeTopMainView() {
             priority
           />
           <h1 className="flex flex-col gap-3 px-5 pt-40 text-5xl md:text-7xl">
-            <span>Body-internet</span>
-            <span className="flex flex-col items-start gap-3 md:items-center lg:flex-row md:gap-0">
+            <span className="text-black">Body-internet</span>
+            <span className="flex flex-col items-start gap-3 text-black md:items-center lg:flex-row md:gap-0">
               <span>Platform</span>
               <Pbutton
                 wrapperClass="md:ml-5 flex"
