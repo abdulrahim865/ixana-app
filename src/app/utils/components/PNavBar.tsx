@@ -21,7 +21,7 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
       <div className="items-center justify-center hidden w-full lg:flex">
         <div className="relative flex-col w-full ">
           {isHomeView && (
-            <div className="flex justify-between p-3 px-14 bg-iblack ">
+            <div className="flex justify-between p-1.5 px-14 bg-iblack ">
               <div className="flex items-center gap-3 lg:gap-14">
                 <a className="flex items-center gap-3 text-xs">
                   <Image
@@ -51,26 +51,41 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
 
           <div className="relative flex w-full">
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
-              <div className="flex items-center gap-3 lg:gap-14">
-                <a className="flex items-center gap-3 text-xs">
-                  Meet us at CES
-                </a>
-                <a className="flex items-center gap-3 text-xs">Booth 61249</a>
-              </div>
-
               <Link href="/">
                 <Image
-                  src="/assets/ixana-logo.svg"
+                  src={`/assets/ixana-${isHomeView ? "logo" : "white"}.svg`}
                   alt="Ixana logo"
-                  width={167}
+                  width={100}
                   height={31}
                   priority
                 />
               </Link>
 
-              <div className="flex items-center gap-6">
-                <Pbutton text="Try Ixana" icon={<ToprightArrow />} />
-                <Pbutton text="Contact us" icon={<ToprightArrow />} />
+              <div className="flex items-center gap-5">
+                <a
+                  className={`text-xs ${
+                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                  }  `}
+                  href="/about"
+                >
+                  About us
+                </a>
+                <a
+                  className={`text-xs ${
+                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                  }  `}
+                  href="/our-technology"
+                >
+                  Our Technology
+                </a>
+                <a
+                  className={`text-xs ${
+                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                  }  `}
+                  href="/"
+                >
+                  Tech Insight
+                </a>
               </div>
             </div>
           </div>
