@@ -10,6 +10,7 @@ import ProductFeaturesSection from "./utils/pages/home/sections/ProductFeaturesS
 import ProductSpecSection from "./utils/pages/home/sections/ProductSpecSection";
 import ProductStoriesSection from "./utils/pages/home/sections/ProductStoriesSection";
 import HomeOurMissionHighlighted from "./utils/pages/home/sections/HomeBreakQuoteHighlighted";
+import HomeOurClients from "./utils/pages/home/sections/HomeOurClients";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
       <HomeOurMissionHighlighted />
       <HomeBlogSection />
+      <HomeOurClients />
       <PFooter />
     </main>
   );
