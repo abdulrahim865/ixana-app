@@ -17,8 +17,8 @@ export default function HomeBreakThrough() {
           <h2 className="flex text-4xl text-center ">
             {/* Breakthrough technology for high- speed <br /> human-computer
             interaction */}
-            Ixana\'s roadmap for high- speed<br /> human-computer
-            interaction
+            Ixana&apos;s roadmap for high- speed
+            <br /> human-computer interaction
           </h2>
 
           <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
