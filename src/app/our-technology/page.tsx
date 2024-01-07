@@ -20,12 +20,12 @@ export default function Home() {
         <TechnologyProductSpecSection />
         <TechnologyWhyWifi />
         <TechnologyImpact />
-        <TechnologyWifiToday />
-
-        <TechnologyWifiFAQ />
-        <TechnologyProducts />
       </div>
-      {/* <TechnologyHeadPhoneReview /> */}
+      <TechnologyHeadPhoneReview />
+      <div className="flex flex-col items-center px-12 md:px-0">
+        <TechnologyWifiToday />
+        <TechnologyWifiFAQ />
+      </div>
       {/* <HomeWatchDemo />
       <HomeLearnMoreSection />
       <ProductSpecSection />
