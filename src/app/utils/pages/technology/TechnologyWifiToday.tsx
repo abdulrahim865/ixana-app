@@ -44,7 +44,7 @@ export default function TechnologyWifiToday() {
                   height={20}
                   priority
                 />
-                <span>5Mbs production ready chip</span>
+                <span>12 major device partners</span>
               </div>
               <div className="flex items-center gap-3">
                 <Image
@@ -54,7 +54,7 @@ export default function TechnologyWifiToday() {
                   height={20}
                   priority
                 />
-                <span>5Mbs production ready chip</span>
+                <span>Defense contracts for Wi-R integration</span>
               </div>
             </div>
           </div>

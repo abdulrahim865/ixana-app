@@ -13,7 +13,7 @@ export default function HomeTopMainView() {
       <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col-reverse items-start gap-5 md:items-center md:flex-row ">
         <Image
           src="/assets/home/headphonesremoved.png"
-          alt="Head Phones Ixana"
+          alt="Human-Computer Network"
           className="flex basis-1/2 scale-x-[-1] md:scale-x-[initial]"
           width={500}
           height={300}
@@ -32,10 +32,10 @@ export default function HomeTopMainView() {
           <h1 className="flex flex-col gap-3 px-5 pt-40 text-5xl md:text-8xl">
             <span>Body-internet</span>
             <span className="flex flex-col items-start gap-3 md:items-center lg:flex-row md:gap-0">
-              <span>platform</span>
+              <span>Platform</span>
               <Pbutton
                 wrapperClass="md:ml-5 flex"
-                text="Try Ixana"
+                text="Demo"
                 icon={<ToprightArrow size={32} />}
                 size="lg"
               />

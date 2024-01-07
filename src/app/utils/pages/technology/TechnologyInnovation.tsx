@@ -7,10 +7,10 @@ export default function TechnologyInnovation() {
       <div className="flex flex-col items-center w-full gap-12">
         <span className="primary-chip">The Innovation</span>
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-          Security and performance of wired communication with the convenience
-          of wireless
+          
+          A fundamentally new wireless technology designed from the ground-up for Body-Area Human-Computer Networks
         </h2>
-        <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
+        {/* <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
           <Image
             src="/assets/technology/wearable-headset.png"
             alt="Wearable Ixana"
@@ -22,12 +22,13 @@ export default function TechnologyInnovation() {
           <div className="flex flex-col items-start basis-[50%] lg:basis-[30%] justify-center gap-3">
             <h2 className="text-4xl font-light ">Introducing Wi-R</h2>
             <p className="text-xs font-light max-w-64">
-              A fundamentally new wireless technology designed from the
-              ground-up for Body Area Network
+              {/* A fundamentally new wireless technology designed from the
+              ground-up for Body Area Network 
+              Security and performance of wired communication with the convenience of wireless
             </p>
             <Pbutton text="How is it different" icon={<ToprightArrow />} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

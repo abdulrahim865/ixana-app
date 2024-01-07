@@ -30,7 +30,8 @@ export default function HomeWatchDemo() {
           </div>
         </div>
 
-        <span>Transfer contacts, files and data with a handshake</span>
+        {/* <span>Transfer contacts, files and data with a handshake</span> */}
+        <span>Communicate with Touch</span>
       </div>
     </div>
   );
