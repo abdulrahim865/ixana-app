@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TechnologyTopHeader() {
   return (
-    <div className=" overflow-hidden relative flex flex-col w-full min-h-[100vh] grow bg-iblack  ">
+    <div className=" overflow-hidden relative flex flex-col w-full min-h-[600px] lg:min-h-[100vh] grow bg-iblack  ">
       <div className="absolute top-0 bottom-0 -left-[5%] -right-[5%] flex items-end  gap-5 justify-end">
         <Image
           src="/assets/home/ixana-headset-pattern.png"

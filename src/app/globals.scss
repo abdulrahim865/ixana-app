@@ -5,7 +5,14 @@
   @apply transition1 flex gap-3 items-center pl-5 pr-1 py-1.5 text-white rounded-full bg-ilightblack border border-solid border-ilightblack hover:border-ibtnorange;
 }
 .primary-chip {
-  @apply flex px-3 py-1 text-xs text-black rounded-full bg-ibtnorange;
+  @apply flex px-3 py-1 text-xs text-black rounded-full bg-ibtnorange relative;
+  &.dotted:before {
+    content: "";
+    @apply flex w-1 h-1 rounded-full absolute -left-5 bg-black top-3;
+    &.white {
+      @apply bg-white;
+    }
+  }
 }
 @tailwind base;
 @tailwind components;

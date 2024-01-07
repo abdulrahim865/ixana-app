@@ -3,7 +3,15 @@ import Image from "next/image";
 
 export default function HomeBreakThrough() {
   return (
-    <div className="flex flex-col items-center w-full min-h-screen gap-5 px-12 py-12 text-white bg-iblack">
+    <div className="relative flex flex-col items-center w-full min-h-screen gap-5 px-12 py-24 text-white bg-iblack">
+      <Image
+        src="/assets/home/breakthrough-pattern.svg"
+        alt="Ixana Pattern"
+        width={20}
+        height={50}
+        className="flex absolute left-[calc(50%-11px)] top-0"
+        priority
+      />
       <div className="container flex flex-col items-center w-full gap-5 ">
         <div className="flex flex-col items-center gap-3">
           <h2 className="flex text-4xl text-center ">

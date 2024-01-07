@@ -29,7 +29,7 @@ export default function HomeTopMainView() {
             height={300}
             priority
           />
-          <h1 className="flex flex-col gap-3 px-5 pt-40 text-5xl md:text-8xl">
+          <h1 className="flex flex-col gap-3 px-5 pt-40 text-5xl md:text-7xl">
             <span>Body-internet</span>
             <span className="flex flex-col items-start gap-3 md:items-center lg:flex-row md:gap-0">
               <span>Platform</span>

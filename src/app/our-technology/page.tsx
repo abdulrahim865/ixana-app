@@ -1,5 +1,6 @@
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
+import TechnologyHeadPhoneReview from "../utils/pages/technology/TechnologyHeadPhoneReview";
 import TechnologyImpact from "../utils/pages/technology/TechnologyImpact";
 import TechnologyInnovation from "../utils/pages/technology/TechnologyInnovation";
 import TechnologyProductSpecSection from "../utils/pages/technology/TechnologyProductSpecSection";
@@ -19,10 +20,11 @@ export default function Home() {
         <TechnologyProductSpecSection />
         <TechnologyWhyWifi />
         <TechnologyImpact />
+      </div>
+      <TechnologyHeadPhoneReview />
+      <div className="flex flex-col items-center px-12 md:px-0">
         <TechnologyWifiToday />
-
         <TechnologyWifiFAQ />
-        <TechnologyProducts />
       </div>
       {/* <HomeWatchDemo />
       <HomeLearnMoreSection />
