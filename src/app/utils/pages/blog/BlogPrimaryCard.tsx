@@ -21,7 +21,7 @@ export default function BlogCard() {
           <span className="flex text-xs">Nov 1, 2022</span>
           <span className="flex text-xs">Shreyas Sen, Angik Sarkar</span>
         </div>
-        <Pbutton text="Read More" icon={<ToprightArrow />} />
+        <Pbutton text="Read More" uiType="ghost" icon={<ToprightArrow />} />
       </div>
     </div>
   );

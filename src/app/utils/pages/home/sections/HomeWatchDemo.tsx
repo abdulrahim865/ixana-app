@@ -1,6 +1,11 @@
+"use client";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
+import { Modal } from "antd";
+import { useState } from "react";
 
 export default function HomeWatchDemo() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row">
       <div
@@ -25,6 +30,7 @@ export default function HomeWatchDemo() {
                 text="Watch Demo"
                 icon={<ToprightArrow wrapperClass=" text-black" size={32} />}
                 size="xl"
+                onClick={() => setIsModalOpen(true)}
               />
             </div>
           </div>
@@ -32,6 +38,18 @@ export default function HomeWatchDemo() {
 
         <span>Transfer contacts, files and data with a handshake</span>
       </div>
+      <Modal
+        open={isModalOpen}
+        width="100%"
+        footer={null}
+        onCancel={(e) => setIsModalOpen(false)}
+      >
+        <iframe
+          width="100%"
+          height="600px"
+          src="https://player.vimeo.com/video/786424550?"
+        ></iframe>
+      </Modal>
     </div>
   );
 }

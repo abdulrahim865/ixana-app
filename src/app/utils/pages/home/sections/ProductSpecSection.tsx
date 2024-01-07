@@ -14,10 +14,10 @@ export default function ProductSpecSection() {
             height={20}
             priority
           />
-          <h2 className="text-4xl w-[400px]">
+          <h2 className="text-4xl lg:w-[400px]">
             Silicon Chip for Body Area Network
           </h2>
-          <p className="text-xs font-light w-[400px]">
+          <p className="text-xs font-light lg:w-[400px]">
             Our 4Mbit/s silicon chip is faster than Bluetooth, yet 100x lower
             power, lower latency and more reliable. Integrate it inside
             wearables, smartphones and other devices similar to how you’d
@@ -28,7 +28,7 @@ export default function ProductSpecSection() {
         <Image
           src="/assets/home/ixana-chip.png"
           alt="Chip Ixana"
-          className="flex flex-col basis-[50%] lg:basis-[40%] h-auto w-[400px] lg:w-fit"
+          className="flex flex-col basis-[50%] lg:basis-[40%] h-auto lg:w-[400px] lg:w-fit"
           width={500}
           height={300}
           priority
@@ -38,7 +38,7 @@ export default function ProductSpecSection() {
         <Image
           src="/assets/home/ixana-headset.png"
           alt="Chip Ixana"
-          className="flex flex-col lg:basis-[40%] h-auto w-[400px] lg:w-fit"
+          className="flex flex-col lg:basis-[40%] h-auto lg:w-[400px] lg:w-fit"
           width={500}
           height={300}
           priority
@@ -52,10 +52,10 @@ export default function ProductSpecSection() {
             height={20}
             priority
           />
-          <h2 className="text-4xl w-[400px]">
+          <h2 className="text-4xl lg:w-[400px]">
             Stream audio and data with touch
           </h2>
-          <p className="text-xs font-light w-[400px]">
+          <p className="text-xs font-light lg:w-[400px]">
             Experience the next frontier in connectivity with Ixana&apos;s Wi-R
             technology. A touch is all it takes to seamlessly stream audio and
             data, creating a world where interaction becomes instant and
@@ -74,10 +74,10 @@ export default function ProductSpecSection() {
             height={20}
             priority
           />
-          <h2 className="text-4xl w-[400px]">
+          <h2 className="text-4xl lg:w-[400px]">
             Silicon Chip for Body Area Network
           </h2>
-          <p className="text-xs font-light w-[400px]">
+          <p className="text-xs font-light lg:w-[400px]">
             Our 4Mbit/s silicon chip is faster than Bluetooth, yet 100x lower
             power, lower latency and more reliable. Integrate it inside
             wearables, smartphones and other devices similar to how you&apos;d
@@ -88,7 +88,7 @@ export default function ProductSpecSection() {
         <Image
           src="/assets/home/ixana-parts.png"
           alt="Chip Ixana"
-          className="flex flex-col basis-[50%] lg:basis-[40%] h-auto w-[400px] lg:w-fit"
+          className="flex flex-col basis-[50%] lg:basis-[40%] h-auto lg:w-[400px] lg:w-fit"
           width={500}
           height={300}
           priority

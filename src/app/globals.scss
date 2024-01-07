@@ -20,6 +20,7 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,4 +72,10 @@ span.ant-collapse-header-text {
   background-color: transparent;
   color: black;
   border: none;
+}
+
+:where(.css-dev-only-do-not-override-i46qwz).ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
 }

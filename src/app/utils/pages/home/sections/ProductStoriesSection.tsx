@@ -95,7 +95,7 @@ export default function ProductStoriesSection() {
         <Image
           src="/assets/home/stories-line-right.svg"
           alt=""
-          className="flex w-[50px] absolute left-[calc(50%-50px)] -top-[6px]  "
+          className="flex w-[50px] absolute left-[calc(50%-50px)] -top-[1px]  "
           width={500}
           height={500}
           priority
