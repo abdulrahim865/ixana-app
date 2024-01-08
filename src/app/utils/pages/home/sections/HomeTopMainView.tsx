@@ -33,12 +33,10 @@ export default function HomeTopMainView() {
             <span className="text-black">Body-internet</span>
             <span className="flex flex-col items-start gap-3 text-black md:items-center lg:flex-row md:gap-0">
               <span>Platform</span>
-              <Pbutton
-                wrapperClass="md:ml-5 flex"
-                text="Demo"
-                icon={<ToprightArrow size={32} />}
-                size="lg"
-              />
+              <a href="#demo" className="flex gap-3 text-sm Pbutton md:ml-5">
+                <span>Demo</span>
+                <ToprightArrow size={32} />
+              </a>
             </span>
           </h1>
         </div>

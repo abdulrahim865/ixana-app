@@ -1,49 +1,83 @@
+"use client";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function AboutUsOurSupporters() {
   const peoples = [
     {
       id: 1,
-      image: "/assets/aboutus/support/hack_vc.png",
+      image: "/assets/aboutus/support/hack_vc.svg",
       name: "Aniket Sharma",
     },
     {
       id: 2,
-      image: "/assets/aboutus/support/samsung_next.png",
+      image: "/assets/aboutus/support/samsung_next.svg",
       name: "Aniket Sharma",
     },
     {
       id: 3,
-      image: "/assets/aboutus/support/uncorrelated.png",
+      image: "/assets/aboutus/support/uncorrelated.svg",
       name: "Aniket Sharma",
     },
 
     {
       id: 4,
-      image: "/assets/aboutus/support/evonexus.png",
+      image: "/assets/aboutus/support/evonexus.svg",
       name: "Aniket Sharma",
     },
   ];
-  return (
-    <div className="flex flex-col justify-center w-full ">
-      <h2 className="flex text-4xl font-light ">
-        Early supporters we are grateful to
-      </h2>
 
-      <div className="flex justify-between w-full gap-12">
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+    },
+  };
+
+  const contentStyle: React.CSSProperties = {
+    margin: 0,
+    height: "160px",
+    color: "#fff",
+    lineHeight: "160px",
+    textAlign: "center",
+    background: "#364d79",
+  };
+
+  return (
+    <div className="flex flex-col w-full min-h-[70vh] gap-24 py-12 justify-center  ">
+      <div className="flex items-center justify-center w-full ">
+        <h2 className="text-xl font-light text-center md:text-4xl">
+          Early supporters we are grateful to
+        </h2>
+      </div>
+      <Carousel responsive={responsive} arrows={false}>
         {peoples.map((item) => (
-          <div key={item.id} className="flex flex-col gap-5">
+          <div className="flex items-center justify-center " key={item.name}>
             <Image
               src={item.image}
               alt={item.name}
-              className=" w-full max-h-full lg:max-w-[100%]"
+              className=" max-h-[50px] "
               width={300}
               height={300}
               priority
             />
           </div>
         ))}
-      </div>
+      </Carousel>
     </div>
   );
 }

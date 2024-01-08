@@ -4,7 +4,13 @@ import { Pbutton, ToprightArrow } from "./Pbutton";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
-export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
+export const PNavBar = ({
+  isHomeView,
+  isProductView,
+}: {
+  isHomeView?: boolean;
+  isProductView?: boolean;
+}) => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -53,7 +59,9 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
               <Link href="/">
                 <Image
-                  src={`/assets/ixana-${isHomeView ? "logo" : "white"}.svg`}
+                  src={`/assets/ixana-${
+                    isHomeView || isProductView ? "logo" : "white"
+                  }.svg`}
                   alt="Ixana logo"
                   width={100}
                   height={31}
@@ -64,7 +72,9 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
               <div className="flex items-center gap-5">
                 <a
                   className={`text-xs ${
-                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                    isHomeView || isProductView
+                      ? "text-[rgba(16, 15, 15, 1)]"
+                      : "text-white"
                   }  `}
                   href="/about"
                 >
@@ -72,7 +82,9 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
                 </a>
                 <a
                   className={`text-xs ${
-                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                    isHomeView || isProductView
+                      ? "text-[rgba(16, 15, 15, 1)]"
+                      : "text-white"
                   }  `}
                   href="/our-technology"
                 >
@@ -80,7 +92,9 @@ export const PNavBar = ({ isHomeView }: { isHomeView?: boolean }) => {
                 </a>
                 <a
                   className={`text-xs ${
-                    isHomeView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"
+                    isHomeView || isProductView
+                      ? "text-[rgba(16, 15, 15, 1)]"
+                      : "text-white"
                   }  `}
                   href="/"
                 >
