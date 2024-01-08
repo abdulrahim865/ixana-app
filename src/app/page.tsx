@@ -8,9 +8,9 @@ import HomeTopMainView from "./utils/pages/home/sections/HomeTopMainView";
 import HomeWatchDemo from "./utils/pages/home/sections/HomeWatchDemo";
 import ProductFeaturesSection from "./utils/pages/home/sections/ProductFeaturesSection";
 import ProductSpecSection from "./utils/pages/home/sections/ProductSpecSection";
-import ProductStoriesSection from "./utils/pages/home/sections/ProductStoriesSection";
 import HomeOurMissionHighlighted from "./utils/pages/home/sections/HomeBreakQuoteHighlighted";
 import HomeOurClients from "./utils/pages/home/sections/HomeOurClients";
+import HomeProductStoriesSection from "./utils/pages/home/sections/HomeProductStoriesSection";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <HomeLearnMoreSection />
         <ProductSpecSection />
         <ProductFeaturesSection />
-        <ProductStoriesSection />
+        <HomeProductStoriesSection />
 
         <HomeBreakThrough />
         <HomeOurMission />

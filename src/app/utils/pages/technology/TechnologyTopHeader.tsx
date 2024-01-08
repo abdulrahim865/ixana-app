@@ -17,7 +17,7 @@ export default function TechnologyTopHeader() {
       <div className="absolute flex flex-col items-start gap-5 left-10 bottom-10">
         <div className="primary-chip">Wi-R</div>
         <h1 className="flex text-5xl text-white ">
-          Wireless for Body Area Network
+          Wireless for Human-Computer Network
         </h1>
       </div>
     </div>

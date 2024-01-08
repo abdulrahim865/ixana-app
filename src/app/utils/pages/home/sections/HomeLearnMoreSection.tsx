@@ -26,12 +26,11 @@ export default function HomeLearnMoreSection() {
       <div className="flex flex-col items-center gap-5 my-12 text-center text-white basis-[80%] lg:basis-1/3 grow-0 z-10">
         <span className="primary-chip">Technology</span>
         <h1 className="text-4xl font-light ">
-          Create an E-Field bubble <br /> around you to transfer data
+          Private, fast, efficient <br /> Human-Computer Network
         </h1>
         <span className="text-xs font-extralight text-[#BFBDBD]">
-          Traditional wireless is absorbed by our body and radiates everywhere.
           Our groundbreaking innovation restricts the signal only in a E-field
-          bubble around you, making it 100 times more efficient.
+          bubble around you, making it 100 times more efficient. Traditional wireless is absorbed by our body and radiates everywhere.
         </span>
         <Pbutton
           text="Learn more"

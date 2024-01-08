@@ -15,7 +15,7 @@ export default function HomeOurMissionHighlighted() {
       <div className="flex flex-col items-center gap-5 lg:w-[700px]  px-12">
         <h2 className="flex text-xl lg:text-5xl font-light max-w-[800px] text-center">
           Build the future of high-speed human-computer interaction with the
-          world’s most profilic innovators
+          world’s most prolific innovators
         </h2>
 
         <p className="flex text-sm font-light max-w-[800px] text-center">

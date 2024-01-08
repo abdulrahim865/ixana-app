@@ -19,12 +19,12 @@ export default function AboutUsPeople() {
     },
   ];
   return (
-    <div className="flex min-h-[80vh] w-full flex-col  container justify-center">
+    <div className="flex min-h-[80vh] w-full flex-col gap-12  container justify-center">
       <div className="flex items-center w-full gap-5">
         <h2 className="flex text-4xl font-light ">Ixana team.</h2>
         <div className="flex h-[1px] bg-black grow"></div>
       </div>
-      <div className="flex justify-between w-full gap-12">
+      <div className="flex flex-col justify-between w-full gap-12 md:flex-row">
         {peoples.map((item) => (
           <div key={item.id} className="flex flex-col gap-5">
             <Image

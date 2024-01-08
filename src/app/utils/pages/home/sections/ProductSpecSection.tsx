@@ -15,7 +15,7 @@ export default function ProductSpecSection() {
             priority
           />
           <h2 className="text-4xl lg:w-[400px]">
-            Silicon Chip for Body Area Network
+            Ixana Silicon Chip for Human-Computer Network
           </h2>
           <p className="text-xs font-light lg:w-[400px]">
             Our 4Mbit/s silicon chip is faster than Bluetooth, yet 100x lower

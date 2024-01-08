@@ -7,7 +7,10 @@ export default function HomeWatchDemo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row">
+    <div
+      className="flex min-h-[60vh] w-full relative flex-col lg:flex-row"
+      id="demo"
+    >
       <div
         className="flex bg-no-repeat bg-contain grow md:basis-1/2"
         style={{
@@ -22,7 +25,10 @@ export default function HomeWatchDemo() {
           backgroundPositionY: "50%",
         }}
       ></div>
-      <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center gap-5">
+      <div
+        id="#demo"
+        className="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center gap-5"
+      >
         <div className="flex flex-col items-center min-h-[50px]">
           <div className="flex px-3 py-1.5 border border-solid rounded-full border-[#D4D3D2] hover:p-1 transition1">
             <div className="flex px-5 py-1.5 border border-solid rounded-full border-[#A29F9F] hover:p-1 transition1">
@@ -36,7 +42,8 @@ export default function HomeWatchDemo() {
           </div>
         </div>
 
-        <span>Transfer contacts, files and data with a handshake</span>
+        {/* <span>Transfer contacts, files and data with a handshake</span> */}
+        <span>Communicate with Touch</span>
       </div>
       <Modal
         open={isModalOpen}

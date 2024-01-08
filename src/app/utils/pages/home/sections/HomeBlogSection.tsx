@@ -25,7 +25,7 @@ export default function HomeBlogSection() {
               priority
             />
             <h3 className="p-3 font-light text-md">
-              Wi-R enables wereables to harness AI capabilities via distributed
+              Wi-R enables wearables to harness AI capabilities via distributed
               computation
             </h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
@@ -40,8 +40,7 @@ export default function HomeBlogSection() {
               priority
             />
             <h3 className="p-3 font-light text-md">
-              Wi-R enables wereables to harness AI capabilities via distributed
-              computation
+              All-day Augmented Reality, now possible courtesy of Wi-R
             </h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
           </div>
@@ -55,8 +54,7 @@ export default function HomeBlogSection() {
               priority
             />
             <h3 className="p-3 font-light text-md">
-              Wi-R enables wereables to harness AI capabilities via distributed
-              computation
+              Wi-R technology White Paper
             </h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
           </div>

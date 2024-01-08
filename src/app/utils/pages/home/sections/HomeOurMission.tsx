@@ -6,11 +6,10 @@ export default function HomeOurMission() {
       <div className="flex flex-col items-center gap-12">
         <span className="primary-chip">Our mission</span>
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-          Create an electronic analog of human nervous system to 10x battery
-          life of personal electronics today and unlock real-time brain-AI
-          communication tomorrow
+          Create an electronic counterpart of human nervous system to unlock real-time brain-AI
+          communication 
         </h2>
-        <div className="flex flex-col items-center gap-3">
+        {/* <div className="flex flex-col items-center gap-3">
           <div className="flex items-center gap-1.5 ">
             <span className="font-normal text-md">
               100x Lower energy{" "}
@@ -36,7 +35,7 @@ export default function HomeOurMission() {
           <span className="font-normal text-md">
             10x faster <span className="text-sm font-light ">compared to</span>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

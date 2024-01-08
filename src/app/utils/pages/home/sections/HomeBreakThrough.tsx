@@ -15,8 +15,10 @@ export default function HomeBreakThrough() {
       <div className="container flex flex-col items-center w-full gap-5 ">
         <div className="flex flex-col items-center gap-3">
           <h2 className="flex text-4xl text-center ">
-            Breakthrough technology for high- speed <br /> human-computer
-            interaction
+            {/* Breakthrough technology for high- speed <br /> human-computer
+            interaction */}
+            Ixana&apos;s roadmap for high- speed
+            <br /> human-computer interaction
           </h2>
 
           <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
