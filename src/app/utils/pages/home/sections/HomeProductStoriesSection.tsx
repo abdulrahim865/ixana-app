@@ -25,6 +25,34 @@ export default function HomeProductStoriesSection() {
     },
   };
   const carousel = useRef<Carousel>(null);
+
+  const testimonials = [
+    {
+      text: "Having seen the demo of an early prototype, I see the intriguing potential for the technology to play a key role in the future evolution of wearables.",
+      picture: "/assets/home/testimonials/rory-moore-evonexus-headshot.jpeg",
+      name: "Rory Moore",
+      bio: "Co-Founder, Evonexus; Co-Founder, Peregrine Semiconductor",
+    },
+    {
+      text: "The unique combination of a high-speed wire-free personal network faster and lower power than Bluetooth or Wi-Fi, and the all-day wearable AR headset is nothing short of mind-blowing. It has the potential to fundamentally change the future of personal computing.",
+      picture: "/assets/home/testimonials/salil-deshpande.jpg",
+      name: "Salil Deshpande",
+      bio: "General Partner, Uncorrelated Ventures",
+    },
+    {
+      text: "Ixana has created a platform technology with the potential to change how we connect to machines and to each other.",
+      picture: "/assets/home/testimonials/tchiweb2.png",
+      name: "Tom Chi",
+      bio: "Ex-Tech Lead, Google Glass; Managing Partner, At One Ventures",
+    },
+    {
+      text: "I was fascinated by the experience of Ixana's headset prototype. When they launch the ultra-light headset that's on the roadmap, it'll be a game-changer.",
+      picture: "/assets/home/testimonials/ed_roman.jpg",
+      name: "Ed Roman",
+      bio: "Managing Director, Hack VC",
+    },
+  ];
+
   return (
     <div className="flex flex-col w-full pb-12 ">
       <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden px-12">
@@ -49,13 +77,7 @@ export default function HomeProductStoriesSection() {
               }}
               className="bg-transparent border-none bg-[rgba(230, 230, 230, 1)]"
             >
-              <Image
-                src="/assets/arrow-right.svg"
-                alt="Arrow right"
-                width={50}
-                height={50}
-                priority
-              />
+              <Image src="/assets/arrow-right.svg" alt="Arrow right" width={50} height={50} priority />
             </button>
             <button
               onClick={(e) => {
@@ -76,17 +98,11 @@ export default function HomeProductStoriesSection() {
         </div>
 
         <Carousel ref={carousel} responsive={responsive} arrows={false}>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-            <div key={item} className="flex flex-col gap-3 w-[280px]">
-              <p className="text-xs text-[rgba(0,0,0,0.7)] ">
-                “ The unique combination of a high-speed wire-free personal
-                network faster and lower power than Bluetooth or Wi-Fi, and all
-                day wereable AR headset is nothing short of mind-blowing. It has
-                the potential to fundamentally change the future of personal
-                computing. “
-              </p>
-              <span className="text-sm ">Ed Roman</span>
-              <span className="text-md ">Managing director, Hack VC</span>
+          {testimonials.map((item, index) => (
+            <div key={index} className="flex flex-col gap-3 w-[280px]">
+              <p className="text-xs text-[rgba(0,0,0,0.7)] ">“ {item.text} “</p>
+              <span className="text-sm ">{item.name}</span>
+              <span className="text-md ">{item.bio}</span>
             </div>
           ))}
         </Carousel>
