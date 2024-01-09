@@ -5,7 +5,7 @@ export default function HomeBlogSection() {
   return (
     <div className="flex min-h-[70vh] w-full flex-col  items-center container justify-center my-24  px-12 lg:px-0">
       <div className="flex flex-col items-center gap-12">
-        <span className="primary-chip">Our mission</span>
+        <span className="primary-chip">Resources to Get Started</span>
         <div className="flex flex-col items-center gap-3">
           <h2 className="flex text-4xl font-light max-w-[800px] text-center">
             Insights from ours Blogs, Papers and News

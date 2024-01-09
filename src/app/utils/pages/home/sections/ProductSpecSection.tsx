@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ProductSpecSection() {
   return (
     <div className="flex flex-col w-full ">
-      <div className="  flex  flex-col md:flex-row  w-full min-h-[90vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
+      <div className="  flex  flex-col md:flex-row  w-full min-h-[70vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
         <div className="flex px-12 lg:pl-24 flex-col items-start basis-[50%] lg:basis-[40%] justify-center gap-3">
           <span className="primary-chip">Technology</span>
           <Image src="/assets/home/icons/icon-product.svg" alt="Product Ixana" width={20} height={20} priority />
@@ -24,7 +24,7 @@ export default function ProductSpecSection() {
           priority
         />
       </div>
-      <div className="  flex  flex-col md:flex-row  w-full min-h-[90vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
+      {/* <div className="  flex  flex-col md:flex-row  w-full min-h-[90vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
         <Image
           src="/assets/home/ixana-headset.png"
           alt="Chip Ixana"
@@ -65,7 +65,7 @@ export default function ProductSpecSection() {
           height={300}
           priority
         />
-      </div>
+      </div> */}
     </div>
   );
 }
