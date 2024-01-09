@@ -16,46 +16,53 @@ export default function HomeBlogSection() {
         </div>
         <div className="flex flex-col items-center gap-5 lg:flex-row">
           <div className="flex flex-col items-center gap-3">
-            <Image
-              src="/assets/home/blog1.png"
-              alt="Blog Ixana"
-              className="flex w-full max-h-full max-w-[100%]"
-              width={100}
-              height={100}
-              priority
-            />
+            <div className="h-72 w-72 flex relative">
+              <Image
+                src="/assets/home/blog1.png"
+                alt="Blog Ixana"
+                className=""
+                fill={true}
+                priority
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </div>
             <h3 className="p-3 font-light text-md">
-              Wi-R enables wearables to harness AI capabilities via distributed
-              computation
+              Wi-R enables wearables to harness AI capabilities via distributed computation
             </h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
           </div>
           <div className="flex flex-col items-center gap-3">
-            <Image
-              src="/assets/home/blog2.png"
-              alt="Blog Ixana"
-              className="flex w-full max-h-full max-w-[100%]"
-              width={100}
-              height={100}
-              priority
-            />
-            <h3 className="p-3 font-light text-md">
-              All-day Augmented Reality, now possible courtesy of Wi-R
-            </h3>
+            <div className="h-72 w-72 flex relative">
+              <Image
+                src="/assets/home/blog2.png"
+                alt="Blog Ixana"
+                className=""
+                fill={true}
+                priority
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <h3 className="p-3 font-light text-md">All-day Augmented Reality, now possible courtesy of Wi-R</h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
           </div>
           <div className="flex flex-col items-center gap-3">
-            <Image
-              src="/assets/home/blog3.png"
-              alt="Blog Ixana"
-              className="flex w-full max-h-full max-w-[100%]"
-              width={100}
-              height={100}
-              priority
-            />
-            <h3 className="p-3 font-light text-md">
-              Wi-R technology White Paper
-            </h3>
+            <div className="h-72 w-72 flex relative">
+              <Image
+                src="/assets/home/blog3.png"
+                alt="Blog Ixana"
+                className=""
+                fill={true}
+                priority
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <h3 className="p-3 font-light text-md">Wi-R technology White Paper</h3>
             <Pbutton text="Read more" icon={<ToprightArrow />} />
           </div>
         </div>
