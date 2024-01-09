@@ -16,15 +16,15 @@ export default function ProductFeaturesSection() {
     },
     {
       name: "Secure data privacy",
-      icon: "realtime.svg",
+      icon: "securedata.svg",
     },
     {
       name: "Eliminates device pairing",
-      icon: "realtime.svg",
+      icon: "devicepairing.svg",
     },
     {
       name: "Exchange data through touch",
-      icon: "realtime.svg",
+      icon: "exchangedata.svg",
     },
   ];
   return (
@@ -38,13 +38,7 @@ export default function ProductFeaturesSection() {
               key={item.name}
               className="flex flex-col items-center gap-5 p-10 border border-solid border-ibtnorange rounded-2xl basis-[25%] "
             >
-              <Image
-                src={`/assets/home/icons/${item.icon}`}
-                alt={item.name}
-                width={33}
-                height={33}
-                priority
-              />
+              <Image src={`/assets/home/icons/${item.icon}`} alt={item.name} width={33} height={33} priority />
               <span>{item.name}</span>
             </div>
           ))}

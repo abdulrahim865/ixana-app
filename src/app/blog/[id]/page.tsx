@@ -15,30 +15,20 @@ export default function BlogDetail() {
           <div className="container flex flex-col gap-3 grow max-w-[700px]">
             <div className="flex flex-wrap items-center gap-3">
               <h5 className="text-white primary-chip">Nov 1, 2022</h5>
-              <h5 className="primary-chip bg-[rgba(241,241,241,1)]">
-                Shreyas Sen, Angik Sarkar
-              </h5>
-              <h5 className="primary-chip bg-[rgba(241,241,241,1)]">
-                23 comments
-              </h5>
+              <h5 className="primary-chip bg-[rgba(241,241,241,1)]">Shreyas Sen, Angik Sarkar</h5>
+              <h5 className="primary-chip bg-[rgba(241,241,241,1)]">23 comments</h5>
             </div>
 
             <div className="flex flex-col gap-5">
               <div className="flex flex-col gap-3">
-                <h2 className="flex items-start pt-12 text-4xl font-light md:text-6xl">
-                  Wi-R Technology White Paper
-                </h2>
+                <h2 className="flex items-start pt-12 text-4xl font-light md:text-6xl">Wi-R Technology White Paper</h2>
                 <p className="text-sm font-light ">
-                  Wi-R is a new non-radiative near-field communication
-                  technology that uses Electro-Quasistatic (EQS) Fields for
-                  communication. The key differentiations that make Wi-R unique
-                  are as follows:
+                  Wi-R is a new non-radiative near-field communication technology that uses Electro-Quasistatic (EQS)
+                  Fields for communication. The key differentiations that make Wi-R unique are as follows:
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="flex items-start pt-12 text-4xl font-light">
-                  WNon-radiative Wire-like wireless
-                </h2>
+                <h2 className="flex items-start pt-12 text-4xl font-light">WNon-radiative Wire-like wireless</h2>
                 <p className="text-sm font-light ">
                   {`Traditional electromagnetic (EM) field-based wireless (e.g.,
                   Bluetooth, Wi-Fi, UltraWideBand (UWB)) radiates signals in
@@ -79,8 +69,7 @@ export default function BlogDetail() {
               </div>
               <div className="flex flex-col gap-3">
                 <h2 className="flex items-start pt-12 text-4xl font-light">
-                  How does Wi-R compare with other Near-field communication
-                  techniques?
+                  How does Wi-R compare with other Near-field communication techniques?
                 </h2>
                 <p className="text-sm font-light ">
                   {`The prominent near-field communication products available in the market are NFC and NFMI. Near-Field Communication (NFC) is an extremely short-range communication, typically used for payment, etc. Near-Field Magnetic Induction (NFMI) is a longer-range version of NFC and has been commonly used for connecting one earbud to another for relaying audio for synchronous playback in both ears.`}
@@ -97,9 +86,8 @@ export default function BlogDetail() {
                 {/* asdf */}
 
                 <p className="text-sm font-light ">
-                  Comparison between different wireless technologies including
-                  Wi-R. The numbers for other technologies such as NFMI have
-                  been reported from: LINK
+                  Comparison between different wireless technologies including Wi-R. The numbers for other technologies
+                  such as NFMI have been reported from: LINK
                 </p>
               </div>
               <div className="flex flex-col gap-3">
@@ -107,70 +95,50 @@ export default function BlogDetail() {
                   What does Wi-R enable that is not possible today?
                 </h2>
                 <p className="text-sm font-light ">
-                  Wi-R's transformative capabilities enable applications that
+                  {`Wi-R's transformative capabilities enable applications that
                   are limited by designer imagination (and physics). Some of the
-                  prominent features are:
+                  prominent features are:`}
                 </p>
               </div>
               <div className="flex flex-col gap-3 ">
                 <ul className="pl-3">
                   <li className="list-disc">
-                    <p>
-                      Combine touch, intent and communication in a single
-                      seamless action
-                    </p>
+                    <p>Combine touch, intent and communication in a single seamless action</p>
                   </li>
                   <li className="list-disc">
-                    <p>
-                      Pairing-free smart devices: No more hassle of pairing.
-                      It’s ready as soon as you put it on
-                    </p>
+                    <p>{`Pairing-free smart devices: No more hassle of pairing. It's ready as soon as you put it on`}</p>
                   </li>
                   <li className="list-disc">
                     <p>Touch Selectivity: Transfer contacts with a fist bump</p>
                   </li>
                   <li className="list-disc">
-                    <p>
-                      Multiple time-synchronized wearables: Imagine up to 25
-                      body motion trackers
-                    </p>
+                    <p>Multiple time-synchronized wearables: Imagine up to 25 body motion trackers</p>
                   </li>
                   <li className="list-disc">
                     <p>Ultra-Low-Energy: All-day, real-time, distributed AI</p>
                   </li>
                   <li className="list-disc">
+                    <p>High-speed: Stream video from AR headset to Smartphone</p>
+                  </li>
+                  <li className="list-disc">
+                    <p>Physically secure: Additional layer of Security for sensitive data or action</p>
+                  </li>
+                  <li className="list-disc">
                     <p>
-                      High-speed: Stream video from AR headset to Smartphone
+                      Negligible Inter-Human Interference: Increases capacity of communication in a space with multiple
+                      humans with each having multiple wearables
                     </p>
                   </li>
                   <li className="list-disc">
                     <p>
-                      Physically secure: Additional layer of Security for
-                      sensitive data or action
+                      Charging-free Patches: Sensing energy is typically low for many applications. Communication energy
+                      and peak power requirements are typically the bottleneck. Wi-R opens the door for long-lasting and
+                      even charging-free patches for many low-speed applications by lowering the communication energy by
+                      100x
                     </p>
                   </li>
                   <li className="list-disc">
-                    <p>
-                      Negligible Inter-Human Interference: Increases capacity of
-                      communication in a space with multiple humans with each
-                      having multiple wearables
-                    </p>
-                  </li>
-                  <li className="list-disc">
-                    <p>
-                      Charging-free Patches: Sensing energy is typically low for
-                      many applications. Communication energy and peak power
-                      requirements are typically the bottleneck. Wi-R opens the
-                      door for long-lasting and even charging-free patches for
-                      many low-speed applications by lowering the communication
-                      energy by 100x
-                    </p>
-                  </li>
-                  <li className="list-disc">
-                    <p>
-                      Distributed Computing in BAN: Augmenting humans with
-                      real-time AI
-                    </p>
+                    <p>Distributed Computing in BAN: Augmenting humans with real-time AI</p>
                   </li>
                 </ul>
                 <div className="flex flex-col gap-3">
@@ -178,20 +146,15 @@ export default function BlogDetail() {
                     Why has similar technology not been used before?
                   </h2>
                   <p className="text-sm font-light ">
-                    While there have been BAN and PAN working groups and much
-                    research on Human Body Communication, most, if not all,
-                    approaches tried to bring traditional wireless radio
-                    techniques to solve this problem, limiting the benefits
-                    attainable from these approaches. Especially, using
-                    radio-like techniques with EQS fields, the channel loss used
-                    to be prohibitively high.
+                    While there have been BAN and PAN working groups and much research on Human Body Communication,
+                    most, if not all, approaches tried to bring traditional wireless radio techniques to solve this
+                    problem, limiting the benefits attainable from these approaches. Especially, using radio-like
+                    techniques with EQS fields, the channel loss used to be prohibitively high.
                   </p>
                   <p className="text-sm font-light ">
-                    Radios were invented to communicate in a vacuum and over the
-                    air. However, they are not the most efficient when trying to
-                    conduct over a conducting high permittivity structure such
-                    as the human body, suffering from RF signal absorption, and
-                    heating in some cases.
+                    Radios were invented to communicate in a vacuum and over the air. However, they are not the most
+                    efficient when trying to conduct over a conducting high permittivity structure such as the human
+                    body, suffering from RF signal absorption, and heating in some cases.
                   </p>
 
                   <p className="text-sm font-light ">
@@ -214,17 +177,8 @@ export default function BlogDetail() {
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-3 mt-12">
-              {[
-                "Application",
-                "AI",
-                "Distributed computing",
-                "Wereables",
-                "Augumented reality",
-              ].map((item) => (
-                <h5
-                  className="primary-chip bg-[rgba(241,241,241,1)]"
-                  key={item}
-                >
+              {["Application", "AI", "Distributed computing", "Wereables", "Augumented reality"].map((item) => (
+                <h5 className="primary-chip bg-[rgba(241,241,241,1)]" key={item}>
                   {item}
                 </h5>
               ))}
@@ -243,8 +197,8 @@ export default function BlogDetail() {
                   <div className="flex flex-col gap-3 max-w-[300px] ">
                     <h2 className="text-2xl ">Shreyas Sen</h2>
                     <span className="text-xs font-light ">
-                      Elmore Associate Professor of ECE & BME at Purdue, Founder
-                      & CTO of Ixana, MIT TR35, TEDx, GT 40U40
+                      Elmore Associate Professor of ECE & BME at Purdue, Founder & CTO of Ixana, MIT TR35, TEDx, GT
+                      40U40
                     </span>
                   </div>
                 </div>
@@ -256,8 +210,7 @@ export default function BlogDetail() {
               <div className="flex flex-col items-start w-full gap-3">
                 <h2 className="text-4xl font-light ">Leave a reply</h2>
                 <span className="text-xs font-light ">
-                  Your email address will not be published. Required fields are
-                  marked *
+                  Your email address will not be published. Required fields are marked *
                 </span>
                 <div className="flex flex-col items-start w-full gap-3 pt-5">
                   <div className="flex w-full gap-5 grow">
@@ -300,9 +253,7 @@ export default function BlogDetail() {
                   </div>
                 </div>
 
-                <button className="px-2 ml-auto text-xs Pbutton">
-                  Post comment
-                </button>
+                <button className="px-2 ml-auto text-xs Pbutton">Post comment</button>
               </div>
               <div className="flex w-full h-[1px] bg-black  grow"></div>
               <div className="flex flex-col items-start gap-12">
@@ -313,17 +264,13 @@ export default function BlogDetail() {
                   </div>
                   <span className="text-xs ">neuralink.com</span>
                   <p className="text-xs font-light ">
-                    We are happy to announce that we’ve received approval from
-                    the reviewing independent institutional review board and our
-                    first hospital site to begin recruitment for our
-                    first-in-human clinical trial. The PRIME Study (short for
-                    Precise Robotically Implanted Brain-Computer Interface) – a
-                    groundbreaking investigational medical device trial for our
-                    fully-implantable, wireless brain-computer interface (BCI) –
-                    aims to evaluate the safety of our implant (N1) and surgical
-                    robot (R1) and assess the initial functionality of our BCI
-                    for enabling people with paralysis to control external
-                    devices with their thoughts.
+                    We are happy to announce that we’ve received approval from the reviewing independent institutional
+                    review board and our first hospital site to begin recruitment for our first-in-human clinical trial.
+                    The PRIME Study (short for Precise Robotically Implanted Brain-Computer Interface) – a
+                    groundbreaking investigational medical device trial for our fully-implantable, wireless
+                    brain-computer interface (BCI) – aims to evaluate the safety of our implant (N1) and surgical robot
+                    (R1) and assess the initial functionality of our BCI for enabling people with paralysis to control
+                    external devices with their thoughts.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -333,17 +280,13 @@ export default function BlogDetail() {
                   </div>
                   <span className="text-xs ">neuralink.com</span>
                   <p className="text-xs font-light ">
-                    We are happy to announce that we’ve received approval from
-                    the reviewing independent institutional review board and our
-                    first hospital site to begin recruitment for our
-                    first-in-human clinical trial. The PRIME Study (short for
-                    Precise Robotically Implanted Brain-Computer Interface) – a
-                    groundbreaking investigational medical device trial for our
-                    fully-implantable, wireless brain-computer interface (BCI) –
-                    aims to evaluate the safety of our implant (N1) and surgical
-                    robot (R1) and assess the initial functionality of our BCI
-                    for enabling people with paralysis to control external
-                    devices with their thoughts.
+                    We are happy to announce that we’ve received approval from the reviewing independent institutional
+                    review board and our first hospital site to begin recruitment for our first-in-human clinical trial.
+                    The PRIME Study (short for Precise Robotically Implanted Brain-Computer Interface) – a
+                    groundbreaking investigational medical device trial for our fully-implantable, wireless
+                    brain-computer interface (BCI) – aims to evaluate the safety of our implant (N1) and surgical robot
+                    (R1) and assess the initial functionality of our BCI for enabling people with paralysis to control
+                    external devices with their thoughts.
                   </p>
                 </div>
                 <Pbutton

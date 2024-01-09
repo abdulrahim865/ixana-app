@@ -2,12 +2,11 @@ import Image from "next/image";
 
 export default function HomeOurMission() {
   return (
-    <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center">
+    <div className="flex min-h-[50vh] w-full flex-col  items-center container justify-center">
       <div className="flex flex-col items-center gap-12">
         <span className="primary-chip">Our mission</span>
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-          Create an electronic counterpart of human nervous system to unlock real-time brain-AI
-          communication 
+          Create an electronic counterpart of human nervous system to unlock real-time brain-AI communication
         </h2>
         {/* <div className="flex flex-col items-center gap-3">
           <div className="flex items-center gap-1.5 ">
