@@ -74,7 +74,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
       </div>
       <div className={`fixed top-0 z-10 flex w-full bg-white ${isScrolled ? "bg-opacity-100" : ""}`}>
         <div className="relative flex items-center justify-center w-full p-5 lg:hidden">
-          <a href="#">
+          <a href="/">
             <Image src="/assets/ixana-logo.svg" alt="Ixana logo" width={100} height={31} priority />
           </a>
           <button className="absolute top-0 bottom-0 right-0 flex items-center">
