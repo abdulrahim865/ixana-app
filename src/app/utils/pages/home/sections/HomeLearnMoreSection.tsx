@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeLearnMoreSection() {
   return (
@@ -29,14 +30,16 @@ export default function HomeLearnMoreSection() {
           Private, fast, efficient <br /> Human-Computer Network
         </h1>
         <span className="text-xs font-extralight text-[#BFBDBD]">
-          Our groundbreaking innovation restricts the signal only in a E-field
-          bubble around you, making it 100 times more efficient. Traditional wireless is absorbed by our body and radiates everywhere.
+          Our groundbreaking innovation restricts the signal only in a E-field bubble around you, making it 100 times
+          more efficient. Traditional wireless is absorbed by our body and radiates everywhere.
         </span>
-        <Pbutton
-          text="Learn more"
-          icon={<ToprightArrow />}
-          wrapperClass="text-sm bg-white text-iblack hover:bg-iblack transition1 hover:text-white"
-        />
+        <Link href="/our-technology">
+          <Pbutton
+            text="Learn more"
+            icon={<ToprightArrow />}
+            wrapperClass="text-sm bg-white text-iblack hover:bg-iblack transition1 hover:text-white"
+          />
+        </Link>
       </div>
     </div>
   );

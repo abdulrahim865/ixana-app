@@ -1,16 +1,22 @@
 "use client";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import { Modal } from "antd";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "next/navigation";
 
 export default function HomeWatchDemo() {
+  const params = useParams();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  useEffect(() => {
+    if (window.location.hash == "#demo") {
+      setIsModalOpen(true);
+    }
+  }, [params]);
+
   return (
-    <div
-      className="flex min-h-[60vh] w-full relative flex-col lg:flex-row"
-      id="demo"
-    >
+    <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row" id="demo">
       <div
         className="flex bg-no-repeat bg-contain grow md:basis-1/2"
         style={{
@@ -45,15 +51,10 @@ export default function HomeWatchDemo() {
         {/* <span>Transfer contacts, files and data with a handshake</span> */}
         <span>Communicate with Touch</span>
       </div>
-      <Modal
-        open={isModalOpen}
-        width="100%"
-        footer={null}
-        onCancel={(e) => setIsModalOpen(false)}
-      >
+      <Modal open={isModalOpen} width="100%" footer={null} onCancel={(e) => setIsModalOpen(false)}>
         <iframe
           width="100%"
-          height="600px"
+          className="min-h-[50vh] lg:min-h-[70vh]"
           src="https://player.vimeo.com/video/786424550?"
         ></iframe>
       </Modal>

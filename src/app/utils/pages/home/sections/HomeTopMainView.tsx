@@ -1,7 +1,10 @@
+"use client";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function HomeTopMainView() {
+  const router = useRouter();
   return (
     <div
       className=" overflow-hidden relative flex flex-col w-full min-h-[600px] md:min-h-[100vh] grow mt-14 lg:mt-0  "
@@ -33,7 +36,7 @@ export default function HomeTopMainView() {
             <span className="text-black">Body-internet</span>
             <span className="flex flex-col items-start gap-3 text-black md:items-center lg:flex-row md:gap-0">
               <span>Platform</span>
-              <a href="#demo" className="flex gap-3 text-sm Pbutton md:ml-5">
+              <a onClick={() => router.push("/#demo")} className="flex gap-3 text-sm Pbutton md:ml-5 cursor-pointer">
                 <span>Demo</span>
                 <ToprightArrow size={32} />
               </a>

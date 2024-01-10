@@ -12,8 +12,7 @@ export default function TechnologyWifiFAQ() {
     },
     {
       key: "2",
-      label:
-        "Does it need to touch for Wi-R communication? If my phone/laptop is on the table, will it work?",
+      label: "Does it need to touch for Wi-R communication? If my phone/laptop is on the table, will it work?",
       children: <p>{text}</p>,
     },
     {
@@ -50,18 +49,10 @@ export default function TechnologyWifiFAQ() {
 
   return (
     <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-12">
-      <div className="flex flex-col w-full gap-12 lg:flex-row">
-        <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-          Wi-R technology question answered.
-        </h2>
+      <div id="faqs" className="flex flex-col w-full gap-12 lg:flex-row">
+        <h2 className="flex text-4xl font-light max-w-[800px] text-center">Wi-R technology question answered.</h2>
         <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
-          <Collapse
-            className="w-full "
-            items={items}
-            defaultActiveKey={["1"]}
-            expandIconPosition="end"
-          />
-          ;
+          <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />
         </div>
       </div>
     </div>

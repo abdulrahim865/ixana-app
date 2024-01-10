@@ -5,21 +5,14 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Drawer } from "antd";
 
-export const PNavBar = ({
-  isHomeView,
-  isProductView,
-}: {
-  isHomeView?: boolean;
-  isProductView?: boolean;
-}) => {
+export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; isProductView?: boolean }) => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const [scrolled, setScrolled] = useState(false);
   const handleScroll = (event: any) => {
-    const tabScrolled =
-      (document.documentElement.scrollTop || document.body.scrollTop) > 50;
+    const tabScrolled = (document.documentElement.scrollTop || document.body.scrollTop) > 50;
     setScrolled(tabScrolled);
   };
   const isScrolled = useMemo(() => scrolled, [scrolled]);
@@ -40,23 +33,11 @@ export const PNavBar = ({
             <div className="flex justify-between p-1.5 px-14 bg-iblack ">
               <div className="flex items-center gap-3 lg:gap-14">
                 <a className="flex items-center gap-3 text-xs">
-                  <Image
-                    src="/assets/mail.svg"
-                    alt="Mail Button"
-                    width={22}
-                    height={22}
-                    priority
-                  />
+                  <Image src="/assets/mail.svg" alt="Mail Button" width={22} height={22} priority />
                   <span className="text-white ">Meet us at CES</span>
                 </a>
                 <a className="flex items-center gap-3 text-xs">
-                  <Image
-                    src="/assets/user.svg"
-                    alt="Booth Button"
-                    width={22}
-                    height={22}
-                    priority
-                  />
+                  <Image src="/assets/user.svg" alt="Booth Button" width={22} height={22} priority />
                   <span className="text-white ">Booth 61249</span>
                 </a>
               </div>
@@ -69,9 +50,7 @@ export const PNavBar = ({
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
               <Link href="/">
                 <Image
-                  src={`/assets/ixana-${
-                    isHomeView || isProductView ? "logo" : "white"
-                  }.svg`}
+                  src={`/assets/ixana-${isHomeView || isProductView ? "logo" : "white"}.svg`}
                   alt="Ixana logo"
                   width={100}
                   height={31}
@@ -81,31 +60,19 @@ export const PNavBar = ({
 
               <div className="flex items-center gap-5">
                 <a
-                  className={`text-xs ${
-                    isHomeView || isProductView
-                      ? "text-[rgba(16, 15, 15, 1)]"
-                      : "text-white"
-                  }  `}
-                  href="/about"
+                  className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
+                  href="/about-us"
                 >
                   About us
                 </a>
                 <a
-                  className={`text-xs ${
-                    isHomeView || isProductView
-                      ? "text-[rgba(16, 15, 15, 1)]"
-                      : "text-white"
-                  }  `}
+                  className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
                   href="/our-technology"
                 >
                   Our Technology
                 </a>
                 <a
-                  className={`text-xs ${
-                    isHomeView || isProductView
-                      ? "text-[rgba(16, 15, 15, 1)]"
-                      : "text-white"
-                  }  `}
+                  className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
                   href="/"
                 >
                   Tech Insight
@@ -115,20 +82,10 @@ export const PNavBar = ({
           </div>
         </div>
       </div>
-      <div
-        className={`fixed top-0 z-10 flex w-full bg-white ${
-          isScrolled ? "bg-opacity-100" : ""
-        }`}
-      >
+      <div className={`fixed top-0 z-10 flex w-full bg-white ${isScrolled ? "bg-opacity-100" : ""}`}>
         <div className="relative flex items-center justify-center w-full p-5 lg:hidden">
-          <a href="#">
-            <Image
-              src="/assets/ixana-logo.svg"
-              alt="Ixana logo"
-              width={100}
-              height={31}
-              priority
-            />
+          <a href="/">
+            <Image src="/assets/ixana-logo.svg" alt="Ixana logo" width={100} height={31} priority />
           </a>
 
           <button
