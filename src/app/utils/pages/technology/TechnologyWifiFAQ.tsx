@@ -52,7 +52,7 @@ export default function TechnologyWifiFAQ() {
       <div id="faqs" className="flex flex-col w-full gap-12 lg:flex-row">
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">Wi-R technology question answered.</h2>
         <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
-          <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />;
+          <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />
         </div>
       </div>
     </div>
