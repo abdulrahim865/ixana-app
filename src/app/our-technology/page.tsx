@@ -26,16 +26,6 @@ export default function Home() {
         <TechnologyWifiToday />
         <TechnologyWifiFAQ />
       </div>
-      {/* <HomeWatchDemo />
-      <HomeLearnMoreSection />
-      <ProductSpecSection />
-      <ProductFeaturesSection />
-      <ProductStoriesSection />
-
-      <HomeBreakThrough />
-      <HomeOurMission />
-      <HomeOurMissionHighlighted />
-      <HomeBlogSection /> */}
       <PFooter />
     </main>
   );
