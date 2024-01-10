@@ -39,7 +39,7 @@ export default function ProductFeaturesSection() {
               className="flex flex-col items-center gap-5 p-10 border border-solid border-ibtnorange rounded-2xl basis-[25%] "
             >
               <Image src={`/assets/home/icons/${item.icon}`} alt={item.name} width={33} height={33} priority />
-              <span>{item.name}</span>
+              <span className="text-center">{item.name}</span>
             </div>
           ))}
         </div>
