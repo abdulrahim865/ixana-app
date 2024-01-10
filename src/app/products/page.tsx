@@ -11,9 +11,7 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
       <ProductsTopHeader />
-      <div className="flex flex-col items-center px-12 md:px-0">
-        <ProductWhyUse />
-      </div>
+      <ProductWhyUse />
       <ProductStoriesSection />
       <div className="flex flex-col items-center w-full px-12 md:px-0">
         <TechnologyProducts />

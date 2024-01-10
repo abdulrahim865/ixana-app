@@ -26,20 +26,28 @@ export default function ProductStoriesSection() {
   };
   const carousel = useRef<Carousel>(null);
   return (
-    <div className="flex flex-col w-full pb-12 ">
+    <div className="relative flex flex-col w-full md:pt-24 min-h-[500px] mb-[100px] md:mb-[250px] ">
+      <div
+        className="absolute bottom-0 left-5 md:left-12 w-[1px] top-[90px] "
+        style={{
+          backgroundImage: 'url("/assets/lines-top-bottom.svg")',
+          backgroundSize: "100%",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "top right",
+        }}
+      ></div>
+
+      <div
+        className="absolute left-5 md:left-12 h-[250px] -bottom-[250px] w-[50%] "
+        style={{
+          backgroundImage: 'url("/assets/products/product-line-bottom.svg")',
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top right",
+        }}
+      ></div>
+
       <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden px-12">
-        <div className=" flex w-[calc(50%-3rem)] absolute left-0 top-0 bottom-0">
-          <Image
-            src="/assets/home/stories-line-left.svg"
-            alt=""
-            className="flex object-contain w-auto "
-            width={500}
-            height={500}
-            priority
-          />
-        </div>
-        <div className="  h-[0.5px] flex bg-black absolute left-[4%] right-[10%] top-0"></div>
-        <div className=" h-[0.5px] flex bg-black absolute left-[4%] bottom-0 w-[calc(46%-50px)]"></div>
         <div className="flex flex-col justify-between md:flex-row">
           <h2 className="flex text-4xl ">A few applications</h2>
           <div className="flex gap-3">
@@ -97,16 +105,6 @@ export default function ProductStoriesSection() {
             </div>
           ))}
         </Carousel>
-      </div>
-      <div className="relative flex w-full">
-        <Image
-          src="/assets/home/stories-line-right.svg"
-          alt=""
-          className="flex w-[50px] absolute left-[calc(50%-50px)] -top-[1px]  "
-          width={500}
-          height={500}
-          priority
-        />
       </div>
     </div>
   );

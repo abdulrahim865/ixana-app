@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Pbutton, ToprightArrow } from "./Pbutton";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { Drawer } from "antd";
 
 export const PNavBar = ({
   isHomeView,
@@ -22,6 +23,15 @@ export const PNavBar = ({
     setScrolled(tabScrolled);
   };
   const isScrolled = useMemo(() => scrolled, [scrolled]);
+  const [mobileDrawer, setMobileDrawer] = useState(false);
+
+  const navItems = [
+    { name: "Home", route: "/" },
+    { name: "technology", route: "/" },
+    { name: "products", route: "/" },
+    { name: "blog", route: "/" },
+  ];
+
   return (
     <>
       <div className="items-center justify-center hidden w-full lg:flex">
@@ -120,7 +130,11 @@ export const PNavBar = ({
               priority
             />
           </a>
-          <button className="absolute top-0 bottom-0 right-0 flex items-center">
+
+          <button
+            className="absolute top-0 bottom-0 right-0 flex items-center"
+            onClick={(e) => setMobileDrawer(true)}
+          >
             <Image
               src="/assets/menu.svg"
               alt="Ixana menu"
@@ -131,6 +145,34 @@ export const PNavBar = ({
           </button>
         </div>
       </div>
+      <Drawer
+        placement="right"
+        onClose={() => {
+          setMobileDrawer(false);
+        }}
+        open={mobileDrawer}
+      >
+        <div className="flex flex-col gap-5">
+          <Link href="/">
+            <Image
+              src={`/assets/ixana-${
+                isHomeView || isProductView ? "logo" : "white"
+              }.svg`}
+              alt="Ixana logo"
+              width={100}
+              height={31}
+              priority
+            />
+          </Link>
+          <div className="flex flex-col gap-3 p-3">
+            {navItems.map((nav) => (
+              <a key={nav.name} href={nav.route}>
+                {nav.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      </Drawer>
     </>
   );
 };
