@@ -20,9 +20,9 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
 
   const navItems = [
     { name: "Home", route: "/" },
-    { name: "technology", route: "/" },
-    { name: "products", route: "/" },
-    { name: "blog", route: "/" },
+    { name: "About", route: "/about-us" },
+    { name: "Technology", route: "/our-technology" },
+    { name: "Blog", route: "/blog" },
   ];
 
   return (
@@ -88,17 +88,8 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
             <Image src="/assets/ixana-logo.svg" alt="Ixana logo" width={100} height={31} priority />
           </a>
 
-          <button
-            className="absolute top-0 bottom-0 right-0 flex items-center"
-            onClick={(e) => setMobileDrawer(true)}
-          >
-            <Image
-              src="/assets/menu.svg"
-              alt="Ixana menu"
-              width={50}
-              height={50}
-              priority
-            />
+          <button className="absolute top-0 bottom-0 right-0 flex items-center" onClick={(e) => setMobileDrawer(true)}>
+            <Image src="/assets/menu.svg" alt="Ixana menu" width={50} height={50} priority />
           </button>
         </div>
       </div>
@@ -112,9 +103,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
         <div className="flex flex-col gap-5">
           <Link href="/">
             <Image
-              src={`/assets/ixana-${
-                isHomeView || isProductView ? "logo" : "white"
-              }.svg`}
+              src={`/assets/ixana-${isHomeView || isProductView ? "logo" : "white"}.svg`}
               alt="Ixana logo"
               width={100}
               height={31}
