@@ -5,18 +5,15 @@ export default function ApplicationsWhyUse() {
   const applications = [
     {
       title: "Distributed Wearable AI",
-      description:
-        "High-speed, low power Wi-R enables distributed AI with a wearable hub device.",
+      description: "High-speed, low power Wi-R enables distributed AI with a wearable hub device.",
     },
     {
       title: "All-day AR Headset",
-      description:
-        "Offloading video processing with Distributed AI enables all-day AR.",
+      description: "Offloading video processing with Distributed AI enables all-day AR.",
     },
     {
       title: "5G Relayed Wearables",
-      description:
-        "High-speed distributed computation enables wearables to be empowered with 5G in the hub devices.",
+      description: "High-speed distributed computation enables wearables to be empowered with 5G in the hub devices.",
     },
     {
       title: "Pairing-free Electronics",
@@ -48,21 +45,11 @@ export default function ApplicationsWhyUse() {
               className="flex flex-col gap-3 p-3 rounded-xl basis-[calc(40%-3rem)] items-start"
             >
               <span className="flex items-center gap-1.5 text-md">
-                <Image
-                  src="/assets/products/bullet-icon.svg"
-                  alt="Search Button"
-                  width={24}
-                  height={24}
-                  priority
-                />
+                <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
                 <span>{application.title}</span>
               </span>
-              <span className="text-xs font-light md:max-w-[300px]">
-                {application.description}
-              </span>
-              <button className="primary-chip bg-[#262727] text-white">
-                Read more
-              </button>
+              <span className="text-xs font-light md:max-w-[300px]">{application.description}</span>
+              <button className="primary-chip bg-[#262727] text-white">Read more</button>
             </div>
           ))}
         </div>

@@ -4,7 +4,6 @@ import ApplicationsHighlighted from "../utils/pages/applications/ApplicationsHig
 import ApplicationsTopHeader from "../utils/pages/applications/ApplicationsTopHeader";
 import ApplicationsWhitePaperSection from "../utils/pages/applications/ApplicationsWhitePaperSection";
 import ApplicationsWhyUse from "../utils/pages/applications/ApplicationsWhyUse";
-import ProductStoriesSection from "../utils/pages/products/ProductStoriesSection";
 
 export default function Applications() {
   return (
