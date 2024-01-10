@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeBlogSection() {
   return (
@@ -31,7 +32,9 @@ export default function HomeBlogSection() {
             <h3 className="p-3 font-light text-md">
               Wi-R enables wearables to harness AI capabilities via distributed computation
             </h3>
-            <Pbutton text="Read more" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="Read more" icon={<ToprightArrow />} />
+            </Link>
           </div>
           <div className="flex flex-col items-center gap-3">
             <div className="h-72 w-72 flex relative">
@@ -47,7 +50,9 @@ export default function HomeBlogSection() {
               />
             </div>
             <h3 className="p-3 font-light text-md">All-day Augmented Reality, now possible courtesy of Wi-R</h3>
-            <Pbutton text="Read more" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="Read more" icon={<ToprightArrow />} />
+            </Link>
           </div>
           <div className="flex flex-col items-center gap-3">
             <div className="h-72 w-72 flex relative">
@@ -63,7 +68,9 @@ export default function HomeBlogSection() {
               />
             </div>
             <h3 className="p-3 font-light text-md">Wi-R technology White Paper</h3>
-            <Pbutton text="Read more" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="Read more" icon={<ToprightArrow />} />
+            </Link>
           </div>
         </div>
       </div>

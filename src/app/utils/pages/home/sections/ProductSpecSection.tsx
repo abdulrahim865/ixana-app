@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductSpecSection() {
   return (
@@ -13,7 +14,9 @@ export default function ProductSpecSection() {
             Our 4Mbit/s silicon chip is faster than Bluetooth, yet 100x lower power, lower latency and more reliable.
             Integrate it inside wearables, smartphones and other devices similar to how you’d integrate a wireless chip.
           </p>
-          <Pbutton text="Learn More" icon={<ToprightArrow />} />
+          <Link href="/our-technology">
+            <Pbutton text="Learn More" icon={<ToprightArrow />} />
+          </Link>
         </div>
         <Image
           src="/assets/home/ixana-chip.png"

@@ -99,7 +99,7 @@ export default function HomeProductStoriesSection() {
 
         <Carousel ref={carousel} responsive={responsive} arrows={false}>
           {testimonials.map((item, index) => (
-            <div key={index} className="flex flex-col gap-3 w-[280px]">
+            <div key={index} className="flex flex-col gap-3 md:w-[280px]">
               <p className="text-xs text-[rgba(0,0,0,0.7)] ">“ {item.text} “</p>
               <span className="text-sm ">{item.name}</span>
               <span className="text-md ">{item.bio}</span>

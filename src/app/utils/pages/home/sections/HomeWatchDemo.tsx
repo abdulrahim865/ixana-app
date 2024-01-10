@@ -52,7 +52,11 @@ export default function HomeWatchDemo() {
         <span>Communicate with Touch</span>
       </div>
       <Modal open={isModalOpen} width="100%" footer={null} onCancel={(e) => setIsModalOpen(false)}>
-        <iframe width="100%" height="600px" src="https://player.vimeo.com/video/786424550?"></iframe>
+        <iframe
+          width="100%"
+          className="min-h-[50vh] lg:min-h-[70vh]"
+          src="https://player.vimeo.com/video/786424550?"
+        ></iframe>
       </Modal>
     </div>
   );
