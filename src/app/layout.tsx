@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import Script from "next/script";
+import dynamic from "next/dynamic";
 
 const AspektaVF = localFont({
   src: [
@@ -48,6 +49,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const CrispWithNoSSR = dynamic(() => import("./utils/components/CrispChat"));
   return (
     <html lang="en">
       {/* External Scripts */}
@@ -55,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <Script type="text/javascript" src="https://app.posthog.com/static/array.js" async />
       <Script type="text/javascript" src="https://www.clarity.ms/tag/ermnjbk1lg" async />
       <Script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-KX71MVT6XV" async />
+      <CrispWithNoSSR />
       <body className={AspektaVF.className}>{children}</body>
     </html>
   );

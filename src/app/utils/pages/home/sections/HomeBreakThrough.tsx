@@ -128,7 +128,14 @@ export default function HomeBreakThrough() {
             />
           </div>
           <div className="max-w-[90vw]">
-            <Carousel autoPlay={true} infiniteLoop={true} interval={2000} showStatus={false} showArrows={false}>
+            <Carousel
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={2000}
+              showStatus={false}
+              showArrows={false}
+              showThumbs={false}
+            >
               {texts.map((text, index) => (
                 <div className="flex items-center justify-center w-full py-6" key={index}>
                   <h3 className="text-sm font-light min-h-[50px] text-white">{text}</h3>
