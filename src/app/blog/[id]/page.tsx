@@ -10,8 +10,8 @@ export default function BlogDetail() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
       <BlogTopHeader />
-      <div className="flex flex-col items-center w-full px-6 md:px-0">
-        <div className="flex flex-col items-center gap-24 py-5 md:py-24">
+      <div className="flex flex-col w-full px-6 md:px-0">
+        <div className="flex flex-col gap-24 py-5 md:py-24">
           <div className="container flex flex-col gap-3 grow max-w-[700px]">
             <div className="flex flex-wrap items-center gap-3">
               <h5 className="text-white primary-chip">Nov 1, 2022</h5>
