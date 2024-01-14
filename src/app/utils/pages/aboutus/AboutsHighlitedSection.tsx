@@ -22,19 +22,19 @@ export default function AboutsHighlitedSection() {
         <div className="flex flex-wrap items-center justify-between w-full gap-3 ">
           <div className="flex flex-col items-start basis-[calc(50%-0.75rem)] md:basis-[calc(25%-3rem)] items-center">
             <h3 className="text-md ">Touch selectivity</h3>
-            <span className="text-xs font-light ">Touch selectivity</span>
+            <span className="text-xs font-light ">{`Transfer contacts with a fist bump`}</span>
           </div>
           <div className="flex flex-col items-start basis-[calc(50%-0.75rem)] md:basis-[calc(25%-3rem)] items-center">
-            <h3 className="text-md ">Touch selectivity</h3>
-            <span className="text-xs font-light ">Touch selectivity</span>
+            <h3 className="text-md ">Ultra-low energy</h3>
+            <span className="text-xs font-light ">All-day, real-time, distributed AI</span>
           </div>
           <div className="flex flex-col items-start basis-[calc(50%-0.75rem)] md:basis-[calc(25%-3rem)] items-center">
-            <h3 className="text-md ">Touch selectivity</h3>
-            <span className="text-xs font-light ">Touch selectivity</span>
+            <h3 className="text-md ">High-speed</h3>
+            <span className="text-xs font-light ">Stream video from smartwatch to AR headset</span>
           </div>
           <div className="flex flex-col items-start basis-[calc(50%-0.75rem)] md:basis-[calc(25%-3rem)] items-center">
-            <h3 className="text-md ">Touch selectivity</h3>
-            <span className="text-xs font-light ">Touch selectivity</span>
+            <h3 className="text-md ">Physically-secure</h3>
+            <span className="text-xs font-light ">Pairing-free smart devices</span>
           </div>
         </div>
       </div>
