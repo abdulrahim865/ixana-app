@@ -28,7 +28,7 @@ export default function BlogDetail() {
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="flex items-start pt-12 text-4xl font-light">WNon-radiative Wire-like wireless</h2>
+                <h2 className="flex items-start pt-12 text-4xl font-light">Non-radiative Wire-like wireless</h2>
                 <p className="text-sm font-light ">
                   {`Traditional electromagnetic (EM) field-based wireless (e.g.,
                   Bluetooth, Wi-Fi, UltraWideBand (UWB)) radiates signals in
