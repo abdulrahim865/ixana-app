@@ -69,7 +69,7 @@ export default function HomeProductStoriesSection() {
         <div className=" w-full h-[0.5px] flex bg-black absolute left-[4%] top-0"></div>
         <div className=" h-[0.5px] flex bg-black absolute left-[4%] bottom-0 w-[calc(46%-50px)]"></div>
         <div className="flex flex-col justify-between md:flex-row">
-          <h2 className="flex text-4xl ">Stories from the Ixana Experience</h2>
+          <h2 className="flex text-4xl ">{`Reactions to the Ixana Experience`}</h2>
           <div className="flex gap-3">
             <button
               onClick={(e) => {

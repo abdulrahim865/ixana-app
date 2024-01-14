@@ -7,8 +7,7 @@ export default function TechnologyInnovation() {
       <div className="flex flex-col items-center w-full gap-12">
         <span className="primary-chip">The Innovation</span>
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-          
-          A fundamentally new wireless technology designed from the ground-up for Body-Area Human-Computer Networks
+          {`Security and performance of wired connectivity for Body Area Networks.`}
         </h2>
         {/* <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
           <Image

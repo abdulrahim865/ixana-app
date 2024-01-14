@@ -31,7 +31,7 @@ export default function ProductFeaturesSection() {
     <div className="  flex  flex-col w-full min-h-[70vh] grow justify-center items-center">
       <div className="flex flex-col items-center gap-12 px-12 py-20 ">
         <span className="primary-chip">Impact</span>
-        <h2 className="text-4xl text-center ">100x efficient vs BLE, Wi-Fi</h2>
+        <h2 className="text-4xl text-center ">100X lower energy, 10x lower latency, 10x faster than BTLE and WI-Fi</h2>
         <div className="flex flex-col flex-wrap justify-center gap-5 md:flex-row">
           {features.map((item) => (
             <div
