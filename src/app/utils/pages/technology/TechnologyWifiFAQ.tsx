@@ -19,12 +19,16 @@ export default function TechnologyWifiFAQ() {
     {
       key: "3",
       label: "Can I use Wi-R for authentication on touch?",
-      children: <p>{``}</p>,
+      children: (
+        <p>{`Yes, you can. Infact, seamless authentication might be one of the first usecases that our partners bring to market.`}</p>
+      ),
     },
     {
       key: "4",
       label: "How did you solve a problem incumbents couldn't?",
-      children: <p>{``}</p>,
+      children: (
+        <p>{`Our information processing architecture is very different from what AR headsets have typically pursued. Few even believed a 100X improvement in energy efficiency is possible until we demonstrated it. Multiple major discoveries, exploiting novel physics enabled the 100X advantage.`}</p>
+      ),
     },
     {
       key: "5",
@@ -43,7 +47,31 @@ export default function TechnologyWifiFAQ() {
     {
       key: "7",
       label: "What can Wi-R do that Bluetooth can't?",
-      children: <p>{`100x`}</p>,
+      children: (
+        <div className="pl-10">
+          <ul className="list-disc leading-6">
+            <li>
+              {`Wi-R can transmit 10X higher data rate than Bluetooth (up to 30Mbps demonstrated). This is important to
+              transfer video and multi-sensor data.`}
+            </li>
+            <li>
+              {`Wi-R can be battery-free without severe duty cycling. There are charging-free Bluetooth tags
+              available(Wiliot, Atmosic). However, they achieve it by severely reducing the data rate(<1kbps). Even
+              in the charging-free regime (10uW power consumption), Wi-R can enable ~10-100kbps data rate. This is
+              important for continuous monitoring of health data e.g. ECG waveform and motion capture data.`}
+            </li>
+            <li>
+              {`Wi-R can transmit data by touch. Bluetooth can't select a device based on touch. This would be important
+              for public screens that behave differently based on who is touching them. In the future, this would also
+              be used for payments, replacing/augmenting NFC.`}
+            </li>
+            <li>
+              {`One-to-many connections: This year, our firmware would be able to support one-to-25 device connections.
+              Bluetooth is limited to 8, and that too with a lot of limitations and interference.`}
+            </li>
+          </ul>
+        </div>
+      ),
     },
     {
       key: "8",

@@ -21,7 +21,7 @@ export default function Home() {
         <TechnologyWhyWifi />
         <TechnologyImpact />
       </div>
-      <TechnologyHeadPhoneReview />
+      {/* <TechnologyHeadPhoneReview /> */}
       <div className="flex flex-col items-center px-12 md:px-0">
         <TechnologyWifiToday />
         <TechnologyWifiFAQ />
