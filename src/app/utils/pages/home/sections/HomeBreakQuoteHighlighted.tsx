@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeOurMissionHighlighted() {
   return (
@@ -14,16 +15,16 @@ export default function HomeOurMissionHighlighted() {
     >
       <div className="flex flex-col items-center gap-5 lg:w-[700px]  px-12">
         <h2 className="flex text-xl lg:text-5xl font-light max-w-[800px] text-center">
-          Build the future of high-speed human-computer interaction with the
-          world’s most prolific innovators
+          Build the future of high-speed human-computer interaction with the world’s most prolific innovators
         </h2>
 
         <p className="flex text-sm font-light max-w-[800px] text-center">
-          Developing human-computer interfaces is an interdisciplinary
-          challenge. We are looking for the world’s best engineers, scientists
-          and operations masters.
+          Developing human-computer interfaces is an interdisciplinary challenge. We are looking for the world’s best
+          engineers, scientists and operations masters.
         </p>
-        <Pbutton text="Join Us" icon={<ToprightArrow />} />
+        <Link href="/join-us">
+          <Pbutton text="Join Us" icon={<ToprightArrow />} />
+        </Link>
       </div>
     </div>
   );
