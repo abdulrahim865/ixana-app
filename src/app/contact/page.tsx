@@ -48,7 +48,7 @@ export default function ContactUsPage() {
         <div className="flex flex-col w-full gap-12 md:flex-row ">
           <div className="flex flex-col items-start gap-3 md:basis-1/2 ">
             <form action="https://api.web3forms.com/submit" method="POST" className="w-full">
-              <input type="hidden" name="access_key" value="9ac131f9-fe73-4a60-bdfd-e6588490f558" />
+              <input type="hidden" name="access_key" value="53b5ab93-27f1-41f0-a66a-7ef154e42468" />
               <input type="checkbox" name="botcheck" className="hidden" />
               <div className="flex flex-col w-full gap-4">
                 <span className="text-sm ">Your Name</span>
