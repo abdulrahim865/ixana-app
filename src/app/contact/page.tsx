@@ -1,8 +1,19 @@
+"use client";
 import Image from "next/image";
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
+import { Crisp } from "crisp-sdk-web";
 
 export default function ContactUsPage() {
+  const showLiveChat = () => {
+    if (Crisp.chat.isChatOpened()) {
+      Crisp.chat.open();
+    } else {
+      Crisp.chat.show();
+      Crisp.chat.open();
+    }
+  };
+
   const contacts = [
     {
       icon: "/assets/location.png",
@@ -22,7 +33,11 @@ export default function ContactUsPage() {
           <span>Live Chat</span>
         </div>
       ),
-      description: <button className="px-2 ml-3 text-xs Pbutton">Tap to chat</button>,
+      description: (
+        <button className="px-2 ml-3 text-xs Pbutton" onClick={showLiveChat}>
+          Tap to chat
+        </button>
+      ),
     },
   ];
   return (

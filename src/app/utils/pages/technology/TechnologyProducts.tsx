@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Pbutton, ToprightArrow } from "../../components/Pbutton";
+import Link from "next/link";
 
 export const TechnologyProducts = () => {
   return (
@@ -12,120 +13,67 @@ export const TechnologyProducts = () => {
       }}
     >
       <div className="flex flex-col items-center gap-3">
-        <h2 className="flex text-4xl text-center max-w-[500px] ">
-          Explore Our Cutting-Edge Product Lineup
-        </h2>
+        <h2 className="flex text-4xl text-center max-w-[500px] ">Explore Our Cutting-Edge Product Lineup</h2>
         <span className="text-md text-itextgrey max-w-[500px] text-center">
-          Ixana’s products solve the problems of power, data rate, and link
-          robustness that limit today’s wearables
+          Ixana’s products solve the problems of power, data rate, and link robustness that limit today’s wearables
         </span>
 
-        <div className="primary-chip bg-[#262727] text-white py-2">
-          Learn more
-        </div>
+        <div className="primary-chip bg-[#262727] text-white py-2">Learn more</div>
 
         <div className="flex flex-col gap-3 mt-9 md:flex-row">
           <div className="flex flex-col items-center gap-5">
-            <Image
-              src="/assets/technology/products/chip.png"
-              alt="Headset"
-              width={200}
-              height={200}
-              priority
-            />
+            <Image src="/assets/technology/products/chip.png" alt="Headset" width={200} height={200} priority />
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/location.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/location.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/extra.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/extra.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
             </div>
-            <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            <Link href="/contact">
+              <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            </Link>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Image
-              src="/assets/technology/products/chip.png"
-              alt="Headset"
-              width={200}
-              height={200}
-              priority
-            />
+            <Image src="/assets/technology/products/chip.png" alt="Headset" width={200} height={200} priority />
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/location.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/location.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/extra.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/extra.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
             </div>
-            <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            <Link href="/contact">
+              <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            </Link>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Image
-              src="/assets/technology/products/chip.png"
-              alt="Headset"
-              width={200}
-              height={200}
-              priority
-            />
+            <Image src="/assets/technology/products/chip.png" alt="Headset" width={200} height={200} priority />
             <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
             <span className="text-sm ">YR11 (1Mbit/s) based</span>
             <div className="flex flex-col">
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/location.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/location.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
-                <Image
-                  src="/assets/home/icons/extra.svg"
-                  alt="Ixana icon"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <Image src="/assets/home/icons/extra.svg" alt="Ixana icon" width={20} height={20} priority />
                 Wi-R USB-C Smartphone Plugin
               </span>
             </div>
-            <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            <Link href="/contact">
+              <Pbutton text="Contact us" icon={<ToprightArrow />} />
+            </Link>
           </div>
         </div>
       </div>

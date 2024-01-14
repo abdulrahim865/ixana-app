@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function JoinUsReachOutHighlighted() {
   return (
@@ -20,7 +21,9 @@ export default function JoinUsReachOutHighlighted() {
           our organization is valued, and we look forward to the possibility of working together in the future. Thank
           you for considering us as part of your career journey.
         </span>
-        <Pbutton text="Contact us" icon={<ToprightArrow />} />
+        <Link href="/contact">
+          <Pbutton text="Contact us" icon={<ToprightArrow />} />
+        </Link>
       </div>
     </div>
   );
