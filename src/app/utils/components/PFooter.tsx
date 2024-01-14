@@ -33,7 +33,7 @@ export const PFooter = () => {
                 <Link className="text-sm font-light" href="/our-technology">
                   Wi-R Technology
                 </Link>
-                <Link className="text-sm font-light " href="/our-technology">
+                <Link className="text-sm font-light " href="/products">
                   Ixana Products
                 </Link>
               </div>
