@@ -4,8 +4,11 @@ import { Pbutton, ToprightArrow } from "./Pbutton";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Drawer } from "antd";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; isProductView?: boolean }) => {
+  const path = usePathname();
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -60,6 +63,15 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
               </Link>
 
               <div className="flex items-center gap-5">
+                {path !== "/" && (
+                  <a
+                    className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
+                    href="/"
+                  >
+                    Home
+                  </a>
+                )}
+
                 <a
                   className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
                   href="/about-us"
