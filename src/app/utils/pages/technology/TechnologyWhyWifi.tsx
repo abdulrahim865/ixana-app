@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Pbutton, ToprightArrow } from "../../components/Pbutton";
+import Link from "next/link";
 
 export default function TechnologyWhyWifi() {
   return (
@@ -19,14 +20,14 @@ export default function TechnologyWhyWifi() {
               A Quantum Leap in Energy Efficiency over Bluetooth and Wi-Fi
             </h2>
             <p className="text-xs font-light max-w-96">
-              Discover the game-changing advantage of Wi-R: a remarkable 100x
-              increase in energy efficiency compared to traditional technologies
-              like Bluetooth and Wi-Fi. This unparalleled efficiency not only
-              extends device longevity but also aligns with a sustainable
-              future, setting Wi-R apart as a beacon of innovation in the
+              Discover the game-changing advantage of Wi-R: a remarkable 100x increase in energy efficiency compared to
+              traditional technologies like Bluetooth and Wi-Fi. This unparalleled efficiency not only extends device
+              longevity but also aligns with a sustainable future, setting Wi-R apart as a beacon of innovation in the
               connectivity landscape.
             </p>
-            <Pbutton text="Try Wi-R" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="White Paper" icon={<ToprightArrow />} />
+            </Link>
           </div>
         </div>
       </div>

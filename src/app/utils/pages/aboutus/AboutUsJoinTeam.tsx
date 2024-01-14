@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUsJoinTeam() {
   return (
@@ -18,13 +19,14 @@ export default function AboutUsJoinTeam() {
         </h2>
 
         <p className="flex text-xs text-sm font-light text-center">
-          Explore exciting opportunities to shape the next frontier of
-          technology. At Ixana, we are more than a team; we&apos;re a community
-          of visionaries, collaborators, and pioneers. Join us in pushing the
-          boundaries of what&apos;s possible and crafting a future where
-          connectivity knows no limits. Discover your potential at Ixana.
+          Explore exciting opportunities to shape the next frontier of technology. At Ixana, we are more than a team;
+          we&apos;re a community of visionaries, collaborators, and pioneers. Join us in pushing the boundaries of
+          what&apos;s possible and crafting a future where connectivity knows no limits. Discover your potential at
+          Ixana.
         </p>
-        <Pbutton text="Contact Us" icon={<ToprightArrow />} />
+        <Link href="/join-us">
+          <Pbutton text="Join Us" icon={<ToprightArrow />} />
+        </Link>
       </div>
     </div>
   );

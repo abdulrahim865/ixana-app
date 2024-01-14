@@ -10,8 +10,8 @@ export default function BlogDetail() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
       <BlogTopHeader />
-      <div className="flex flex-col items-center w-full px-6 md:px-0">
-        <div className="flex flex-col items-center gap-24 py-5 md:py-24">
+      <div className="flex flex-col w-full px-6 md:px-0">
+        <div className="flex flex-col gap-24 py-5 md:py-24">
           <div className="container flex flex-col gap-3 grow max-w-[700px]">
             <div className="flex flex-wrap items-center gap-3">
               <h5 className="text-white primary-chip">Nov 1, 2022</h5>
@@ -28,7 +28,7 @@ export default function BlogDetail() {
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="flex items-start pt-12 text-4xl font-light">WNon-radiative Wire-like wireless</h2>
+                <h2 className="flex items-start pt-12 text-4xl font-light">Non-radiative Wire-like wireless</h2>
                 <p className="text-sm font-light ">
                   {`Traditional electromagnetic (EM) field-based wireless (e.g.,
                   Bluetooth, Wi-Fi, UltraWideBand (UWB)) radiates signals in
@@ -223,7 +223,7 @@ export default function BlogDetail() {
                         placeholder="Your email address"
                       />
                     </div>
-                    <div className="flex flex-col gap-1 grow lg:basis-1/2">
+                    {/* <div className="flex flex-col gap-1 grow lg:basis-1/2">
                       <span className="pt-5 text-sm">Your email address</span>
 
                       <input
@@ -231,23 +231,23 @@ export default function BlogDetail() {
                         className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs"
                         placeholder="Your email address"
                       />
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="flex flex-col gap-1 w-[50%]">
-                    <span className="pt-5 text-sm">Your email address</span>
+                  <div className="flex flex-col gap-1 w-full">
+                    <span className="pt-5 text-sm">Your name</span>
 
                     <input
                       type="text"
                       className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs"
-                      placeholder="Your email address"
+                      placeholder="Your name"
                     />
                   </div>
                   <div className="flex flex-col w-full gap-1">
-                    <span className="pt-5 text-sm">Your email address</span>
+                    <span className="pt-5 text-sm">Your comment</span>
 
                     <textarea
                       className="p-1.5 px-4 rounded-2xl border-[#BFBDBD] border font-light text-xs"
-                      placeholder="Your email address"
+                      placeholder="Your comment"
                       rows={10}
                     />
                   </div>

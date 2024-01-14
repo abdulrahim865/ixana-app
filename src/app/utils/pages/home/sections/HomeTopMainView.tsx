@@ -33,7 +33,7 @@ export default function HomeTopMainView() {
             priority
           />
           <h1 className="flex flex-col gap-3 px-5 pt-40 text-5xl md:text-7xl">
-            <span className="text-black">Body-internet</span>
+            <span className="text-black">Body-Internet</span>
             <span className="flex flex-col items-start gap-3 text-black md:items-center lg:flex-row md:gap-0">
               <span>Platform</span>
               <a onClick={() => router.push("/#demo")} className="flex gap-3 text-sm Pbutton md:ml-5 cursor-pointer">

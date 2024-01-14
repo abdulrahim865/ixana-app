@@ -4,18 +4,27 @@ export default function AboutUsPeople() {
   const peoples = [
     {
       id: 1,
-      image: "/assets/aboutus/people.png",
-      name: "Ankit Sarkar",
+      image: "/assets/aboutus/angik.png",
+      name: "Angik Sarkar",
+      position: "CEO",
+      linkX: "https://twitter.com/kyunbit",
+      linkLinkedIn: "https://www.linkedin.com/in/angiksarkar/",
     },
     {
       id: 2,
-      image: "/assets/aboutus/people.png",
-      name: "Ankit Sarkar",
+      image: "/assets/aboutus/shreyas.png",
+      name: "Shreyas Sen",
+      position: "CTO",
+      linkX: "",
+      linkLinkedIn: "https://www.linkedin.com/in/shreyassen/",
     },
     {
       id: 3,
-      image: "/assets/aboutus/people.png",
-      name: "Ankit Sarkar",
+      image: "/assets/aboutus/shovan.png",
+      name: "Shovan Maity",
+      position: "Head of Research",
+      linkX: "",
+      linkLinkedIn: "https://www.linkedin.com/in/shovan-maity-b4121a48/",
     },
   ];
   return (
@@ -36,19 +45,23 @@ export default function AboutUsPeople() {
               priority
             />
             <div className="flex items-center justify-between p-3 border-b border-black border-solid">
-              <h3>Angik Sarkar</h3>
-              <span className="text-xs text-itextgrey ">CEO</span>
+              <h3>{item.name}</h3>
+              <span className="text-xs text-itextgrey ">{item.position}</span>
             </div>
             <div className="flex items-center gap-3 ">
+              {item.linkX && (
+                <a
+                  href={item.linkX}
+                  className="text-sm font-light text-black border-b-2 border-black border-solid "
+                  target="_blank"
+                >
+                  X
+                </a>
+              )}
               <a
-                href=""
+                href={item.linkLinkedIn}
                 className="text-sm font-light text-black border-b-2 border-black border-solid "
-              >
-                X
-              </a>
-              <a
-                href=""
-                className="text-sm font-light text-black border-b-2 border-black border-solid "
+                target="_blank"
               >
                 Linkedin
               </a>
