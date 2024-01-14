@@ -32,25 +32,28 @@
 --foreground-rgb {
   color: rgb(var(--foreground-rgb));
 }
-
 .ApplicationsTopHeader {
   background-size:
     auto 75%,
     cover;
 }
-
-:where(.css-dev-only-do-not-override-i46qwz).ant-collapse {
+@media only screen and (max-width: 600px) {
+  .ApplicationsTopHeader {
+    background-size:
+      auto 50%,
+      cover;
+    background-position-x: 140px, 0;
+  }
+}
+.ant-collapse {
   background: transparent;
   border: none;
 }
 
-:where(.css-dev-only-do-not-override-i46qwz).ant-collapse .ant-collapse-content {
+.ant-collapse .ant-collapse-content {
   border: none;
 }
-:where(.css-dev-only-do-not-override-i46qwz).ant-collapse
-  > .ant-collapse-item
-  > .ant-collapse-header
-  .ant-collapse-arrow {
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
   background: rgba(241, 241, 241, 1);
   padding: 6px;
   border-radius: 6px;
@@ -65,17 +68,46 @@ span.ant-collapse-header-text {
   @apply text-xs;
 }
 
-:where(.css-dev-only-do-not-override-i46qwz).ant-pagination .ant-pagination-item {
+.ant-pagination .ant-pagination-item {
   color: gray;
 }
-:where(.css-dev-only-do-not-override-i46qwz).ant-pagination .ant-pagination-item-active {
+.ant-pagination .ant-pagination-item-active {
   background-color: transparent;
   color: black;
   border: none;
 }
 
-:where(.css-dev-only-do-not-override-i46qwz).ant-modal .ant-modal-content {
+.ant-modal .ant-modal-content {
   background-color: transparent;
   box-shadow: none;
   padding: 0;
+}
+.ant-collapse > .ant-collapse-item {
+  border-bottom: none;
+  border-top: 1px solid #d9d9d9;
+}
+
+.ant-collapse-item.ant-collapse-item-active {
+  @apply transition-all duration-300 ease-in-out;
+
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-radius: 999px;
+    background: #000;
+    display: flex;
+    position: absolute;
+    left: 8px;
+    top: 23px;
+  }
+}
+.ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+  max-width: 500px;
+  @apply transform duration-1000 ease-in-out;
+  p {
+    font-weight: 300;
+  }
 }

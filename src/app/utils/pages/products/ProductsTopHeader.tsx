@@ -17,13 +17,12 @@ export default function ProductsTopHeader() {
           backgroundPositionY: "100%",
         }}
       ></div>
-      <div className="absolute flex flex-col items-start gap-3 left-20 bottom-20">
+      <div className="absolute flex flex-col items-start gap-3 left-5 md:left-20 bottom-20 w-[50%] md:w-full">
         <h1 className="flex text-6xl ">
           How to use <br /> Wi-R
         </h1>
         <span className="font-light ">
-          Build unique smart devices with Ixana’s Wi-R <br /> Body Internet
-          Platform
+          Build unique smart devices with Ixana’s Wi-R <br /> Body Internet Platform
         </span>
         <Pbutton text="Order now" icon={<ToprightArrow />} />
       </div>

@@ -14,7 +14,7 @@ export default function ProductWhyUse() {
         }}
       ></div>
       <div
-        className="absolute bottom-[70px] right-5 top-[70px] md:right-12 w-[1px] md:top-[90px]"
+        className="absolute bottom-0 md:bottom-[70px] right-5 top-[65px] md:right-12 w-[0.5px] md:w-[1px] md:top-[90px]"
         style={{
           backgroundImage: 'url("/assets/lines-top-bottom.svg")',
           backgroundSize: "100%",
@@ -40,67 +40,39 @@ export default function ProductWhyUse() {
         <div className="flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row">
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
-              <Image
-                src="/assets/products/bullet-icon.svg"
-                alt="Search Button"
-                width={24}
-                height={24}
-                priority
-              />
+              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
               <span>100x Lower energy</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to
-              long battery-life
+              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
             </span>
           </div>
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
-              <Image
-                src="/assets/products/bullet-icon.svg"
-                alt="Search Button"
-                width={24}
-                height={24}
-                priority
-              />
+              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
               <span>100x Lower energy</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to
-              long battery-life
+              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
             </span>
           </div>
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
-              <Image
-                src="/assets/products/bullet-icon.svg"
-                alt="Search Button"
-                width={24}
-                height={24}
-                priority
-              />
+              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
               <span>100x Lower energy</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to
-              long battery-life
+              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
             </span>
           </div>
 
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
-              <Image
-                src="/assets/products/bullet-icon.svg"
-                alt="Search Button"
-                width={24}
-                height={24}
-                priority
-              />
+              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
               <span>100x Lower energy</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to
-              long battery-life
+              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
             </span>
           </div>
         </div>

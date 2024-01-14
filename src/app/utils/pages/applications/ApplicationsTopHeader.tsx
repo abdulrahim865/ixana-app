@@ -17,8 +17,8 @@ export default function ApplicationsTopHeader() {
           backgroundPositionY: "100%",
         }}
       ></div>
-      <div className="absolute flex flex-col items-start gap-3 left-20 bottom-20">
-        <h1 className="flex text-6xl ">AI co-pilot for the physical world</h1>
+      <div className="absolute flex flex-col items-start gap-3 left-5 md:left-20 bottom-20 w-[50%] md:w-full">
+        <h1 className="flex text-2xl md:text-6xl ">AI co-pilot for the physical world</h1>
         <Pbutton text="Order now" icon={<ToprightArrow />} />
       </div>
     </div>
