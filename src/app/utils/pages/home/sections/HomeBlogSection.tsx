@@ -15,7 +15,7 @@ export default function HomeBlogSection() {
             {`Dive in to learn more about Ixana's technology and progress`}
           </span>
         </div>
-        <div className="grid grid-cols-3 items-center gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-5">
           <div className="flex flex-col items-center gap-3">
             <div className="h-72 w-72 flex relative">
               <Image

@@ -22,6 +22,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
     { name: "Home", route: "/" },
     { name: "About", route: "/about-us" },
     { name: "Technology", route: "/our-technology" },
+    { name: "Products", route: "/products" },
     { name: "Blog", route: "/blog" },
   ];
 
@@ -73,7 +74,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
                 </a>
                 <a
                   className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
-                  href="/"
+                  href="/blog/123"
                 >
                   Tech Insight
                 </a>
