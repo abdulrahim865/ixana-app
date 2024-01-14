@@ -47,42 +47,54 @@ export default function ContactUsPage() {
         <h1 className="text-4xl">Have a question? Drop us a line.</h1>
         <div className="flex flex-col w-full gap-12 md:flex-row ">
           <div className="flex flex-col items-start gap-3 md:basis-1/2 ">
-            <div className="flex flex-col w-full gap-4">
-              <span className="text-sm ">Your Name</span>
+            <form action="https://api.web3forms.com/submit" method="POST" className="w-full">
+              <input type="hidden" name="access_key" value="9ac131f9-fe73-4a60-bdfd-e6588490f558" />
+              <input type="checkbox" name="botcheck" className="hidden" />
+              <div className="flex flex-col w-full gap-4">
+                <span className="text-sm ">Your Name</span>
 
-              <input
-                type="text"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your name"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Your email address</span>
+                <input
+                  type="text"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Your email address</span>
 
-              <input
-                type="email"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your email address"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Subject</span>
+                <input
+                  type="email"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your email address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Subject</span>
 
-              <input
-                type="email"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Subject"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Your message</span>
+                <input
+                  type="text"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Subject"
+                  name="subject"
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Your message</span>
 
-              <textarea
-                className="p-4 rounded-3xl border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your email address"
-                rows={10}
-              />
-            </div>
+                <textarea
+                  className="p-4 rounded-3xl border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your message"
+                  rows={10}
+                  name="message"
+                  required
+                />
+              </div>
+              <input className="w-full Pbutton bg-black text-center mt-5" type="submit" value="Send" />
+            </form>
           </div>
           <div className="flex  md:basis-1/2 border border-solid border-[rgba(191,189,189,1)] p-7 justify-between   rounded-3xl  items-center">
             <div className="flex flex-col justify-around h-full gap-7">
