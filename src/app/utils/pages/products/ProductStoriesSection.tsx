@@ -28,7 +28,7 @@ export default function ProductStoriesSection() {
   return (
     <div className="relative flex flex-col w-full md:pt-24 min-h-[500px] mb-[100px] md:mb-[250px] ">
       <div
-        className="absolute bottom-0 left-5 md:left-12 w-[1px] top-[90px] "
+        className="absolute bottom-0 left-5 md:left-12 w-[0.5px] md:w-[1px] top-8 md:top-[90px] "
         style={{
           backgroundImage: 'url("/assets/lines-top-bottom.svg")',
           backgroundSize: "100%",
@@ -57,13 +57,7 @@ export default function ProductStoriesSection() {
               }}
               className="bg-transparent border-none bg-[rgba(230, 230, 230, 1)]"
             >
-              <Image
-                src="/assets/arrow-right.svg"
-                alt="Arrow right"
-                width={50}
-                height={50}
-                priority
-              />
+              <Image src="/assets/arrow-right.svg" alt="Arrow right" width={50} height={50} priority />
             </button>
             <button
               onClick={(e) => {
@@ -86,21 +80,13 @@ export default function ProductStoriesSection() {
         <Carousel ref={carousel} responsive={responsive} arrows={false}>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
             <div key={item} className="flex flex-col gap-3 w-[280px]">
-              <Image
-                src="/assets/products/product1.png"
-                alt="Arrow right"
-                width={500}
-                height={500}
-                priority
-              />
+              <Image src="/assets/products/product1.png" alt="Arrow right" width={500} height={500} priority />
               <span className="text-sm ">Charging-free wearables</span>
 
               <p className="text-xs text-[rgba(0,0,0,0.7)] ">
-                Wi-R’s low power, high-speed operation enables distributed
-                computing i.e. every wearable doesn’t need it’s own processor.
-                Removing power hungry processing and low power communication
-                means most wearables such as health monitors can be
-                charging-free.
+                Wi-R’s low power, high-speed operation enables distributed computing i.e. every wearable doesn’t need
+                it’s own processor. Removing power hungry processing and low power communication means most wearables
+                such as health monitors can be charging-free.
               </p>
             </div>
           ))}
