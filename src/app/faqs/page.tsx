@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
-import { Collapse } from "antd";
+import { Collapse, CollapseProps } from "antd";
 
 export default function FaqPage() {
   const text =
