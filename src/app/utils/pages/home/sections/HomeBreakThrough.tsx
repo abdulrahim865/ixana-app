@@ -57,9 +57,9 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            <Link href="/blog/123">
+            {/* <Link href="/blog/123">
               <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
             <div className="flex flex-col items-center gap-12 basis-1/4">
@@ -118,9 +118,9 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            <Link href="/blog/123">
+            {/* <Link href="/blog/123">
               <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
             <Image
