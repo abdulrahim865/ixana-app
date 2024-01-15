@@ -5,16 +5,16 @@ import Link from "next/link";
 export const TechnologyFutureProducts = () => {
   const features = [
     {
-      name: "Real-time, wearable AI",
+      name: "Sampling later in 2024",
       spec: "20Mbit/s Wi-R Chip",
     },
     {
-      name: "All-day battery Smartglass",
-      spec: "20Mbit/s Wi-R Chip",
+      name: "Made for smartglasses and hearables",
+      spec: "Wi-R Audio/Video SoC",
     },
     {
-      name: "Charging-free wearables",
-      spec: "20Mbit/s Wi-R Chip",
+      name: "",
+      spec: "Wi-R EXG sensor platform",
     },
   ];
   return (
