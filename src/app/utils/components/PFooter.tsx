@@ -37,7 +37,7 @@ export const PFooter = () => {
                   Ixana Products
                 </Link>
                 <Link className="text-sm font-light " href="/applications">
-                  Applications
+                  Ixana Applications
                 </Link>
               </div>
             </div>
