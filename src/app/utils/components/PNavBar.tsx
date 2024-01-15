@@ -34,7 +34,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
     <>
       <div className="items-center justify-center hidden w-full lg:flex">
         <div className="relative flex-col w-full ">
-          {isHomeView && (
+          {/* {isHomeView && (
             <div className="flex justify-between p-1.5 px-14 bg-iblack ">
               <div className="flex items-center gap-3 lg:gap-14">
                 <a className="flex items-center gap-3 text-xs">
@@ -49,7 +49,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
 
               <Pbutton text="Book Meeting" icon={<ToprightArrow />} />
             </div>
-          )}
+          )} */}
 
           <div className="relative flex w-full">
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
