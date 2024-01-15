@@ -46,7 +46,7 @@ export default function ContactUsPage() {
       <div className="container flex flex-col items-center px-12 md:px-0 lg:min-h-[700px] justify-center gap-12 lg:max-w-[800px] pt-24 pb-12 md:py-12 ">
         <h1 className="text-4xl">Have a question? Drop us a line.</h1>
         <div className="flex flex-col w-full gap-12 md:flex-row ">
-          <div className="flex flex-col items-start gap-3 md:basis-1/2 ">
+          <div className="flex flex-col items-start gap-3 md:basis-1/2 order-2 lg:order-1">
             <form action="https://api.web3forms.com/submit" method="POST" className="w-full">
               <input type="hidden" name="access_key" value="53b5ab93-27f1-41f0-a66a-7ef154e42468" />
               <input type="checkbox" name="botcheck" className="hidden" />
@@ -96,7 +96,7 @@ export default function ContactUsPage() {
               <input className="w-full Pbutton bg-black text-center mt-5" type="submit" value="Send" />
             </form>
           </div>
-          <div className="flex  md:basis-1/2 border border-solid border-[rgba(191,189,189,1)] p-7 justify-between   rounded-3xl  items-center">
+          <div className="flex  md:basis-1/2 border border-solid border-[rgba(191,189,189,1)] p-7 justify-between rounded-3xl  items-center order-1 lg:order-2">
             <div className="flex flex-col justify-around h-full gap-7">
               {contacts.map((item, index) => (
                 <div key={index} className="flex gap-9">

@@ -12,8 +12,9 @@ export default function TechnologyProductSpecSection() {
           <div className="flex flex-col items-start basis-[50%] lg:basis-[60%] justify-center gap-3">
             <h2 className="text-4xl font-light">Wire-like wireless</h2>
             <p className="text-xs font-light max-w-[400px]">
-              {`Traditional wireless signals radiate uniformly in every direction. The Bluetooth signal created on your
-              phone can be accessed by anyone in a 5-10m radius. Alternatively, Wi-R(tm) confines the signal around the wearer's  E-Field surface. Your data signal is private from someone sitting at the next table.`}
+              Traditional wireless signals radiate uniformly in every direction. The Bluetooth signal created on your
+              phone can be accessed by anyone in a 5-10m radius. Alternatively, Wi-R<sup>TM</sup> confines the signal
+              around the wearer`s E-Field surface. Your data signal is private from someone sitting at the next table.
             </p>
 
             {selected == 0 ? (

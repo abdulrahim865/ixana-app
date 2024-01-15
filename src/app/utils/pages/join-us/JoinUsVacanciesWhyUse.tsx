@@ -35,7 +35,7 @@ export default function JoinUsVacanciesWhyUse() {
               <div className="flex w-full bg-[rgba(210,210,218,1)] h-[1px]"></div>
               <div className="flex items-center justify-between w-full gap-3 grow text-[rgba(210,210,218,1)]">
                 <span className="flex text-xs font-light">3 days ago</span>
-                <Link href="/contact">
+                <Link href="https://www.linkedin.com/jobs/view/3802057264" target="_blank">
                   <button className="primary-chip bg-[#262727] text-white">Apply now</button>
                 </Link>
               </div>
