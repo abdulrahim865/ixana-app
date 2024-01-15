@@ -24,7 +24,7 @@ export const TechnologyProducts = () => {
           <div className="flex flex-col items-center gap-5">
             <Image src="/assets/technology/products/chip.png" alt="Headset" width={200} height={200} priority />
             <h3 className="text-xl text-center">Wi-R Chip</h3>
-            <span className="text-sm ">YR11 (4Mbit/s)</span>
+            <span className="text-sm ">YR22 (4Mbit/s)</span>
             <div className="flex flex-col">
               <span className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
                 <Image src="/assets/home/icons/extra.svg" alt="Ixana icon" width={20} height={20} priority />

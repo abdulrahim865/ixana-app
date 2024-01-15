@@ -18,7 +18,7 @@ export const TechnologyFutureProducts = () => {
     },
   ];
   return (
-    <div className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-12 lg:px-0 mb-12">
+    <div className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-5 lg:px-0 mb-12">
       <div className="flex flex-col items-center w-full gap-3">
         <h2 className="flex text-4xl text-center max-w-[500px] font-light ">Future Wi-R products</h2>
         <span className="text-xs text-center text-itextgrey">
