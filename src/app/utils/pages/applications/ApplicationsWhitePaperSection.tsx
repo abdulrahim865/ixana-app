@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Pbutton, ToprightArrow } from "../../components/Pbutton";
+import Link from "next/link";
 
 export default function ApplicationsWhitePaperSection() {
   return (
@@ -17,15 +18,14 @@ export default function ApplicationsWhitePaperSection() {
             />
           </div>
           <div className="flex flex-col items-start basis-[50%] lg:basis-[60%] justify-center gap-3">
-            <h2 className="text-4xl font-light ">
-              Wi-R Technology White Paper
-            </h2>
+            <h2 className="text-4xl font-light ">Wi-R Technology White Paper</h2>
             <p className="text-xs font-light max-w-[400px]">
-              Wi-R is a new non-radiative near-field communication technology
-              that uses Electro-Quasistatic (EQS) Fields for communication. The
-              key differentiations that make Wi-R unique are as follows:
+              Wi-R is a new non-radiative near-field communication technology that uses Electro-Quasistatic (EQS) Fields
+              for communication. The key differentiations that make Wi-R unique are as follows:
             </p>
-            <Pbutton text="Learn more" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="Learn more" icon={<ToprightArrow />} />
+            </Link>
           </div>
         </div>
       </div>

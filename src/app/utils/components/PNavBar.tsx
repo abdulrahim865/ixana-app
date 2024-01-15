@@ -26,6 +26,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
     { name: "About", route: "/about-us" },
     { name: "Technology", route: "/our-technology" },
     { name: "Products", route: "/products" },
+    { name: "Applications", route: "/applications" },
     { name: "Blog", route: "/blog" },
   ];
 

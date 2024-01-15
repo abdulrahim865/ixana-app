@@ -36,6 +36,9 @@ export const PFooter = () => {
                 <Link className="text-sm font-light " href="/products">
                   Ixana Products
                 </Link>
+                <Link className="text-sm font-light " href="/applications">
+                  Applications
+                </Link>
               </div>
             </div>
             <div className="flex flex-col ">
@@ -44,9 +47,9 @@ export const PFooter = () => {
                 <a className="text-sm font-light" href="/blog">
                   Blog/Case Studies
                 </a>
-                <a className="text-sm font-light" href="/blog">
+                {/* <a className="text-sm font-light" href="/blog">
                   News
-                </a>
+                </a> */}
                 <a className="text-sm font-light" href="/our-technology#faqs">
                   FAQ
                 </a>
@@ -79,10 +82,18 @@ export const PFooter = () => {
         </div>
         <span className="text-xs font-light text-center basis-1/3 ">designed by akeo</span>
         <div className="flex items-center justify-end gap-3 basis-1/3">
-          <a href="" className="text-sm font-light text-black border-b-2 border-black border-solid ">
+          <a
+            href="https://www.linkedin.com/company/ixanahq"
+            className="text-sm font-light text-black border-b-2 border-black border-solid"
+            target="_blank"
+          >
             Linkedin
           </a>
-          <a href="" className="text-sm font-light text-black border-b-2 border-black border-solid ">
+          <a
+            href="https://twitter.com/ixanahq"
+            className="text-sm font-light text-black border-b-2 border-black border-solid"
+            target="_blank"
+          >
             X
           </a>
         </div>

@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ApplicationsHighlighted() {
   return (
@@ -20,7 +21,9 @@ export default function ApplicationsHighlighted() {
         <p className="flex text-sm font-light max-w-[800px] text-center">
           {`Embrace the next level of connectivity with Ixana's advanced solutions. Our technology sets new standards for efficiency and ease of use. Be at the forefront of the digital revolution.`}
         </p>
-        <Pbutton text="Visit Product Page" icon={<ToprightArrow />} />
+        <Link href="/products">
+          <Pbutton text="Visit Product Page" icon={<ToprightArrow />} />
+        </Link>
       </div>
     </div>
   );
