@@ -50,29 +50,29 @@ export default function ProductWhyUse() {
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
               <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>100x Lower energy</span>
+              <span>10x faster vs Bluetooth</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
+              Product Wi-R chips operate at 5Mbit/s. 20 Mbit/s chips tested in lab.
             </span>
           </div>
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
               <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>100x Lower energy</span>
+              <span>10x lower latency </span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
+              {`Similar to any wired communication, Wi-R has <1ms latency.`}
             </span>
           </div>
 
           <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
             <span className="flex items-center gap-3 text-md">
               <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>100x Lower energy</span>
+              <span>Inbuilt physical security</span>
             </span>
             <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
+              {`Signal is only confined in a bubble around you. Someone next to you doesn't even have access to the signal`}
             </span>
           </div>
         </div>

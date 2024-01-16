@@ -5,6 +5,24 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export default function ProductStoriesSection() {
+  const stories = [
+    {
+      image: "/assets/products/apps/app1.png",
+      title: "Charging-free wearables",
+      text: "Wi-R's low power, high-speed operation enables distributed computing i.e. every wearable doesn't need it's own processor. Removing power hungry processing and low power communication means most wearables such as health monitors can be charging-free.",
+    },
+    {
+      image: "/assets/products/apps/app2.png",
+      title: "All-day battery-life smartglasses",
+      text: "Smartglasses in the market today have 1 hr active battery life. Part of the reason is that processing video on your head requires a heavy-duty processor that consumes battery and generates heat. Wi-R enables smartglasses to compute using the smartphone's processor.",
+    },
+    {
+      image: "/assets/products/apps/app3.png",
+      title: "Pairing-free wearables",
+      text: "Imagine you pick up a headphone and it automatically starts working since it gets paired the moment you touch it.",
+    },
+  ];
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -25,6 +43,7 @@ export default function ProductStoriesSection() {
     },
   };
   const carousel = useRef<Carousel>(null);
+
   return (
     <div className="relative flex flex-col w-full md:pt-24 min-h-[500px] mb-[100px] md:mb-[250px] ">
       <div
@@ -78,16 +97,12 @@ export default function ProductStoriesSection() {
         </div>
 
         <Carousel ref={carousel} responsive={responsive} arrows={false}>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-            <div key={item} className="flex flex-col gap-3 w-[280px]">
-              <Image src="/assets/products/product1.png" alt="Arrow right" width={500} height={500} priority />
-              <span className="text-sm ">Charging-free wearables</span>
+          {stories.map((item, index) => (
+            <div key={index} className="flex flex-col gap-3 w-[280px]">
+              <Image src={item.image} alt="Arrow right" width={500} height={500} priority />
+              <span className="text-sm ">{item.title}</span>
 
-              <p className="text-xs text-[rgba(0,0,0,0.7)] ">
-                Wi-R’s low power, high-speed operation enables distributed computing i.e. every wearable doesn’t need
-                it’s own processor. Removing power hungry processing and low power communication means most wearables
-                such as health monitors can be charging-free.
-              </p>
+              <p className="text-xs text-[rgba(0,0,0,0.7)] ">{item.text}</p>
             </div>
           ))}
         </Carousel>

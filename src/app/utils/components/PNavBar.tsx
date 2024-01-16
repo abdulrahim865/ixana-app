@@ -4,8 +4,11 @@ import { Pbutton, ToprightArrow } from "./Pbutton";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Drawer } from "antd";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; isProductView?: boolean }) => {
+  const path = usePathname();
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -22,14 +25,16 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
     { name: "Home", route: "/" },
     { name: "About", route: "/about-us" },
     { name: "Technology", route: "/our-technology" },
-    { name: "Blog", route: "/blog" },
+    { name: "Products", route: "/products" },
+    { name: "Applications", route: "/applications" },
+    /* { name: "Blog", route: "/blog" }, */
   ];
 
   return (
     <>
       <div className="items-center justify-center hidden w-full lg:flex">
         <div className="relative flex-col w-full ">
-          {isHomeView && (
+          {/* {isHomeView && (
             <div className="flex justify-between p-1.5 px-14 bg-iblack ">
               <div className="flex items-center gap-3 lg:gap-14">
                 <a className="flex items-center gap-3 text-xs">
@@ -44,7 +49,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
 
               <Pbutton text="Book Meeting" icon={<ToprightArrow />} />
             </div>
-          )}
+          )} */}
 
           <div className="relative flex w-full">
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
@@ -59,6 +64,15 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
               </Link>
 
               <div className="flex items-center gap-5">
+                {path !== "/" && (
+                  <a
+                    className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
+                    href="/"
+                  >
+                    Home
+                  </a>
+                )}
+
                 <a
                   className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
                   href="/about-us"
@@ -73,7 +87,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
                 </a>
                 <a
                   className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
-                  href="/"
+                  href="/blog/123"
                 >
                   Tech Insight
                 </a>

@@ -1,31 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
 
 export default function JoinUsVacanciesWhyUse() {
   const applications = [
     {
-      title: "Distributed Wearable AI",
-      location: "United Arab emirates",
-    },
-    {
-      title: "All-day AR Headset",
-      location: "United Arab emirates",
-    },
-    {
-      title: "5G Relayed Wearables",
-      location: "United Arab emirates",
-    },
-    {
-      title: "Pairing-free Electronics",
-      location: "United Arab emirates",
-    },
-    {
-      title: "Charging-free Trackers",
-      location: "United Arab emirates",
-    },
-    {
-      title: "Communicate With Touch",
-      location: "United Arab emirates",
+      title: "Embedded Software Engineer",
+      location: "West Lafayette, IN",
     },
   ];
 
@@ -54,7 +35,9 @@ export default function JoinUsVacanciesWhyUse() {
               <div className="flex w-full bg-[rgba(210,210,218,1)] h-[1px]"></div>
               <div className="flex items-center justify-between w-full gap-3 grow text-[rgba(210,210,218,1)]">
                 <span className="flex text-xs font-light">3 days ago</span>
-                <button className="primary-chip bg-[#262727] text-white">Apply now</button>
+                <Link href="https://www.linkedin.com/jobs/view/3802057264" target="_blank">
+                  <button className="primary-chip bg-[#262727] text-white">Apply now</button>
+                </Link>
               </div>
             </div>
           ))}

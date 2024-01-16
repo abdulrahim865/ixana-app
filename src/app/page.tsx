@@ -28,7 +28,7 @@ export default function Home() {
         <HomeOurMission />
       </div>
       <HomeOurMissionHighlighted />
-      <HomeBlogSection />
+      {/* <HomeBlogSection /> */}
       {/* <HomeOurClients /> */}
       <PFooter />
     </main>

@@ -7,14 +7,14 @@ export default function ProductSpecSection() {
     <div className="flex flex-col w-full ">
       <div className="  flex  flex-col md:flex-row  w-full min-h-[70vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
         <div className="flex px-12 lg:pl-24 flex-col items-start basis-[50%] lg:basis-[40%] justify-center gap-3">
-          <span className="primary-chip">Technology</span>
+          <span className="primary-chip">Product</span>
           <Image src="/assets/home/icons/icon-product.svg" alt="Product Ixana" width={20} height={20} priority />
           <h2 className="text-4xl lg:w-[400px]">Ixana Silicon Chip for Human-Computer Network</h2>
           <p className="text-xs font-light lg:w-[400px]">
             Our 4Mbit/s silicon chip is faster than Bluetooth, yet 100x lower power, lower latency and more reliable.
             Integrate it inside wearables, smartphones and other devices similar to how you’d integrate a wireless chip.
           </p>
-          <Link href="/our-technology">
+          <Link href="/products">
             <Pbutton text="Learn More" icon={<ToprightArrow />} />
           </Link>
         </div>

@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <Script type="text/javascript" src="https://app.posthog.com/static/array.js" async />
       <Script type="text/javascript" src="https://www.clarity.ms/tag/ermnjbk1lg" async />
       <Script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-KX71MVT6XV" async />
+      <Script type="text/javascript" src="https://web3forms.com/client/script.js" async />
       <CrispWithNoSSR />
       <body className={AspektaVF.className}>{children}</body>
     </html>

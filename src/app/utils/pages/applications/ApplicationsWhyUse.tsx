@@ -49,7 +49,7 @@ export default function ApplicationsWhyUse() {
                 <span>{application.title}</span>
               </span>
               <span className="text-xs font-light md:max-w-[300px]">{application.description}</span>
-              <button className="primary-chip bg-[#262727] text-white">Read more</button>
+              {/* <button className="primary-chip bg-[#262727] text-white">Read more</button> */}
             </div>
           ))}
         </div>

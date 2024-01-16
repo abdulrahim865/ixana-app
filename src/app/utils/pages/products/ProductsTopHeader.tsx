@@ -1,5 +1,6 @@
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductsTopHeader() {
   return (
@@ -18,13 +19,11 @@ export default function ProductsTopHeader() {
         }}
       ></div>
       <div className="absolute flex flex-col items-start gap-3 left-5 md:left-20 bottom-20 w-[50%] md:w-full">
-        <h1 className="flex text-6xl ">
-          How to use <br /> Wi-R
-        </h1>
-        <span className="font-light ">
-          Build unique smart devices with Ixana’s Wi-R <br /> Body Internet Platform
-        </span>
-        <Pbutton text="Order now" icon={<ToprightArrow />} />
+        <h1 className="flex text-6xl ">How to use Wi-R</h1>
+        <span className="font-light ">{`Build unique smart devices with Ixana's Wi-R Body Internet Platform`}</span>
+        <Link href="/contact">
+          <Pbutton text="Order now" icon={<ToprightArrow />} />
+        </Link>
       </div>
     </div>
   );

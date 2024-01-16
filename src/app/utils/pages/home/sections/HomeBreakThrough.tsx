@@ -1,6 +1,7 @@
 "use client";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
+import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -56,7 +57,9 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
+            {/* <Link href="/blog/123">
+              <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
+            </Link> */}
           </div>
           <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
             <div className="flex flex-col items-center gap-12 basis-1/4">
@@ -115,7 +118,9 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
+            {/* <Link href="/blog/123">
+              <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
+            </Link> */}
           </div>
           <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
             <Image

@@ -5,20 +5,20 @@ import Link from "next/link";
 export const TechnologyFutureProducts = () => {
   const features = [
     {
-      name: "Real-time, wearable AI",
+      name: "Sampling later in 2024",
       spec: "20Mbit/s Wi-R Chip",
     },
     {
-      name: "All-day battery Smartglass",
-      spec: "20Mbit/s Wi-R Chip",
+      name: "Made for smartglasses and hearables",
+      spec: "Wi-R Audio/Video SoC",
     },
     {
-      name: "Charging-free wearables",
-      spec: "20Mbit/s Wi-R Chip",
+      name: "",
+      spec: "Wi-R EXG sensor platform",
     },
   ];
   return (
-    <div className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-12 lg:px-0 mb-12">
+    <div className="relative container flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 justify-center rounded-t-3xl  px-5 lg:px-0 mb-12">
       <div className="flex flex-col items-center w-full gap-3">
         <h2 className="flex text-4xl text-center max-w-[500px] font-light ">Future Wi-R products</h2>
         <span className="text-xs text-center text-itextgrey">
@@ -33,7 +33,7 @@ export const TechnologyFutureProducts = () => {
             >
               <span className="text-sm font-medium ">{item.spec}</span>
               <span className="mb-5 text-xs font-light ">{item.name}</span>
-              <Link href="contact">
+              <Link href="/contact">
                 <Pbutton text="Contact us" icon={<ToprightArrow />} />
               </Link>
             </div>

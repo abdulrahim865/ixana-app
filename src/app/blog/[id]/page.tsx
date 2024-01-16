@@ -12,7 +12,7 @@ export default function BlogDetail() {
       <BlogTopHeader />
       <div className="flex flex-col w-full px-6 md:px-0">
         <div className="flex flex-col gap-24 py-5 md:py-24">
-          <div className="container flex flex-col gap-3 grow max-w-[700px]">
+          <div className="container mx-auto flex flex-col gap-3 grow max-w-[700px]">
             <div className="flex flex-wrap items-center gap-3">
               <h5 className="text-white primary-chip">Nov 1, 2022</h5>
               <h5 className="primary-chip bg-[rgba(241,241,241,1)]">Shreyas Sen, Angik Sarkar</h5>

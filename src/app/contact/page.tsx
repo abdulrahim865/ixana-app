@@ -1,8 +1,19 @@
+"use client";
 import Image from "next/image";
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
+import { Crisp } from "crisp-sdk-web";
 
 export default function ContactUsPage() {
+  const showLiveChat = () => {
+    if (Crisp.chat.isChatOpened()) {
+      Crisp.chat.open();
+    } else {
+      Crisp.chat.show();
+      Crisp.chat.open();
+    }
+  };
+
   const contacts = [
     {
       icon: "/assets/location.png",
@@ -22,7 +33,11 @@ export default function ContactUsPage() {
           <span>Live Chat</span>
         </div>
       ),
-      description: <button className="px-2 ml-3 text-xs Pbutton">Tap to chat</button>,
+      description: (
+        <button className="px-2 ml-3 text-xs Pbutton" onClick={showLiveChat}>
+          Tap to chat
+        </button>
+      ),
     },
   ];
   return (
@@ -31,45 +46,57 @@ export default function ContactUsPage() {
       <div className="container flex flex-col items-center px-12 md:px-0 lg:min-h-[700px] justify-center gap-12 lg:max-w-[800px] pt-24 pb-12 md:py-12 ">
         <h1 className="text-4xl">Have a question? Drop us a line.</h1>
         <div className="flex flex-col w-full gap-12 md:flex-row ">
-          <div className="flex flex-col items-start gap-3 md:basis-1/2 ">
-            <div className="flex flex-col w-full gap-4">
-              <span className="text-sm ">Your Name</span>
+          <div className="flex flex-col items-start gap-3 md:basis-1/2 order-2 lg:order-1">
+            <form action="https://api.web3forms.com/submit" method="POST" className="w-full">
+              <input type="hidden" name="access_key" value="53b5ab93-27f1-41f0-a66a-7ef154e42468" />
+              <input type="checkbox" name="botcheck" className="hidden" />
+              <div className="flex flex-col w-full gap-4">
+                <span className="text-sm ">Your Name</span>
 
-              <input
-                type="text"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your name"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Your email address</span>
+                <input
+                  type="text"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Your email address</span>
 
-              <input
-                type="email"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your email address"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Subject</span>
+                <input
+                  type="email"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your email address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Subject</span>
 
-              <input
-                type="email"
-                className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Subject"
-              />
-            </div>
-            <div className="flex flex-col w-full gap-1">
-              <span className="text-sm ">Your message</span>
+                <input
+                  type="text"
+                  className="p-1.5 px-4 rounded-full border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Subject"
+                  name="subject"
+                />
+              </div>
+              <div className="flex flex-col w-full gap-1">
+                <span className="text-sm ">Your message</span>
 
-              <textarea
-                className="p-4 rounded-3xl border-[#BFBDBD] border font-light text-xs w-full"
-                placeholder="Your email address"
-                rows={10}
-              />
-            </div>
+                <textarea
+                  className="p-4 rounded-3xl border-[#BFBDBD] border font-light text-xs w-full"
+                  placeholder="Your message"
+                  rows={10}
+                  name="message"
+                  required
+                />
+              </div>
+              <input className="w-full Pbutton bg-black text-center mt-5" type="submit" value="Send" />
+            </form>
           </div>
-          <div className="flex  md:basis-1/2 border border-solid border-[rgba(191,189,189,1)] p-7 justify-between   rounded-3xl  items-center">
+          <div className="flex  md:basis-1/2 border border-solid border-[rgba(191,189,189,1)] p-7 justify-between rounded-3xl  items-center order-1 lg:order-2">
             <div className="flex flex-col justify-around h-full gap-7">
               {contacts.map((item, index) => (
                 <div key={index} className="flex gap-9">
