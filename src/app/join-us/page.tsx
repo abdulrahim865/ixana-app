@@ -8,7 +8,7 @@ export default function JoinUsPage() {
   return (
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
-      <JoinUsTopHeader />
+      <JoinUsTopHeader title="Join Us" description="We work hard. We play hard." />
       <div className="flex flex-col items-center px-12 md:px-0">
         <JoinUsVacanciesWhyUse />
       </div>
