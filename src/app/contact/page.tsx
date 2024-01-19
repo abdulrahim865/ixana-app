@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
 import { Crisp } from "crisp-sdk-web";
+import Link from "next/link";
 
 export default function ContactUsPage() {
   const showLiveChat = () => {
@@ -23,7 +24,11 @@ export default function ContactUsPage() {
     {
       icon: "/assets/contact/message.svg",
       title: "Email",
-      description: "hello@ixana.ai",
+      description: (
+        <Link href="mailto:hello@ixana.ai" target="_blank">
+          hello@ixana.ai
+        </Link>
+      ),
     },
     {
       icon: "/assets/contact/live-chat.svg",
