@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Chip from "../../components/Chip";
 
 export default function ProductStoriesSection() {
   const stories = [
@@ -46,28 +47,9 @@ export default function ProductStoriesSection() {
 
   return (
     <div className="relative flex flex-col w-full md:pt-24 min-h-[500px] mb-[100px] md:mb-[250px] ">
-      <div
-        className="absolute bottom-0 left-5 md:left-12 w-[0.5px] md:w-[1px] top-8 md:top-[90px] "
-        style={{
-          backgroundImage: 'url("/assets/lines-top-bottom.svg")',
-          backgroundSize: "100%",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "top right",
-        }}
-      ></div>
-
-      <div
-        className="absolute left-5 md:left-12 h-[250px] -bottom-[250px] w-[50%] "
-        style={{
-          backgroundImage: 'url("/assets/products/product-line-bottom.svg")',
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "top right",
-        }}
-      ></div>
-
       <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden px-12">
         <div className="flex flex-col justify-between md:flex-row">
+          <Chip title="Use Cases" bgColor="gray" textColor="white" />
           <h2 className="flex text-4xl ">A few applications</h2>
           <div className="flex gap-3">
             <button
