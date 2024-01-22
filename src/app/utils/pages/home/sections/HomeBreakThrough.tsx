@@ -38,16 +38,8 @@ export default function HomeBreakThrough() {
   ];
 
   return (
-    <div>
-      <div className="relative md:flex flex-col items-center w-full min-h-screen gap-5 px-12 py-24 text-white bg-iblack hidden">
-        <Image
-          src="/assets/home/breakthrough-pattern.svg"
-          alt="Ixana Pattern"
-          width={20}
-          height={50}
-          className="flex absolute left-[calc(50%-11px)] top-0"
-          priority
-        />
+    <>
+      <div className="relative flex-col items-center hidden w-full min-h-screen gap-5 px-12 py-24 text-white md:flex bg-iblack">
         <div className="container flex flex-col items-center w-full gap-5 ">
           <div className="flex flex-col items-center gap-3">
             <h2 className="flex text-4xl text-center ">
@@ -101,14 +93,6 @@ export default function HomeBreakThrough() {
       </div>
       {/* For Mobile */}
       <div className="relative flex flex-col items-center w-full min-h-screen gap-5 px-6 pt-24 pb-10 text-white bg-iblack md:hidden">
-        <Image
-          src="/assets/home/breakthrough-pattern.svg"
-          alt="Ixana Pattern"
-          width={20}
-          height={50}
-          className="flex absolute left-[calc(50%-11px)] top-0"
-          priority
-        />
         <div className="container flex flex-col items-center w-full gap-5 ">
           <div className="flex flex-col items-center gap-3">
             <h2 className="flex text-xl text-center">
@@ -150,6 +134,6 @@ export default function HomeBreakThrough() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

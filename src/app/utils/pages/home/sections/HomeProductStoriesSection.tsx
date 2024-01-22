@@ -13,7 +13,7 @@ export default function HomeProductStoriesSection() {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -54,23 +54,13 @@ export default function HomeProductStoriesSection() {
   ];
 
   return (
-    <div className="flex flex-col w-full pb-12 ">
-      <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden px-12">
-        <div className=" flex w-[calc(50%-3rem)] absolute left-0 top-0 bottom-0">
-          <Image
-            src="/assets/home/stories-line-left.svg"
-            alt=""
-            className="flex object-contain w-auto "
-            width={500}
-            height={500}
-            priority
-          />
-        </div>
-        <div className=" w-full h-[0.5px] flex bg-black absolute left-[4%] top-0"></div>
-        <div className=" h-[0.5px] flex bg-black absolute left-[4%] bottom-0 w-[calc(46%-50px)]"></div>
-        <div className="flex flex-col justify-between md:flex-row">
-          <h2 className="flex text-4xl ">{`Reactions to the Ixana Experience`}</h2>
-          <div className="flex gap-3">
+    <div className="flex flex-col w-full py-12 ">
+      <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-4 relative overflow-hidden px-12 ">
+        <div className="primary-chip bg-[#6A6665] text-white w-fit">Testimonials</div>
+
+        <div className="flex flex-col justify-between w-full md:flex-row">
+          <h2 className="flex text-4xl ">{`Stories from the Ixana Experience`}</h2>
+          <div className="flex gap-3 pt-6">
             <button
               onClick={(e) => {
                 carousel.current?.previous(1);
@@ -99,23 +89,13 @@ export default function HomeProductStoriesSection() {
 
         <Carousel ref={carousel} responsive={responsive} arrows={false}>
           {testimonials.map((item, index) => (
-            <div key={index} className="flex flex-col gap-3 md:w-[280px]">
+            <div key={index} className="flex flex-col gap-3 md:max-w-[480px]">
               <p className="text-xs text-[rgba(0,0,0,0.7)] ">“ {item.text} “</p>
               <span className="text-sm ">{item.name}</span>
               <span className="text-md ">{item.bio}</span>
             </div>
           ))}
         </Carousel>
-      </div>
-      <div className="relative flex w-full">
-        <Image
-          src="/assets/home/stories-line-right.svg"
-          alt=""
-          className="flex w-[50px] absolute left-[calc(50%-50px)] -top-[1px]  "
-          width={500}
-          height={500}
-          priority
-        />
       </div>
     </div>
   );
