@@ -60,8 +60,8 @@ export default function JoinUsPage() {
                 <ul className="pl-3">
                   <li className="list-disc">
                     <p>
-                      Bachelor's degree in Electrical Engineering with a focus on Circuit Design, or equivalent
-                      practical experience
+                      {`Bachelor's degree in Electrical Engineering with a focus on Circuit Design, or equivalent
+                      practical experience`}
                     </p>
                   </li>
                   <li className="list-disc">
@@ -83,8 +83,8 @@ export default function JoinUsPage() {
                 <ul className="pl-3">
                   <li className="list-disc">
                     <p>
-                      Bachelor's degree in Electrical Engineering with a focus on Circuit Design, or equivalent
-                      practical experience
+                      {`Bachelor's degree in Electrical Engineering with a focus on Circuit Design, or equivalent
+                      practical experience`}
                     </p>
                   </li>
                   <li className="list-disc">
