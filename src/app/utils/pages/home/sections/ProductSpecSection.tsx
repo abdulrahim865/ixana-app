@@ -34,7 +34,7 @@ export default function ProductSpecSection() {
     <>
       {specs.map((spec, index) => (
         <div key={index} className="container flex flex-col w-full ">
-          <div className="  flex  flex-col md:flex-row  w-full min-h-[70vh] grow py-5 justify-between items-center gap-3 md:gap-0 ">
+          <div className="  flex  flex-col-reverse md:flex-row  w-full min-h-[70vh] grow py-5 justify-between items-center gap-5 md:gap-0 ">
             <div className="flex flex-col items-start basis-[50%] lg:basis-[40%] justify-center gap-3">
               <span className="primary-chip text-white bg-[#6A6665]">{spec.tag}</span>
               <Image src={spec.icon} alt="Product Ixana" width={20} height={20} priority />

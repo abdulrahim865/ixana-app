@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HomeLearnMoreSection() {
   return (
-    <div className=" container overflow-hidden relative flex justify-center w-full min-h-[90vh] grow bg-iblack rounded-3xl px-3 md:px-12">
+    <div className=" container overflow-hidden relative flex justify-center w-full min-h-[90vh] grow bg-iblack md:rounded-3xl px-3 md:px-12">
       <div className="absolute top-0 bottom-0 -left-[5%] -right-[5%] flex items-end justify-between gap-5">
         <Image
           src="/assets/home/ixana-headset-pattern-2.png"

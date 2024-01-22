@@ -19,8 +19,10 @@ export default function Home() {
       <PNavBar isHomeView />
       <HomeTopMainView />
       <HomeWatchDemo />
-      <div className="flex flex-col items-center w-full px-6 md:px-0">
+      <div className="flex flex-col items-center w-full">
         <HomeLearnMoreSection />
+      </div>
+      <div className="flex flex-col items-center w-full px-6 md:px-0">
         <ProductSpecSection />
         <ProductFeaturesSection />
         <ProductFeaturedIn />
