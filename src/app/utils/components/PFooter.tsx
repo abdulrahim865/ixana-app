@@ -53,7 +53,7 @@ export const PFooter = () => {
                 {/* <a className="text-sm font-light" href="/blog">
                   News
                 </a> */}
-                <a className="text-sm font-light" href="/our-technology#faqs">
+                <a className="text-sm font-light" href="/faq">
                   FAQ
                 </a>
               </div>
