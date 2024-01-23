@@ -11,6 +11,7 @@ import ProductSpecSection from "./utils/pages/home/sections/ProductSpecSection";
 import HomeOurMissionHighlighted from "./utils/pages/home/sections/HomeBreakQuoteHighlighted";
 import HomeOurClients from "./utils/pages/home/sections/HomeOurClients";
 import HomeProductStoriesSection from "./utils/pages/home/sections/HomeProductStoriesSection";
+import ProductFeaturedIn from "./utils/pages/home/sections/ProductFeaturedIn";
 
 export default function Home() {
   return (
@@ -18,18 +19,22 @@ export default function Home() {
       <PNavBar isHomeView />
       <HomeTopMainView />
       <HomeWatchDemo />
-      <div className="flex flex-col items-center w-full px-6 md:px-0">
+      <div className="flex flex-col items-center w-full">
         <HomeLearnMoreSection />
+      </div>
+      <div className="flex flex-col items-center w-full px-6 md:px-0">
         <ProductSpecSection />
         <ProductFeaturesSection />
-        <HomeProductStoriesSection />
+        <ProductFeaturedIn />
 
         <HomeBreakThrough />
+        <HomeProductStoriesSection />
+
         <HomeOurMission />
       </div>
       <HomeOurMissionHighlighted />
-      {/* <HomeBlogSection /> */}
-      {/* <HomeOurClients /> */}
+      <HomeBlogSection />
+      <HomeOurClients />
       <PFooter />
     </main>
   );

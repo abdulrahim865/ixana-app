@@ -18,20 +18,6 @@ export default function HomeWatchDemo() {
   return (
     <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row" id="demo">
       <div
-        className="flex bg-no-repeat bg-contain grow md:basis-1/2"
-        style={{
-          backgroundImage: "url(/assets/home/ixana-waves.svg)",
-          backgroundPositionY: "50%",
-        }}
-      ></div>
-      <div
-        className="flex rotate-180 bg-no-repeat bg-contain grow md:basis-1/2"
-        style={{
-          backgroundImage: "url(/assets/home/ixana-waves.svg)",
-          backgroundPositionY: "50%",
-        }}
-      ></div>
-      <div
         id="#demo"
         className="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center gap-5"
       >
