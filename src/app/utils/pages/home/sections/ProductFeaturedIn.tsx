@@ -22,7 +22,7 @@ export default function ProductFeaturedIn() {
         <div className="flex flex-col justify-center gap-5 md:flex-row">
           {features.map((item) => (
             <div
-              key={item.name}
+              key={item.icon}
               className="flex flex-col items-center gap-5 p-10 border border-solid border-[#D4D3D2] rounded-2xl min-w-[300px] "
             >
               <Image
