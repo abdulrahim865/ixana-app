@@ -36,18 +36,18 @@ export default function TechnologySpecs() {
     },
   ];
   return (
-    <div className="flex min-h-[80vh] w-full flex-col  container justify-center py-12 mb-24 gap-12 border border-ibtnorange rounded-3xl px-24">
-      <h2 className="text-2xl font-light ">
+    <div className="flex min-h-[80vh] w-full flex-col  container justify-center py-12 mb-24 gap-12 border border-ibtnorange rounded-3xl px-6 md:px-24">
+      <h2 className="text-2xl font-light text-center md:text-left ">
         Wi-R Enables 100x Better, <br /> Previously Unimaginable Experiences
       </h2>
 
       <div className="flex flex-col">
         {features.map((feature, index) => (
           <div key={feature.name} className="flex flex-col">
-            <div className="flex items-center gap-12 py-5 grow">
-              <h2 className="text-xl font-light basis-[200px] ">{feature.name}</h2>
+            <div className="flex flex-col items-center gap-3 py-5 md:gap-12 md:flex-row grow">
+              <h2 className="text-xl font-light md:basis-[200px] ">{feature.name}</h2>
               <div className="flex items-end grow text-ibtnorange ">
-                <span className="text-5xl font-medium">{feature.desc}</span>{" "}
+                <span className="text-5xl font-medium text-center md:text-left">{feature.desc}</span>
                 {feature.up !== undefined && <ArrowUp style={`${feature.up == true ? "rotate-180" : ""} `} />}
               </div>
               <ul className="basis-2/5">

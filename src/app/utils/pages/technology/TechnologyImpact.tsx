@@ -36,7 +36,7 @@ export default function TechnologyImpact() {
           </span>
         </div>
 
-        <h1 className="text-3xl font-light text max-w-[650px] pt-[200px] text-center">
+        <h1 className="text-2xl md:text-3xl font-light text max-w-[650px] pt-[200px] text-center">
           Traditional wireless signal&nbsp;
           <span className=" text-itextgrey">
             is available everywhere within a radius. Near-field communications simply reduce the radius. Such direction
