@@ -8,7 +8,7 @@ export const TechnologyProducts = () => {
       name: "Wi-R Chip",
       href: "/products",
       image: "chip.png",
-      desc: "YR22 (4Mbit/s)",
+      desc: "YR22 (4Mbit/s) based",
       spec: [
         {
           icon: "location.svg",
@@ -39,14 +39,14 @@ export const TechnologyProducts = () => {
       content: "If you want to make small volume Wi-R products",
     },
     {
-      name: "YR21 Evaluation Kit",
+      name: "Wi-R Evaluation Kit",
       href: "/products",
       image: "headset.png",
-      desc: "Test YR22 (4Mbit/s) Wi-R",
+      desc: "YR21 (4Mbit/s) based",
       spec: [
         {
           icon: "location.svg",
-          text: "Wi-R USB-C Smartphone Plugin",
+          text: "Includes Wi-R USB-C Smartphone Plugin",
         },
         {
           icon: "extra.svg",
@@ -68,10 +68,10 @@ export const TechnologyProducts = () => {
       <div className="flex flex-col items-center gap-3">
         <h2 className="flex text-4xl text-center max-w-[500px] ">Explore Our Cutting-Edge Product Lineup</h2>
         <span className="text-md text-itextgrey max-w-[500px] text-center">
-          Ixana’s products solve the problems of power, data rate, and link robustness that limit today’s wearables
+          {`Ixana's products solve the problems of power, data rate, and link robustness that limit today's wearables`}
         </span>
 
-        <div className="primary-chip bg-[#262727] text-white py-2">Learn more</div>
+        {/* <div className="primary-chip bg-[#262727] text-white py-2">Learn more</div> */}
 
         <div className="flex flex-col gap-3 mt-9 md:flex-row">
           {products.map((product) => (
@@ -84,8 +84,8 @@ export const TechnologyProducts = () => {
                 height={200}
                 priority
               />
-              <h3 className="text-xl text-center">Wi-R Evaluation Board</h3>
-              <span className="text-sm ">YR11 (1Mbit/s) based</span>
+              <h3 className="text-xl text-center">{product.name}</h3>
+              <span className="text-sm ">{product.desc}</span>
               <div className="flex flex-col">
                 {product.spec.map((spec) => (
                   <span key={spec.text} className="text-xs flex items-center gap-3 text=[rgba(0, 0, 0, 0.67)]">
@@ -94,7 +94,7 @@ export const TechnologyProducts = () => {
                   </span>
                 ))}
               </div>
-              <Pbutton text="Find out more" icon={<ToprightArrow />} />
+              {/* <Pbutton text="Find out more" icon={<ToprightArrow />} /> */}
               <span className="text-sm max-w-[230px] text-center ">{product.content}</span>
             </Link>
           ))}

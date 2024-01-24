@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Pbutton, ToprightArrow } from "../../components/Pbutton";
 import { useState } from "react";
 import { Modal } from "antd";
+import Link from "next/link";
 
 export default function TechnologyInnovation() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +45,9 @@ export default function TechnologyInnovation() {
               A fundamentally new wireless technology designed from the ground-up for Body Area Network Security and
               performance of wired communication with the convenience of wireless
             </p>
-            <Pbutton text="How is it different" icon={<ToprightArrow />} />
+            <Link href="/blog/123">
+              <Pbutton text="How is it different" icon={<ToprightArrow />} />
+            </Link>
           </div>
         </div>
       </div>

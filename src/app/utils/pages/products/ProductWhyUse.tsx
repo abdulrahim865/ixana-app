@@ -1,80 +1,50 @@
 import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
+import Chip from "@/app/utils/components/Chip";
 
 export default function ProductWhyUse() {
+  const whys = [
+    {
+      image: "/assets/products/why-icons/1.png",
+      title: "100x Lower energy",
+      desc: "Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life",
+    },
+    {
+      image: "/assets/products/why-icons/2.png",
+      title: "10x lower latency",
+      desc: `Similar to any wired communication, Wi-R has <1ms latency.`,
+    },
+    {
+      image: "/assets/products/why-icons/3.png",
+      title: "10x faster vs Bluetooth",
+      desc: `Product Wi-R chips operate at 5Mbit/s. 20 Mbit/s chips tested in lab.`,
+    },
+    {
+      image: "/assets/products/why-icons/4.png",
+      title: "Inbuilt physical security",
+      desc: `Signal is only confined in a bubble around you. Someone next to you doesn't even have access to the signal`,
+    },
+  ];
+
   return (
-    <div className="flex flex-col w-full min-h-[70vh] relative px-12 md:px-0">
-      <div
-        className="absolute bottom-0 right-5 md:right-12 top-0 md:-top-[125px] w-[50%] h-[250px] "
-        style={{
-          backgroundImage: 'url("/assets/products/why-use-lines-top.svg")',
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "top bottom",
-        }}
-      ></div>
-      <div
-        className="absolute bottom-0 md:bottom-[70px] right-5 top-[65px] md:right-12 w-[0.5px] md:w-[1px] md:top-[90px]"
-        style={{
-          backgroundImage: 'url("/assets/lines-top-bottom.svg")',
-          backgroundSize: "100%",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "top right",
-        }}
-      ></div>
-
-      <div
-        className="absolute -bottom-[100px] left-5 md:left-12 right-5 md:right-12 h-[100px] "
-        style={{
-          backgroundImage: 'url("/assets/products/product-line-middle.svg")',
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "top right",
-        }}
-      ></div>
-
-      <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden md:px-12 justify-center">
-        <div className="flex flex-col justify-center md:flex-row">
-          <h2 className="flex text-4xl ">Why use Wi-R? </h2>
+    <div className="container w-full min-h-[70vh] relative px-0 md:px-12 mx-auto">
+      <div className="w-full bg-left-top py-12 justify-center bg-[#FF6320] md:rounded-3xl text-white">
+        <Chip title="Technology" bgColor="white" textColor="black" />
+        <div className="flex flex-col justify-center">
+          <h2 className="text-4xl text-center">Why use Wi-R?</h2>
         </div>
-        <div className="flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row">
-          <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
-            <span className="flex items-center gap-3 text-md">
-              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>100x Lower energy</span>
-            </span>
-            <span className="text-xs font-light md:max-w-[300px]">
-              Wi-R is 100x lower energy compared to Bluetooth/Wi-Fi leading to long battery-life
-            </span>
-          </div>
-          <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
-            <span className="flex items-center gap-3 text-md">
-              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>10x faster vs Bluetooth</span>
-            </span>
-            <span className="text-xs font-light md:max-w-[300px]">
-              Product Wi-R chips operate at 5Mbit/s. 20 Mbit/s chips tested in lab.
-            </span>
-          </div>
-          <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
-            <span className="flex items-center gap-3 text-md">
-              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>10x lower latency </span>
-            </span>
-            <span className="text-xs font-light md:max-w-[300px]">
-              {`Similar to any wired communication, Wi-R has <1ms latency.`}
-            </span>
-          </div>
-
-          <div className="flex flex-col p-3 rounded-xl basis-[calc(40%-3rem)]">
-            <span className="flex items-center gap-3 text-md">
-              <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-              <span>Inbuilt physical security</span>
-            </span>
-            <span className="text-xs font-light md:max-w-[300px]">
-              {`Signal is only confined in a bubble around you. Someone next to you doesn't even have access to the signal`}
-            </span>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-8">
+          {whys.map((why, index) => (
+            <div key={index} className="flex justify-center">
+              <div className="flex flex-col p-3 rounded-xl">
+                <span className="flex items-center gap-3 text-md">
+                  <Image src={why.image} alt="Search Button" width={24} height={24} priority />
+                  <span>{why.title}</span>
+                </span>
+                <span className="text-xs font-light md:max-w-[300px] pl-[36px] pt-2">{why.desc}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

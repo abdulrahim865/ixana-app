@@ -1,6 +1,7 @@
 import { Collapse, CollapseProps } from "antd";
+import Chip from "../../components/Chip";
 
-export default function TechnologyWifiFAQ() {
+export default function TechnologyWifiFAQ({ faqPage = false }: { faqPage?: boolean }) {
   const items: CollapseProps["items"] = [
     {
       key: "1",
@@ -80,14 +81,28 @@ export default function TechnologyWifiFAQ() {
     },
   ];
 
-  return (
-    <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-12">
-      <div id="faqs" className="flex flex-col w-full gap-12 lg:flex-row">
-        <h2 className="flex text-4xl font-light max-w-[800px] text-center">Wi-R technology question answered.</h2>
-        <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
-          <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />
+  if (!faqPage) {
+    return (
+      <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-12">
+        <div id="faqs" className="flex flex-col w-full gap-12 lg:flex-row">
+          <h2 className="flex text-4xl font-light max-w-[800px] text-center">Wi-R technology question answered.</h2>
+          <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
+            <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="flex min-h-[80vh] w-full lg:w-1/2 flex-row  items-center container justify-center py-12">
+        <div id="faqs" className="flex flex-col w-full gap-5">
+          <Chip title={`Frequently asked questions`} bgColor="gray" textColor="white" />
+          <h2 className="w-full text-4xl font-light text-center mb-6">Wi-R technology question answered.</h2>
+          <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
+            <Collapse className="w-full " items={items} defaultActiveKey={["1"]} expandIconPosition="end" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
