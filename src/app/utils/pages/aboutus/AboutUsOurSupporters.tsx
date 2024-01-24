@@ -58,23 +58,17 @@ export default function AboutUsOurSupporters() {
   };
 
   return (
-    <div className="flex flex-col w-full min-h-[70vh] gap-24 py-12 justify-center  ">
+    <div className="flex flex-col w-full md:min-h-[70vh] gap7 md:gap-24 md:py-12 justify-center  ">
       <div className="flex items-center justify-center w-full ">
-        <h2 className="text-xl font-light text-center md:text-4xl">
-          Early supporters we are grateful to
-        </h2>
+        <h2 className="text-xl font-light text-center md:text-4xl">Early supporters we are grateful to</h2>
       </div>
       <Carousel responsive={responsive} arrows={false}>
         {peoples.map((item) => (
-          <div className="flex items-center justify-center " key={item.name}>
-            <Image
-              src={item.image}
-              alt={item.name}
-              className=" max-h-[50px] "
-              width={300}
-              height={300}
-              priority
-            />
+          <div
+            className="flex items-center justify-center border border-[#BFBDBD] p-5 md:py-7 md:px-9 m-5 md:m-7 rounded-2xl"
+            key={item.name}
+          >
+            <Image src={item.image} alt={item.name} className=" h-[50px] " width={300} height={300} priority />
           </div>
         ))}
       </Carousel>

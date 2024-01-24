@@ -4,6 +4,7 @@ import AboutUsExperience from "../utils/pages/aboutus/AboutUsExperience";
 import AboutUsJoinTeam from "../utils/pages/aboutus/AboutUsJoinTeam";
 import AboutUsOurSupporters from "../utils/pages/aboutus/AboutUsOurSupporters";
 import AboutUsPeople from "../utils/pages/aboutus/AboutUsPeople";
+import AboutUsTimeline from "../utils/pages/aboutus/AboutUsTimeline";
 import AboutUsTopHeader from "../utils/pages/aboutus/AboutUsTopHeader";
 import AboutsHighlitedSection from "../utils/pages/aboutus/AboutsHighlitedSection";
 
@@ -19,6 +20,10 @@ export default function Home() {
         <AboutUsPeople />
       </div>
       <AboutUsJoinTeam />
+      <div className="flex flex-col items-center w-full px-12 pt-12 mb-12 md:px-0">
+        <AboutUsTimeline />
+      </div>
+
       <AboutUsOurSupporters />
       <PFooter />
     </main>

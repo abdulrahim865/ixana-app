@@ -31,7 +31,6 @@ export default function AboutUsPeople() {
     <div className="flex min-h-[80vh] w-full flex-col gap-12  container justify-center">
       <div className="flex items-center w-full gap-5">
         <h2 className="flex text-4xl font-light ">Ixana team.</h2>
-        <div className="flex h-[1px] bg-black grow"></div>
       </div>
       <div className="flex flex-col justify-between w-full gap-12 md:flex-row">
         {peoples.map((item) => (
@@ -44,7 +43,7 @@ export default function AboutUsPeople() {
               height={300}
               priority
             />
-            <div className="flex items-center justify-between p-3 border-b border-black border-solid">
+            <div className="flex flex-col justify-between border-solid">
               <h3>{item.name}</h3>
               <span className="text-xs text-itextgrey ">{item.position}</span>
             </div>
@@ -52,7 +51,7 @@ export default function AboutUsPeople() {
               {item.linkX && (
                 <a
                   href={item.linkX}
-                  className="text-sm font-light text-black border-b-2 border-black border-solid "
+                  className="text-xs font-light text-black border-b-2 border-black border-solid "
                   target="_blank"
                 >
                   X
@@ -60,7 +59,7 @@ export default function AboutUsPeople() {
               )}
               <a
                 href={item.linkLinkedIn}
-                className="text-sm font-light text-black border-b-2 border-black border-solid "
+                className="text-xs font-light text-black border-b-2 border-black border-solid "
                 target="_blank"
               >
                 Linkedin
