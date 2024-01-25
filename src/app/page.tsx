@@ -22,10 +22,10 @@ export default function Home() {
       <div className="flex flex-col items-center w-full">
         <HomeLearnMoreSection />
       </div>
-      <div className="flex flex-col items-center w-full px-6 md:px-0">
+      <div className="flex flex-col items-center w-full px-0 lg:px-6">
         <ProductSpecSection />
         <ProductFeaturesSection />
-        <ProductFeaturedIn />
+        {/* <ProductFeaturedIn /> */}
 
         <HomeBreakThrough />
         <HomeProductStoriesSection />
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <HomeOurMissionHighlighted />
       <HomeBlogSection />
-      <HomeOurClients />
+      {/* <HomeOurClients /> */}
       <PFooter />
     </main>
   );

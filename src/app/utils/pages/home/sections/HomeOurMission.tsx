@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomeOurMission() {
   return (
-    <div className="flex min-h-[50vh] w-full flex-col  items-center container justify-center pb-12">
+    <div className="flex min-h-[50vh] w-full flex-col  items-center container justify-center pb-12 px-6">
       <div className="flex flex-col items-center gap-12">
         <span className="primary-chip bg-[#6A6665] text-white w-fit">Our mission</span>
         <h2 className="flex text-4xl font-light max-w-[800px] text-center">
