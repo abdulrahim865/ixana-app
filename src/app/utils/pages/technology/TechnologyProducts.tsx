@@ -6,7 +6,7 @@ export const TechnologyProducts = () => {
   const products = [
     {
       name: "Wi-R Chip",
-      href: "/products",
+      href: "/products/wi-r-chip",
       image: "chip.png",
       desc: "YR22 (4Mbit/s) based",
       spec: [
@@ -23,7 +23,7 @@ export const TechnologyProducts = () => {
     },
     {
       name: "Wi-R Module",
-      href: "/products",
+      href: "/products/wi-r-module",
       image: "board.png",
       desc: "YR22 (4Mbit/s) based",
       spec: [
@@ -40,7 +40,7 @@ export const TechnologyProducts = () => {
     },
     {
       name: "Wi-R Evaluation Kit",
-      href: "/products",
+      href: "/products/wi-r-evaluation-kit",
       image: "headset.png",
       desc: "YR21 (4Mbit/s) based",
       spec: [
@@ -75,7 +75,7 @@ export const TechnologyProducts = () => {
 
         <div className="flex flex-col gap-3 mt-9 md:flex-row">
           {products.map((product) => (
-            <Link href={product.href} key={product.name} className="flex flex-col items-center gap-5">
+            <Link href={product.href} key={product.name} className="flex flex-col items-center gap-5 py-5">
               <Image
                 src={`/assets/technology/products/${product.image}`}
                 className="flex h-[150px] w-auto"
@@ -94,7 +94,9 @@ export const TechnologyProducts = () => {
                   </span>
                 ))}
               </div>
-              {/* <Pbutton text="Find out more" icon={<ToprightArrow />} /> */}
+              <Link href={product.href}>
+                <Pbutton text="Find out more" icon={<ToprightArrow />} />
+              </Link>
               <span className="text-sm max-w-[230px] text-center ">{product.content}</span>
             </Link>
           ))}
