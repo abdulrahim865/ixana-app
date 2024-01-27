@@ -1,36 +1,12 @@
 "use client";
 import { PFooter } from "@/app/utils/components/PFooter";
 import { PNavBar } from "@/app/utils/components/PNavBar";
-import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from "next";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { Pbutton } from "@/app/utils/components/Pbutton";
 import { ToprightArrow } from "@/app/utils/components/Pbutton";
 import Image from "next/image";
 import Error from "next/error";
-
-export const getStaticPaths = (async () => {
-  return {
-    paths: [
-      {
-        params: {
-          name: "wi-r-chip",
-        },
-      },
-      {
-        params: {
-          name: "wi-r-module",
-        },
-      },
-      {
-        params: {
-          name: "wi-r-evaluation-kit",
-        },
-      },
-    ],
-    fallback: true, // false or "blocking"
-  };
-}) satisfies GetStaticPaths;
 
 const pageProps = [
   {
