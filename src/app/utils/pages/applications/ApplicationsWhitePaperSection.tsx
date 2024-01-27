@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ApplicationsWhitePaperSection() {
   return (
-    <div className="flex min-h-[80vh] w-full flex-colitems-center container justify-center">
+    <div className="flex min-h-[80vh] w-full flex-colitems-center container justify-center py-12">
       <div className="flex flex-col items-center w-full gap-12 bg-[#F1F1F1] px-6 py-12 lg:p-10 lg:rounded-3xl">
         <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
           <div className="flex basis-[50%] lg:basis-[50%] justify-start">
