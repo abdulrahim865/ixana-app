@@ -99,13 +99,13 @@ export default function IndividualProductPage() {
     <div className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
 
-      <div className="container mx-auto py-12 pt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="flex flex-col justify-center">
+      <div className="container mx-auto py-12 pt-20 px-5 lg:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="flex flex-col justify-center order-2 lg:order-1">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-5">
-                <h3 className="text-7xl">{data.title}</h3>
-                <h4 className="text-2xl font-light">{data.subtitle}</h4>
+                <h3 className="text-4xl lg:text-7xl">{data.title}</h3>
+                <h4 className="text-xl lg:text-2xl font-light">{data.subtitle}</h4>
                 <p className="text-sm max-w-prose leading-6">{data.desc}</p>
               </div>
               <div className="flex flex-col">
@@ -123,8 +123,8 @@ export default function IndividualProductPage() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <div className="relative w-full min-h-screen">
+          <div className="flex justify-center items-center order-1 lg:order-2">
+            <div className="relative w-full min-h-[40vh] lg:min-h-screen">
               <Image src={data.image} fill={true} alt="Product Image" style={{ objectFit: "contain" }} />
             </div>
           </div>
