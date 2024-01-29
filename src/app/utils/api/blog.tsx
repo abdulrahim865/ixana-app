@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "https://wordpress.ixana.ai/wp-json/wp/v2/",
-  timeout: 5000,
+  timeout: 20000,
 });
 
 export async function getAllBlogPosts() {
