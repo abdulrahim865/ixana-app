@@ -13,7 +13,7 @@ export const PFooter = () => {
         backgroundPositionY: "80%",
       }}
     >
-      <div className="flex flex-col justify-between gap-5 lg:flex-row lg:px-0 lg:gap-0 grow">
+      <div className="container mx-auto flex flex-col justify-between gap-5 lg:flex-row lg:px-0 lg:gap-0 grow">
         <div className="flex justify-between gap-5 basis-[50%]">
           <div className="flex flex-col justify-between w-full lg:flex-row gap-5 lg;gap-0">
             <div className="flex flex-col">
@@ -78,7 +78,7 @@ export const PFooter = () => {
           </div> */}
         </div>
       </div>
-      <div className="flex flex-col items-start justify-between w-full md:items-center lg:flex-row ">
+      <div className="container mx-auto flex flex-col items-start justify-between w-full md:items-center lg:flex-row ">
         <div className="flex flex-col items-start gap-3 md:items-end basis-1/3 lg:flex-row">
           <Image src="/assets/ixana-light.svg" alt="Ixana logo" width={150} height={50} priority />
           <span className="text-xs font-light ">Ixana @ All Rights Reserved 2023</span>

@@ -33,7 +33,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
 
   return (
     <>
-      <div className="items-center justify-center hidden w-full lg:flex">
+      <div className="items-center justify-center hidden w-full lg:flex container mx-auto">
         <div className="relative flex-col w-full ">
           {/* {isHomeView && (
             <div className="flex justify-between p-1.5 px-14 bg-iblack ">
