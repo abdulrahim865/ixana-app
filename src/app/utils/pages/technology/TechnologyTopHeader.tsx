@@ -3,26 +3,28 @@ import Image from "next/image";
 
 export default function TechnologyTopHeader() {
   return (
-    <div className=" overflow-hidden relative flex flex-col w-full min-h-[600px] lg:min-h-[100vh] grow bg-iblack  ">
-      <div className="absolute top-0 bottom-0 -left-[5%] -right-[5%] flex items-end  gap-5 justify-end">
-        <Image
-          src="/assets/home/ixana-headset-pattern.png"
-          alt="Head Phones Ixana"
-          className="flex w-auto max-h-full lg:max-w-[100%]"
-          width={500}
-          height={500}
-          priority
-        />
-      </div>
-      <div className="absolute flex flex-col items-start gap-5 left-10 bottom-10">
-        <div className="primary-chip">Wi-R</div>
-        <h1 className="flex text-5xl text-white ">
-          {/* Wireless for Human-Computer Network */}
-          {`Introducing Wi-R`}
-        </h1>
-        <h3 className="text-sm text-white font-light">
-          {`Breakthrough  wireless technology optimizes Human-Computer Interaction.`}
-        </h3>
+    <div className="bg-iblack w-full">
+      <div className="container mx-auto overflow-hidden lg:overflow-visible relative flex flex-col w-full min-h-[600px] lg:min-h-[100vh] grow">
+        <div className="absolute top-0 bottom-0 -left-[5%] -right-[5%] flex items-end  gap-5 justify-end">
+          <Image
+            src="/assets/home/ixana-headset-pattern.png"
+            alt="Head Phones Ixana"
+            className="flex w-auto max-h-full lg:max-w-[100%]"
+            width={500}
+            height={500}
+            priority
+          />
+        </div>
+        <div className="absolute flex flex-col items-start gap-5 left-10 bottom-10">
+          <div className="primary-chip">Wi-R</div>
+          <h1 className="flex text-5xl text-white ">
+            {/* Wireless for Human-Computer Network */}
+            {`Introducing Wi-R`}
+          </h1>
+          <h3 className="text-sm text-white font-light">
+            {`Breakthrough  wireless technology optimizes Human-Computer Interaction.`}
+          </h3>
+        </div>
       </div>
     </div>
   );
