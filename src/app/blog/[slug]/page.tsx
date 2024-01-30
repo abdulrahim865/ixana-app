@@ -3,7 +3,7 @@ import Image from "next/image";
 import { PFooter } from "../../utils/components/PFooter";
 import { PNavBar } from "../../utils/components/PNavBar";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
-import { getAllBlogPosts, getBlogPostBySlug, getMediaUrlById, getTagsByIds } from "@/app/utils/api/blog";
+import { getAllBlogPosts, getBlogPostBySlug, getMediaUrlById, getTagsByIds, getUserById } from "@/app/utils/api/blog";
 import dayjs from "dayjs";
 import BlogComments from "@/app/utils/pages/blog/BlogComments";
 
@@ -25,6 +25,11 @@ export default async function BlogDetail({ params }: { params: any }) {
     tags = await getTagsByIds(post.tags);
   }
 
+  let author;
+  if (post.author) {
+    author = await getUserById(post.author);
+  }
+
   return (
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
@@ -34,7 +39,7 @@ export default async function BlogDetail({ params }: { params: any }) {
           <div className="container mx-auto flex flex-col gap-3 grow max-w-[700px]">
             <div className="flex flex-wrap items-center gap-3">
               <h5 className="text-white primary-chip">{dayjs(post.date).format("MMM d, YYYY")}</h5>
-              <h5 className="primary-chip bg-[rgba(241,241,241,1)]">Shreyas Sen, Angik Sarkar</h5>
+              {author && <h5 className="primary-chip bg-[rgba(241,241,241,1)]">{author.name}</h5>}
               {/* <h5 className="primary-chip bg-[rgba(241,241,241,1)]">23 comments</h5> */}
             </div>
 
@@ -56,30 +61,31 @@ export default async function BlogDetail({ params }: { params: any }) {
               </div>
             )}
 
-            <div className="flex flex-col gap-12">
-              <div className="flex items-center w-full gap-3 grow">
-                <Image
-                  src="/assets/blog/profile.png"
-                  className="flex w-16 h-16 rounded-full "
-                  alt="Wearable Ixana"
-                  width={100}
-                  height={100}
-                  priority
-                />
-                <div className="flex grow">
-                  <div className="flex flex-col gap-3 max-w-[300px] ">
-                    <h2 className="text-2xl ">Shreyas Sen</h2>
-                    <span className="text-xs font-light ">
-                      Elmore Associate Professor of ECE & BME at Purdue, Founder & CTO of Ixana, MIT TR35, TEDx, GT
-                      40U40
-                    </span>
+            {author && (
+              <div className="flex flex-col gap-12">
+                <div className="flex items-center w-full gap-3 grow">
+                  <Image
+                    src={author.image}
+                    className="flex w-16 h-16 rounded-full "
+                    alt="Wearable Ixana"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                  <div className="flex grow">
+                    <div className="flex flex-col gap-3 max-w-[300px] ">
+                      <h2 className="text-2xl ">{author.name}</h2>
+                      <span className="text-xs font-light ">{author.description}</span>
+                    </div>
                   </div>
+                  {author.link && (
+                    <a className="text-sm " href={author.link}>
+                      Link
+                    </a>
+                  )}
                 </div>
-                <a className="text-sm " href="#">
-                  Instagram
-                </a>
               </div>
-            </div>
+            )}
 
             <div className="py-12">
               <BlogComments slug={slug} title={post.title.rendered} />

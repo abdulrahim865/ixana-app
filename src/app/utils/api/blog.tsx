@@ -30,5 +30,15 @@ export async function getTagsByIds(ids: Array<Number>) {
 
 export async function getMediaUrlById(id: Number) {
   const { data } = await instance.get(`media/${id}`);
-  return data.guid.rendered;
+  return data.media_details.sizes.full.source_url;
+}
+
+export async function getUserById(id: Number) {
+  const { data } = await instance.get(`users/${id}`);
+  return {
+    name: data.name,
+    link: data.url,
+    description: data.description,
+    image: data.avatar_urls["48"],
+  };
 }

@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "secure.gravatar.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
   async redirects() {
     return [
       {
@@ -39,7 +49,7 @@ const nextConfig = {
       },
       {
         source: "/blogs/Wi-R_Technology_White_Paper.html",
-        destination: "/blog/whitepaper",
+        destination: "/blog/wi-r-technology-white-paper",
         permanent: true,
       },
     ];
