@@ -1,28 +1,50 @@
 import Image from "next/image";
-import { Pbutton, ToprightArrow } from "../../components/Pbutton";
+import dayjs from "dayjs";
+import Link from "next/link";
+import { getMediaUrlById, getTagsByIds, getUserById } from "../../api/blog";
 
-export default function BlogCard() {
+export default async function BlogCard({ post }: { post: any }) {
+  const featured_image = post.featured_media ? await getMediaUrlById(post.featured_media) : "/assets/blog/blog1.png";
+
+  let tags = [];
+  if (post.tags.length) {
+    tags = await getTagsByIds(post.tags);
+  }
+
+  let author;
+  if (post.author) {
+    author = await getUserById(post.author);
+  }
+
   return (
-    <div className="flex flex-col gap-5 py-12 ">
-      <Image
-        src="/assets/blog/blog1.png"
-        alt="Wearable Ixana"
-        className="flex w-full"
-        width={500}
-        height={500}
-        priority
-      />
-      <h2 className="text-3xl font-light text-[rgba(26, 26, 26, 1)]">
-        Wi-R enables wearables to harness AI capabilities via distributed
-        computation
-      </h2>
-      <div className="flex items-center justify-between gap-3">
-        <div className="flex flex-col items-start gap1 md:gap-3 md:items-center md:flex-row">
-          <span className="flex text-xs">Nov 1, 2022</span>
-          <span className="flex text-xs">Shreyas Sen, Angik Sarkar</span>
-        </div>
-        <Pbutton text="Read More" uiType="ghost" icon={<ToprightArrow />} />
+    <Link className="flex flex-col gap-5 py-12" href={`/blog/${post.slug}`}>
+      <div className="relative w-full h-80 bg-gray-50 rounded-2xl">
+        <Image
+          src={featured_image}
+          alt="Wearable Ixana"
+          className="flex w-full"
+          fill={true}
+          style={{ objectFit: "contain", objectPosition: "center" }}
+          priority
+        />
       </div>
-    </div>
+      <h2 className="text-2xl lg:text-3xl font-light text-[rgba(26, 26, 26, 1)]">{post.title.rendered}</h2>
+      {tags.length && (
+        <div className="flex flex-wrap items-center gap-2">
+          {tags.map((item: any) => (
+            <h5 className="primary-chip bg-[rgba(241,241,241,1)]" key={item}>
+              {item}
+            </h5>
+          ))}
+        </div>
+      )}
+      <h3 className="text-xs lg:text-sm font-light text-[rgba(26, 26, 26, 1)]">
+        <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+      </h3>
+      <div className="grid grid-cols-2 md:grid-cols-1 text-[#6A6665]">
+        <span className="flex text-xs">{dayjs(post.date).format("MMM d, YYYY")}</span>
+        {author && <span className="flex text-xs text-right md:text-left">{author.name}</span>}
+      </div>
+    </Link>
   );
 }

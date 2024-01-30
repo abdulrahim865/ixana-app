@@ -111,3 +111,21 @@ span.ant-collapse-header-text {
     font-weight: 300;
   }
 }
+
+// Blog Content Wrapper
+.blog-content-wrapper {
+  @apply py-0;
+  p {
+    @apply text-sm font-light py-5;
+  }
+  h2,
+  h3 {
+    @apply pt-5 text-4xl font-light;
+  }
+  ul {
+    @apply pl-3;
+    li {
+      @apply list-disc;
+    }
+  }
+}
