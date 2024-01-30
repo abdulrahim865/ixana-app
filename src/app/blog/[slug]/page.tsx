@@ -3,12 +3,18 @@ import Image from "next/image";
 import { PFooter } from "../../utils/components/PFooter";
 import { PNavBar } from "../../utils/components/PNavBar";
 import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
-import { getAllBlogPosts, getBlogPostBySlug, getMediaUrlById, getTagsByIds, getUserById } from "@/app/utils/api/blog";
+import {
+  getAllBlogPostSlugs,
+  getBlogPostBySlug,
+  getMediaUrlById,
+  getTagsByIds,
+  getUserById,
+} from "@/app/utils/api/blog";
 import dayjs from "dayjs";
 import BlogComments from "@/app/utils/pages/blog/BlogComments";
 
 export async function generateStaticParams() {
-  const posts = await getAllBlogPosts();
+  const posts = await getAllBlogPostSlugs();
   return posts.map((post: any) => {
     return { slug: post.slug };
   });

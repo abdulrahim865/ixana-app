@@ -11,6 +11,12 @@ export async function getAllBlogPosts() {
   return data;
 }
 
+export async function getAllBlogPostSlugs() {
+  console.log("Fetching All Blog Posts");
+  const { data } = await instance.get(`posts?categories=3&status=publish&_fields=slug`);
+  return data;
+}
+
 export async function getBlogPostById(id: Number) {
   const { data } = await instance.get(`posts/${id}`);
   console.log({ data });
