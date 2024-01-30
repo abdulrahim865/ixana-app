@@ -58,6 +58,11 @@ const nextConfig = {
         destination: "/blog/wi-r-technology-white-paper",
         permanent: true,
       },
+      {
+        source: "/blogs/123",
+        destination: "/blog/wi-r-technology-white-paper",
+        permanent: true,
+      },
     ];
   },
 };
