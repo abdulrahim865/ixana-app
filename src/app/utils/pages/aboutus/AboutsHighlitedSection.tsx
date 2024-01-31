@@ -9,7 +9,7 @@ export default function AboutsHighlitedSection() {
         backgroundPosition: "center center",
       }}
     >
-      <div className="z-10 flex flex-col items-center justify-between w-full gap-5 my-24 text-center text-white">
+      <div className="container mx-auto z-10 flex flex-col items-center justify-between w-full gap-5 my-24 text-center text-white">
         <div className="flex flex-col items-center gap-5 w-full lg:w-[50%]">
           <span className="primary-chip white">Technology</span>
           <h1 className="text-4xl font-light">

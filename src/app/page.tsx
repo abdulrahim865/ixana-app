@@ -18,23 +18,25 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isHomeView />
       <HomeTopMainView />
-      <HomeWatchDemo />
-      <div className="flex flex-col items-center w-full">
-        <HomeLearnMoreSection />
-      </div>
-      <div className="flex flex-col items-center w-full px-0 lg:px-6">
-        <ProductSpecSection />
-        <ProductFeaturesSection />
-        {/* <ProductFeaturedIn /> */}
+      <div className="container mx-auto">
+        <HomeWatchDemo />
+        <div className="flex flex-col items-center w-full">
+          <HomeLearnMoreSection />
+        </div>
+        <div className="flex flex-col items-center w-full px-0 lg:px-6">
+          <ProductSpecSection />
+          <ProductFeaturesSection />
+          {/* <ProductFeaturedIn /> */}
 
-        <HomeBreakThrough />
-        <HomeProductStoriesSection />
+          <HomeBreakThrough />
+          <HomeProductStoriesSection />
 
-        <HomeOurMission />
+          <HomeOurMission />
+        </div>
+        <HomeOurMissionHighlighted />
+        <HomeBlogSection />
+        {/* <HomeOurClients /> */}
       </div>
-      <HomeOurMissionHighlighted />
-      <HomeBlogSection />
-      {/* <HomeOurClients /> */}
       <PFooter />
     </main>
   );

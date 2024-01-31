@@ -33,7 +33,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
 
   return (
     <>
-      <div className="items-center justify-center hidden w-full lg:flex">
+      <div className="items-center justify-center hidden w-full lg:flex container mx-auto">
         <div className="relative flex-col w-full ">
           {/* {isHomeView && (
             <div className="flex justify-between p-1.5 px-14 bg-iblack ">
@@ -97,7 +97,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
           </div>
         </div>
       </div>
-      <div className={`fixed top-0 z-10 flex w-full bg-white ${isScrolled ? "bg-opacity-100" : ""}`}>
+      <div className={`fixed top-0 z-20 flex w-full bg-white ${isScrolled ? "bg-opacity-100" : ""}`}>
         <div className="relative flex items-center justify-center w-full p-5 lg:hidden">
           <a href="/">
             <Image src="/assets/ixana-logo.svg" alt="Ixana logo" width={100} height={31} priority />
