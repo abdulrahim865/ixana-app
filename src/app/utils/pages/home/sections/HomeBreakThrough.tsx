@@ -49,7 +49,7 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            {/* <Link href="/blog/123">
+            {/* <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
             </Link> */}
           </div>
@@ -102,7 +102,7 @@ export default function HomeBreakThrough() {
               <br /> human-computer interaction
             </h2>
 
-            {/* <Link href="/blog/123">
+            {/* <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Peek into the future" icon={<ToprightArrow />} />
             </Link> */}
           </div>

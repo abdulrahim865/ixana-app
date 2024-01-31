@@ -32,7 +32,7 @@ export default function HomeBlogSection() {
             <h3 className="p-3 font-light text-md">
               Wi-R enables wearables to harness AI capabilities via distributed computation
             </h3>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Read more" icon={<ToprightArrow />} />
             </Link>
           </div>
@@ -50,7 +50,7 @@ export default function HomeBlogSection() {
               />
             </div>
             <h3 className="p-3 font-light text-md">All-day Augmented Reality, now possible courtesy of Wi-R</h3>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Read more" icon={<ToprightArrow />} />
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function HomeBlogSection() {
               />
             </div>
             <h3 className="p-3 font-light text-md">Wi-R technology White Paper</h3>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Read more" icon={<ToprightArrow />} />
             </Link>
           </div>

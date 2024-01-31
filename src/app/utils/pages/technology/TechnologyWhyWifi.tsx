@@ -25,7 +25,7 @@ export default function TechnologyWhyWifi() {
               longevity but also aligns with a sustainable future, setting Wi-R apart as a beacon of innovation in the
               connectivity landscape.
             </p>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="White Paper" icon={<ToprightArrow />} />
             </Link>
           </div>

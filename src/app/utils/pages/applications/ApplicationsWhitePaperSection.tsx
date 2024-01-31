@@ -23,7 +23,7 @@ export default function ApplicationsWhitePaperSection() {
               Wi-R is a new non-radiative near-field communication technology that uses Electro-Quasistatic (EQS) Fields
               for communication. The key differentiations that make Wi-R unique are as follows:
             </p>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="Learn more" icon={<ToprightArrow />} />
             </Link>
           </div>

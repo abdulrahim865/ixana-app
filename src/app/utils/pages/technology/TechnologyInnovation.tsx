@@ -45,7 +45,7 @@ export default function TechnologyInnovation() {
               A fundamentally new wireless technology designed from the ground-up for Body Area Network Security and
               performance of wired communication with the convenience of wireless
             </p>
-            <Link href="/blog/123">
+            <Link href="/blog/wi-r-technology-white-paper">
               <Pbutton text="How is it different" icon={<ToprightArrow />} />
             </Link>
           </div>

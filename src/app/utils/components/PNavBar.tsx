@@ -88,7 +88,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
                 </a>
                 <a
                   className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
-                  href="/blog/123"
+                  href="/blog/wi-r-technology-white-paper"
                 >
                   Tech Insight
                 </a>
