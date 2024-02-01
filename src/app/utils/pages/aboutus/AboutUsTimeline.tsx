@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Arrow = () => {
   return (
@@ -47,30 +47,37 @@ export default function AboutUsTimeline() {
     {
       year: "2016-20",
       text: "Wi-R Science de-risked by Prof. Shreyas Sen at Purdue University",
+      ref: useRef(null),
     },
     {
       year: "2021",
       text: "Ixana funded. First Wi-R chip tapeout and demonstration",
+      ref: useRef(null),
     },
     {
       year: "2022",
       text: "First wearable to wearable Wi-R communication demonstrated",
+      ref: useRef(null),
     },
     {
       year: "2023",
       text: "1Mbit/s Wi-R chip launched at CES'23. Audio streaming demonstrated",
+      ref: useRef(null),
     },
     {
       year: "2024",
       text: "4Mbit/s Wi-R chip launched at CES'24. SD video streaming demonstrated",
+      ref: useRef(null),
     },
     {
       year: "2025",
       text: "20Mbit/s Wi-R chip launched at CES'24. HD video streaming demonstrated",
+      ref: useRef(null),
     },
     {
       year: "2026-30",
       text: "Body internet platform for wearable AI realized with multiple charging-free Wi-R devices on body",
+      ref: useRef(null),
     },
   ];
 
@@ -81,9 +88,14 @@ export default function AboutUsTimeline() {
 
   const clickArrow = (forward: boolean) => {
     if (forward) {
-      if (currentIndex < timeline.length - 1) setYear(currentIndex + 1);
+      if (currentIndex < timeline.length - 1) {
+        setYear(currentIndex + 1);
+        timeline[currentIndex + 1].ref.current?.scrollIntoView();
+      }
     } else {
-      if (currentIndex != 0) setYear(currentIndex - 1);
+      if (currentIndex != 0) {
+        setYear(currentIndex - 1);
+      }
     }
   };
 
@@ -108,9 +120,13 @@ export default function AboutUsTimeline() {
           <div className="relative flex items-center justify-between w-full mx-12">
             <div className="absolute left-0 right-0 bottom-11 grow h-0.5 bg-[rgba(49,47,47,1)] 5 z-0"></div>
 
-            <div className="flex items-center justify-between w-full gap-5 md:mt-12 overflow-auto">
+            <div className="flex items-center justify-between w-full gap-5 md:mt-12 overflow-auto no-scrollbar">
               {timeline.map(({ year, text }, index) => (
-                <div key={index} className="z-10 flex flex-col items-center justify-between gap-3">
+                <div
+                  key={index}
+                  className="z-10 flex flex-col items-center justify-between gap-3"
+                  ref={timeline[currentIndex].ref}
+                >
                   <h3
                     className={`${currentIndex === index ? "text-xl md:text-3xl" : "text-lg md:text-2xl"}  ${
                       index <= currentIndex ? "text-ibtnorange" : "text-white"
