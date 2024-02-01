@@ -14,11 +14,11 @@ const Arrow = () => {
   );
 };
 
-const Dot = ({ width }: { width: number }) => {
+const Dot = ({ width, fillColor }: { width: number; fillColor: string }) => {
   return (
     <svg width={width} height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_f_9_1814)">
-        <circle cx="45.5945" cy="44.7614" r="26.761" transform="rotate(-180 45.5945 44.7614)" fill="#FF6320" />
+        <circle cx="45.5945" cy="44.7614" r="26.761" transform="rotate(-180 45.5945 44.7614)" fill={fillColor} />
       </g>
       <defs>
         <filter
@@ -40,45 +40,92 @@ const Dot = ({ width }: { width: number }) => {
 };
 
 export default function AboutUsTimeline() {
-  const [currentYear, setCurrentYear] = useState(2016);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayTextIndex, setDisplayTextIndex] = useState(0);
+
+  const timeline = [
+    {
+      year: "2016-20",
+      text: "Wi-R Science de-risked by Prof. Shreyas Sen at Purdue University",
+    },
+    {
+      year: "2021",
+      text: "Ixana funded. First Wi-R chip tapeout and demonstration",
+    },
+    {
+      year: "2022",
+      text: "First wearable to wearable Wi-R communication demonstrated",
+    },
+    {
+      year: "2023",
+      text: "1Mbit/s Wi-R chip launched at CES'23. Audio streaming demonstrated",
+    },
+    {
+      year: "2024",
+      text: "4Mbit/s Wi-R chip launched at CES'24. SD video streaming demonstrated",
+    },
+    {
+      year: "2025",
+      text: "20Mbit/s Wi-R chip launched at CES'24. HD video streaming demonstrated",
+    },
+    {
+      year: "2026-30",
+      text: "Body internet platform for wearable AI realized with multiple charging-free Wi-R devices on body",
+    },
+  ];
+
+  const setYear = (index: number) => {
+    setCurrentIndex(index);
+    setDisplayTextIndex(index);
+  };
+
+  const clickArrow = (forward: boolean) => {
+    if (forward) {
+      if (currentIndex < timeline.length - 1) setYear(currentIndex + 1);
+    } else {
+      if (currentIndex != 0) setYear(currentIndex - 1);
+    }
+  };
+
   return (
     <div className="container flex flex-col items-center w-full gap-5 p-12 py-12 overflow-hidden text-white md:my-12 bg-iblack rounded-3xl">
       <div className="flex flex-col items-center w-full gap-12">
         <div className="flex flex-col items-center justify-between w-full gap-5 py-5 grow">
           <div className="flex gap-3">
-            <button className="p-3 transform rotate-180 rounded-full bg-[rgba(64,62,61,1)]">
+            <button
+              className="p-3 transform rotate-180 rounded-full bg-[rgba(64,62,61,1)]"
+              onClick={() => clickArrow(false)}
+            >
               <Arrow />
             </button>
-            <button className="p-3 rounded-full bg-[rgba(64,62,61,1)]">
+            <button className="p-3 rounded-full bg-[rgba(64,62,61,1)]" onClick={() => clickArrow(true)}>
               <Arrow />
             </button>
           </div>
-          <div className="bg-white primary-chip">Ixana’s timeline</div>
-          <h2 className="text-2xl font-light text-center lg:text-4xl ">
-            Ixana funded. Shovan joins. First Wi-R <br /> chip tapeout at Ixana
-          </h2>
+          <div className="bg-white primary-chip">{`Ixana's timeline`}</div>
+          <h2 className="text-2xl font-light text-center lg:text-4xl ">{timeline[displayTextIndex].text}</h2>
 
           <div className="relative flex items-center justify-between w-full mx-12">
             <div className="absolute left-7 right-7 bottom-11 grow h-0.5 bg-[rgba(49,47,47,1)] 5 z-0"></div>
 
             <div className="flex items-center justify-between w-full gap-5 md:mt-12">
-              {Array(10)
-                .fill(1)
-                .map((_, i) => 2016 + i)
-                .map((index) => (
-                  <div key={index} className="z-10 flex flex-col items-center justify-between gap-3 ">
-                    <h3
-                      className={`${
-                        currentYear === index ? "text-3xl" : "text-2xl"
-                      }   text-ibtnorange transition-all duration-300 ease-in-out`}
-                    >
-                      {index}
-                    </h3>
-                    <button onClick={(e) => setCurrentYear(index)} className="transition-all duration-300 ease-in-out">
-                      <Dot width={currentYear === index ? 91 : 48} />
-                    </button>
-                  </div>
-                ))}
+              {timeline.map(({ year, text }, index) => (
+                <div key={index} className="z-10 flex flex-col items-center justify-between gap-3 ">
+                  <h3
+                    className={`${currentIndex === index ? "text-3xl" : "text-2xl"}  ${
+                      index <= currentIndex ? "text-ibtnorange" : "text-white"
+                    } transition-all duration-300 ease-in-out`}
+                  >
+                    {year}
+                  </h3>
+                  <button onClick={(e) => setYear(index)} className="transition-all duration-300 ease-in-out">
+                    <Dot
+                      width={currentIndex === index ? 91 : 48}
+                      fillColor={index <= currentIndex ? "#FF6320" : "#FFFFFF"}
+                    />
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
         </div>

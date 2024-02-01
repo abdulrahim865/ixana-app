@@ -20,9 +20,9 @@ export default function Home() {
         <AboutUsPeople />
       </div>
       <AboutUsJoinTeam />
-      {/* <div className="flex flex-col items-center w-full px-12 pt-12 mb-12 md:px-0">
+      <div className="flex flex-col items-center w-full px-12 pt-12 mb-12 md:px-0">
         <AboutUsTimeline />
-      </div> */}
+      </div>
 
       <AboutUsOurSupporters />
       <PFooter />
