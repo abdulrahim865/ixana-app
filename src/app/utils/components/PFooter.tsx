@@ -29,6 +29,9 @@ export const PFooter = () => {
               <Link className="text-sm font-light" href="/contact">
                 Contact
               </Link>
+              <Link className="text-sm font-light" href="/join-us">
+                Join Us
+              </Link>
             </div>
             <div className="flex flex-col ">
               <h5 className="font-medium text-md">Our Technology</h5>
@@ -47,7 +50,7 @@ export const PFooter = () => {
             <div className="flex flex-col ">
               <h5 className="font-medium text-md">Tech Insights</h5>
               <div className="flex flex-col">
-                <a className="text-sm font-light" href="/blog/wi-r-technology-white-paper">
+                <a className="text-sm font-light" href="/blog">
                   Blog/Case Studies
                 </a>
                 {/* <a className="text-sm font-light" href="/blog">

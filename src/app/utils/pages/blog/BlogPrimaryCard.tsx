@@ -28,7 +28,9 @@ export default async function BlogCard({ post }: { post: any }) {
           priority
         />
       </div>
-      <h2 className="text-2xl lg:text-3xl font-light text-[rgba(26, 26, 26, 1)]">{post.title.rendered}</h2>
+      <h2 className="text-2xl lg:text-3xl font-light text-[rgba(26, 26, 26, 1)]">
+        <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+      </h2>
       {tags.length && (
         <div className="flex flex-wrap items-center gap-2">
           {tags.map((item: any) => (

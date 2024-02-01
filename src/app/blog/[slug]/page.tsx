@@ -2,7 +2,8 @@ import BlogTopHeader from "@/app/utils/pages/blog/BlogTopHeader";
 import Image from "next/image";
 import { PFooter } from "../../utils/components/PFooter";
 import { PNavBar } from "../../utils/components/PNavBar";
-import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
+import { parseHtml } from "../../utils/api/parsers";
+
 import {
   getAllBlogPostSlugs,
   getBlogPostBySlug,
@@ -50,7 +51,9 @@ export default async function BlogDetail({ params }: { params: any }) {
             </div>
 
             <div className="flex">
-              <h2 className="flex items-start pt-12 text-4xl font-light md:text-6xl">{post.title.rendered}</h2>
+              <h2 className="flex items-start pt-12 text-4xl font-light md:text-6xl">
+                <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+              </h2>
             </div>
 
             <div className="">
@@ -81,7 +84,7 @@ export default async function BlogDetail({ params }: { params: any }) {
                   <div className="flex grow">
                     <div className="flex flex-col gap-3 max-w-[300px] ">
                       <h2 className="text-2xl ">{author.name}</h2>
-                      <span className="text-xs font-light ">{author.description}</span>
+                      <span className="text-xs font-light" dangerouslySetInnerHTML={{ __html: author.description }} />
                     </div>
                   </div>
                   {author.link && (
