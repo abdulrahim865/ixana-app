@@ -48,3 +48,8 @@ export async function getUserById(id: Number) {
     image: data.avatar_urls["48"],
   };
 }
+
+export async function getAllNews() {
+  const { data } = await instance.get(`posts?categories=5&status=publish`);
+  return data;
+}
