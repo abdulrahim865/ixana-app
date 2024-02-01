@@ -50,7 +50,7 @@ export const PFooter = () => {
             <div className="flex flex-col ">
               <h5 className="font-medium text-md">Tech Insights</h5>
               <div className="flex flex-col">
-                <a className="text-sm font-light" href="/blog/123">
+                <a className="text-sm font-light" href="/blog">
                   Blog/Case Studies
                 </a>
                 {/* <a className="text-sm font-light" href="/blog">
