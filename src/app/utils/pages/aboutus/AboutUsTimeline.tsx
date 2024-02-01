@@ -88,7 +88,7 @@ export default function AboutUsTimeline() {
   };
 
   return (
-    <div className="container flex flex-col items-center w-full gap-5 p-12 py-12 overflow-hidden text-white md:my-12 bg-iblack rounded-3xl">
+    <div className="container flex flex-col items-center w-full gap-5 px-0 md:px-12 py-12 overflow-hidden text-white md:my-12 bg-iblack rounded-3xl">
       <div className="flex flex-col items-center w-full gap-12">
         <div className="flex flex-col items-center justify-between w-full gap-5 py-5 grow">
           <div className="flex gap-3">
@@ -106,15 +106,15 @@ export default function AboutUsTimeline() {
           <h2 className="text-2xl font-light text-center lg:text-4xl ">{timeline[displayTextIndex].text}</h2>
 
           <div className="relative flex items-center justify-between w-full mx-12">
-            <div className="absolute left-7 right-7 bottom-11 grow h-0.5 bg-[rgba(49,47,47,1)] 5 z-0"></div>
+            <div className="absolute left-0 right-0 bottom-11 grow h-0.5 bg-[rgba(49,47,47,1)] 5 z-0"></div>
 
-            <div className="flex items-center justify-between w-full gap-5 md:mt-12">
+            <div className="flex items-center justify-between w-full gap-5 md:mt-12 overflow-auto">
               {timeline.map(({ year, text }, index) => (
-                <div key={index} className="z-10 flex flex-col items-center justify-between gap-3 ">
+                <div key={index} className="z-10 flex flex-col items-center justify-between gap-3">
                   <h3
-                    className={`${currentIndex === index ? "text-3xl" : "text-2xl"}  ${
+                    className={`${currentIndex === index ? "text-xl md:text-3xl" : "text-lg md:text-2xl"}  ${
                       index <= currentIndex ? "text-ibtnorange" : "text-white"
-                    } transition-all duration-300 ease-in-out`}
+                    } transition-all duration-300 ease-in-out text-nowrap px-1`}
                   >
                     {year}
                   </h3>
