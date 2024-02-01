@@ -90,11 +90,14 @@ export default function AboutUsTimeline() {
     if (forward) {
       if (currentIndex < timeline.length - 1) {
         setYear(currentIndex + 1);
+        // @ts-ignore
         timeline[currentIndex + 1].ref.current?.scrollIntoView();
       }
     } else {
       if (currentIndex != 0) {
         setYear(currentIndex - 1);
+        // @ts-ignore
+        timeline[currentIndex - 1].ref.current?.scrollIntoView();
       }
     }
   };
