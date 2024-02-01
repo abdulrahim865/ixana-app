@@ -53,9 +53,9 @@ export const PFooter = () => {
                 <a className="text-sm font-light" href="/blog">
                   Blog/Case Studies
                 </a>
-                {/* <a className="text-sm font-light" href="/blog">
+                <a className="text-sm font-light" href="/news">
                   News
-                </a> */}
+                </a>
                 <a className="text-sm font-light" href="/faq">
                   FAQ
                 </a>
