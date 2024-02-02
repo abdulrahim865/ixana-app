@@ -11,7 +11,7 @@ export default function ProductSpecSection() {
       name: "Ixana Silicon Chip for Human-computer Network",
       icon: "/assets/home/icons/icon-product.svg",
       image: "/assets/home/ixana-chip.png",
-      link: "/",
+      link: "/products",
     },
     /* {
       tag: "Why Wi-R",
