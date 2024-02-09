@@ -64,10 +64,16 @@ export default function HomeBreakThrough() {
                   className="flex"
                   priority
                 />
-                <span>Touch to securely pay, unlock doors and workstations</span>
+                <span className="text-gray-400 hover:text-white transition-all ease-in-out">
+                  Touch to securely pay, unlock doors and workstations
+                </span>
               </span>
-              <span className="text-sm font-light w-[150px]">Real-time dashboard of your health</span>
-              <span className="text-sm font-light w-[150px]">Continuous hardware 2FA everywhere</span>
+              <span className="text-sm font-light w-[150px] text-gray-400 hover:text-white transition-all ease-in-out">
+                Real-time dashboard of your health
+              </span>
+              <span className="text-sm font-light w-[150px] text-gray-400 hover:text-white transition-all ease-in-out">
+                Continuous hardware 2FA everywhere
+              </span>
             </div>
             <Image
               src="/assets/home/ixana-chip-full.png"
@@ -78,17 +84,25 @@ export default function HomeBreakThrough() {
               priority
             />
             <div className="flex flex-col items-center gap-12 basis-1/4">
-              <span className="text-sm font-light w-[150px]">Store infinite memories and retrieve at will</span>
-              <span className="text-sm font-light w-[150px]">Train a digital clone based on your physical world</span>
-              <span className="text-sm font-light w-[150px]">Indoor navigation systems for the visually impaired</span>
+              <span className="text-sm font-light w-[150px] text-gray-400 hover:text-white transition-all ease-in-out">
+                Store infinite memories and retrieve at will
+              </span>
+              <span className="text-sm font-light w-[150px] text-gray-400 hover:text-white transition-all ease-in-out">
+                Train a digital clone based on your physical world
+              </span>
+              <span className="text-sm font-light w-[150px] text-gray-400 hover:text-white transition-all ease-in-out">
+                Indoor navigation systems for the visually impaired
+              </span>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center gap-12 md:flex-row basis-1/2">
-          <span className="text-sm font-light lg:w-[200px] text-center ">
+          <span className="text-sm font-light lg:w-[200px] text-center text-gray-400 hover:text-white transition-all ease-in-out">
             Charging-free diabetes management systems
           </span>
-          <span className="text-sm font-light lg:w-[200px] text-center ">Give AI eyes, ears</span>
+          <span className="text-sm font-light lg:w-[200px] text-center text-gray-400 hover:text-white transition-all ease-in-out">
+            Give AI eyes, ears
+          </span>
         </div>
       </div>
       {/* For Mobile */}

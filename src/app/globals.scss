@@ -141,3 +141,18 @@ span.ant-collapse-header-text {
     }
   }
 }
+
+.privacy-policy-wrapper {
+  h1 {
+    @apply text-5xl py-5 font-light;
+  }
+  h3 {
+    @apply text-3xl py-3 font-light;
+  }
+  p {
+    @apply text-sm py-2 font-light;
+  }
+  ul {
+    @apply list-disc font-light text-sm pl-5 py-2;
+  }
+}
