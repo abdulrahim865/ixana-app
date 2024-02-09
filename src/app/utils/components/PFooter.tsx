@@ -4,7 +4,7 @@ import Link from "next/link";
 export const PFooter = () => {
   return (
     <div
-      className="relative flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 rounded-t-3xl  px-12 flex-col justify-between gap-3 md:gap-0"
+      className="relative flex w-full min-h-[60vh] text-black bg-contain bg-no-repeat py-12 rounded-t-3xl px-12 flex-col justify-between gap-3 md:gap-0 pb-28"
       style={{
         background:
           "url(/assets/home/footer-pattern.svg) no-repeat left bottom, linear-gradient(180deg, #E4E5E7 -45.62%, #FFF 100%)",
@@ -88,6 +88,12 @@ export const PFooter = () => {
         </div>
         <span className="text-xs font-light text-center basis-1/3 ">designed by akeo</span>
         <div className="flex items-center justify-end gap-3 basis-1/3">
+          <Link href="/contact" className="text-sm font-light text-black border-b-2 border-black border-solid">
+            Contact Us
+          </Link>
+          <Link href="/privacy-policy" className="text-sm font-light text-black border-b-2 border-black border-solid">
+            Privacy Policy
+          </Link>
           <a
             href="https://www.linkedin.com/company/ixanahq"
             className="text-sm font-light text-black border-b-2 border-black border-solid"
