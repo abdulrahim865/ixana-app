@@ -3,17 +3,28 @@ import { Pbutton, ToprightArrow } from "@/app/utils/components/Pbutton";
 import { Modal } from "antd";
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
+import ReactPlayer from "react-player/vimeo";
 
 export default function HomeWatchDemo() {
   const params = useParams();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [playingVideo, setPlayingVideo] = useState(false);
 
   useEffect(() => {
     if (window.location.hash == "#demo") {
       setIsModalOpen(true);
     }
   }, [params]);
+
+  const closeModal = () => {
+    setPlayingVideo(false);
+    console.log("On Cancel Triggered");
+    console.log({ playingVideo });
+    setTimeout(() => {
+      setIsModalOpen(false);
+    }, 50);
+  };
 
   return (
     <div className="flex min-h-[60vh] w-full relative flex-col lg:flex-row" id="demo">
@@ -37,12 +48,18 @@ export default function HomeWatchDemo() {
         {/* <span>Transfer contacts, files and data with a handshake</span> */}
         <span>Communicate with Touch</span>
       </div>
-      <Modal open={isModalOpen} width="100%" footer={null} onCancel={(e) => setIsModalOpen(false)}>
-        <iframe
+      <Modal open={isModalOpen} width="100%" footer={null} onCancel={closeModal} className="bg-white w-full" centered>
+        <ReactPlayer
+          url="https://player.vimeo.com/video/786424550"
+          controls
           width="100%"
-          className="min-h-[50vh] lg:min-h-[70vh]"
-          src="https://player.vimeo.com/video/786424550?"
-        ></iframe>
+          onPlay={() => setPlayingVideo(true)}
+          onPause={() => setPlayingVideo(false)}
+          pip={false}
+          /* pip={true}
+          stopOnUnmount={false} */
+          playing={playingVideo}
+        />
       </Modal>
     </div>
   );

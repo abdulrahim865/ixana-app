@@ -11,7 +11,7 @@ export default function TechnologyInnovation() {
   return (
     <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-12">
       <div className="flex flex-col items-center w-full gap-16">
-        <div className="flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center gap-5 py-10">
           <span className="primary-chip bg-[#6A6665] text-white w-fit">The Innovation</span>
           <h2 className="flex text-4xl font-light max-w-[800px] text-center">
             {`Security and performance of wired connectivity for Body Area Networks.`}
@@ -30,7 +30,7 @@ export default function TechnologyInnovation() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow">
+        <div className="flex flex-col items-center justify-between w-full gap-12 py-5 md:flex-row grow px-2">
           <Image
             src="/assets/technology/wearable-headset.png"
             alt="Wearable Ixana"

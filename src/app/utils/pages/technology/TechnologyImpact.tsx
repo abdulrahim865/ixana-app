@@ -35,16 +35,6 @@ export default function TechnologyImpact() {
             Touch Selectivity leading to touch detection
           </span>
         </div>
-
-        <h1 className="text-2xl md:text-3xl font-light text max-w-[650px] pt-[200px] text-center">
-          Traditional wireless signal&nbsp;
-          <span className=" text-itextgrey">
-            is available everywhere within a radius. Near-field communications simply reduce the radius. Such direction
-            agnostic transmission is inherently inefficient. Designed for communications between wearables, Wi-R behaves
-            as a wire by confining the signal in a bubble around you. This allows Wi-R to offer superior robustness,
-            efficiency and touch selectivity.
-          </span>
-        </h1>
       </div>
     </div>
   );
