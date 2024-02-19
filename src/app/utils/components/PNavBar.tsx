@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Drawer } from "antd";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; isProductView?: boolean }) => {
   const path = usePathname();
@@ -20,6 +21,8 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
   };
   const isScrolled = useMemo(() => scrolled, [scrolled]);
   const [mobileDrawer, setMobileDrawer] = useState(false);
+  const [floatingNav, setFloatingNav] = useState(false);
+  const [displayProducts, setDisplayProducts] = useState(false);
 
   const navItems = [
     { name: "Home", route: "/" },
@@ -53,6 +56,73 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
           )} */}
 
           <div className="relative flex w-full">
+            {/* Floating Nav */}
+            {floatingNav && (
+              <div
+                className="absolute top-0 bg-white right-0 p-3 px-14 z-20 rounded-xl shadow-2xl transition-all ease-in-out hover:translate-y-1"
+                onMouseLeave={() => setFloatingNav(false)}
+              >
+                <div className={`grid ${path !== "/" ? "grid-cols-4" : "grid-cols-3"} gap-5`}>
+                  {path !== "/" && (
+                    <div className="flex flex-col gap-5 grow-0">
+                      <a className={`text-xs text-[rgba(16, 15, 15, 1)] text-right`} href="/">
+                        Home
+                      </a>
+                    </div>
+                  )}
+
+                  <div className="flex flex-col gap-5 grow-0">
+                    <a className={`text-xs text-[rgba(16, 15, 15, 1)] text-center`} href="/about-us">
+                      About us
+                    </a>
+                  </div>
+                  <div className="flex flex-col gap-5 grow">
+                    <a className={`text-xs text-[rgba(16, 15, 15, 1)]  `} href="/our-technology">
+                      Our Technology
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/our-technology">
+                      Wi-R technology
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/applications">
+                      Applications
+                    </a>
+                    <a
+                      className={`text-xs flex flex-row text-[rgba(16, 15, 15, 1)]`}
+                      onClick={() => setDisplayProducts(!displayProducts)}
+                    >
+                      Ixana Products {displayProducts ? <FaAngleUp size={18} /> : <FaAngleDown size={18} />}
+                    </a>
+                    <div
+                      className={`${
+                        displayProducts ? "" : "hidden"
+                      } transition-all ease-in-out duration-500 flex flex-col gap-3`}
+                    >
+                      <a className={`text-xs text-gray-500 flex flex-row`} href="/products/wi-r-chip">
+                        Wi-R chip
+                      </a>
+                      <a className={`text-xs text-gray-500 flex flex-row`} href="/products/wi-r-module">
+                        Wi-R module
+                      </a>
+                      <a className={`text-xs text-gray-500 flex flex-row`} href="/products/wi-r-evaluation-kit">
+                        YR21 Evaluation Kit
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-5 grow">
+                    <a className={`text-xs text-[rgba(16, 15, 15, 1)]`} href="/blog/wi-r-technology-white-paper">
+                      Tech Insight
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/blog">
+                      Blogs
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/news">
+                      News
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className="absolute top-0 z-10 flex justify-between w-full p-3 px-14">
               <Link href="/">
                 <Image
@@ -64,7 +134,7 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
                 />
               </Link>
 
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-5" onMouseEnter={() => setFloatingNav(true)}>
                 {path !== "/" && (
                   <a
                     className={`text-xs ${isHomeView || isProductView ? "text-[rgba(16, 15, 15, 1)]" : "text-white"}  `}
