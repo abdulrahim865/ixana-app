@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function TechnologyWhyWifi() {
   return (
-    <div className="container flex flex-col items-center w-full gap-5 p-12 py-12 text-white bg-iblack rounded-3xl">
+    <div className="container mx-auto flex flex-col items-center gap-5 px-12 py-12 text-white bg-iblack rounded-3xl">
       <div className="flex flex-col items-center w-full gap-12">
         <div className="flex flex-col items-center justify-between w-full gap-5 py-5 md:flex-row grow">
           <Image

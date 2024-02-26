@@ -62,7 +62,7 @@ export default function AboutUsOurSupporters() {
   };
 
   return (
-    <div className="flex flex-col w-full md:min-h-[70vh] gap7 md:gap-24 md:py-12 justify-center  ">
+    <div className="flex flex-col w-full md:gap-24 md:py-12 justify-center">
       <div className="flex items-center justify-center w-full ">
         <h2 className="text-xl font-light text-center md:text-4xl">Early supporters we are grateful to</h2>
       </div>

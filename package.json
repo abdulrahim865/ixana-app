@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,9 +17,12 @@
     "disqus-react": "^1.1.5",
     "html-entities": "^2.4.0",
     "next": "^14.0.4",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
     "react-multi-carousel": "^2.8.4",
+    "react-player": "^2.14.1",
     "react-responsive-carousel": "^3.2.23",
     "sass": "^1.69.5"
   },
