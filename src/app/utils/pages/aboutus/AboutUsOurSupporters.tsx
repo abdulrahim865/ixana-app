@@ -20,10 +20,14 @@ export default function AboutUsOurSupporters() {
       image: "/assets/aboutus/support/uncorrelated.svg",
       name: "Aniket Sharma",
     },
-
     {
       id: 4,
       image: "/assets/aboutus/support/evonexus.svg",
+      name: "Aniket Sharma",
+    },
+    {
+      id: 4,
+      image: "/assets/aboutus/support/10xfounders.png",
       name: "Aniket Sharma",
     },
   ];
