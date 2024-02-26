@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Ixana: High-speed Human Computer Interaction",
     description: "Augmenting humans with all-day, real-time, distributed AI on what you see,hear and sense",
+    images: ["https://ixana-blog.s3.us-east-1.amazonaws.com/2024/02/ixana-front-med.png"],
   },
   twitter: {
     card: "summary_large_image",
