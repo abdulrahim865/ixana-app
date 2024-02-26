@@ -8,15 +8,23 @@ export default function HomeTopMainView() {
   return (
     <div className="bg-[#F1F1F1] w-full">
       <div className="container mx-auto">
-        <div className="flex flex-col-reverse gap-5 p-3 md:p-12 md:flex-row min-h-[600px] md:min-h-[100vh]  mt-14 lg:mt-0  md:w-full ">
-          <div
-            className=" bg-center bg-no-repeat bg-cover basis-[40%] grow rounded-2xl min-h-[30vh] hidden md:flex"
-            style={{ backgroundImage: `url('/assets/home/headphonesremoved.png')` }}
-          ></div>
+        <div className="flex flex-col-reverse gap-5 p-3 md:p-12 md:flex-row min-h-[600px] md:min-h-[80vh]  mt-14 lg:mt-0  md:w-full ">
+          <div className="flex flex-col items-center justify-center gap-5 md:items-start grow basis-[30%]">
+            <h1 className="flex flex-col items-start justify-end gap-3 text-5xl md:text-5xl lg:basis-3/4 order-3">
+              <span className="text-black">Body-Internet Platform</span>
+              <a onClick={() => router.push("/#demo")} className="flex gap-3 text-sm cursor-pointer Pbutton">
+                <span>Get a demo</span>
+                <ToprightArrow size={32} />
+              </a>
+            </h1>
 
-          <div className="flex flex-col items-center justify-center gap-5 md:items-start grow basis-[60%]">
             <div
-              className="flex justify-center w-full rounded-2xl h-[100px] md:h-initial overflow-hidden md:grow"
+              className=" bg-center bg-no-repeat bg-cover basis-[40%] grow rounded-2xl min-h-[30vh] flex lg:hidden w-full order-2"
+              style={{ backgroundImage: `url('/assets/home/headphonesremoved.png')` }}
+            ></div>
+
+            <div
+              className="flex justify-center w-full rounded-2xl h-[100px] md:h-initial overflow-hidden md:grow order-1"
               style={{ backgroundImage: "linear-gradient(115deg, #FD611F 31.81%, #FFCFBA 115.67%, #FFEFE9 142.09%)" }}
             >
               <Image
@@ -28,20 +36,12 @@ export default function HomeTopMainView() {
                 priority
               />
             </div>
-
-            <div
-              className=" bg-center bg-no-repeat bg-cover basis-[40%] grow rounded-2xl min-h-[30vh] flex md:hidden w-full"
-              style={{ backgroundImage: `url('/assets/home/headphonesremoved.png')` }}
-            ></div>
-
-            <h1 className="flex flex-col items-start justify-end gap-3 text-5xl md:text-5xl basis-1/3 ">
-              <span className="text-black">Body-Internet Platform</span>
-              <a onClick={() => router.push("/#demo")} className="flex gap-3 text-sm cursor-pointer Pbutton">
-                <span>Get a demo</span>
-                <ToprightArrow size={32} />
-              </a>
-            </h1>
           </div>
+
+          <div
+            className=" bg-center bg-no-repeat bg-cover basis-[40%] grow rounded-2xl min-h-[30vh] hidden lg:flex"
+            style={{ backgroundImage: `url('/assets/home/headphonesremoved.png')` }}
+          ></div>
         </div>
       </div>
     </div>
