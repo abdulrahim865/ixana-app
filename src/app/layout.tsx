@@ -30,7 +30,7 @@ const AspektaVF = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: null,
+  metadataBase: new URL("https://ixana.ai"),
   title: "Ixana: High-speed Human Computer Interaction",
   description: "Augmenting humans with all-day, real-time, distributed AI on what you see,hear and sense",
   keywords:
