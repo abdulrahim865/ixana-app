@@ -23,17 +23,15 @@ export default function HomeTopMainView() {
               style={{ backgroundImage: `url('/assets/home/headphonesremoved.png')` }}
             ></div>
 
-            <div
-              className="flex justify-center w-full rounded-2xl h-[100px] md:h-initial overflow-hidden md:grow order-1"
-              style={{ backgroundImage: "linear-gradient(115deg, #FD611F 31.81%, #FFCFBA 115.67%, #FFEFE9 142.09%)" }}
-            >
+            <div className="flex justify-center w-full rounded-2xl h-[100px] lg:min-h-fit overflow-hidden md:grow order-1 bg-gradient-to-r from-[#312F2F] to-[#74706F]">
               <Image
-                src="/assets/home/ixana-drawing.svg"
+                src="/assets/home/ixana-header-chip.png"
                 className="flex "
                 alt="Play Button"
                 width={500}
                 height={300}
                 priority
+                style={{ objectFit: "contain" }}
               />
             </div>
           </div>
