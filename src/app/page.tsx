@@ -23,20 +23,21 @@ export default function Home() {
         <div className="flex flex-col items-center w-full">
           <HomeLearnMoreSection />
         </div>
-        <div className="flex flex-col items-center w-full px-0 lg:px-6">
-          <ProductSpecSection />
-          <ProductFeaturesSection />
-          {/* <ProductFeaturedIn /> */}
-
-          <HomeBreakThrough />
-          <HomeProductStoriesSection />
-
-          <HomeOurMission />
-        </div>
-        <HomeOurMissionHighlighted />
-        <HomeBlogSection />
-        {/* <HomeOurClients /> */}
       </div>
+      <div className="flex flex-col items-center w-full px-0">
+        <ProductSpecSection />
+        <ProductFeaturesSection />
+        {/* <ProductFeaturedIn /> */}
+
+        <HomeBreakThrough />
+        <HomeProductStoriesSection />
+
+        <HomeOurMission />
+      </div>
+      <HomeOurMissionHighlighted />
+      <HomeBlogSection />
+      {/* <HomeOurClients /> */}
+
       <PFooter />
     </main>
   );

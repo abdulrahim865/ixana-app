@@ -39,7 +39,7 @@ export default function HomeBreakThrough() {
 
   return (
     <>
-      <div className="relative flex-col items-center hidden w-full min-h-screen gap-5 px-0 lg:px-12 py-24 text-white md:flex bg-iblack">
+      <div className="relative flex-col items-center hidden w-full gap-5 px-0 lg:px-12 py-24 text-white md:flex bg-iblack">
         <div className="container flex flex-col items-center w-full gap-5 ">
           <div className="flex flex-col items-center gap-3">
             <h2 className="flex text-4xl text-center ">
