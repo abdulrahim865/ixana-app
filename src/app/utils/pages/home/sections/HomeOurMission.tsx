@@ -9,7 +9,7 @@ export default function HomeOurMission() {
           Create an electronic analog of human nervous system to 10x battery life of personal electronics today and
           unlock real-time brain-AI communication tomorrow
         </h2>
-        <div className="flex flex-col items-center gap-3">
+        {/* <div className="flex flex-col items-center gap-3">
           <div className="flex items-center gap-1.5 ">
             <span className="font-normal text-md">
               100x Lower energy <span className="text-sm font-light ">compared to</span>
@@ -34,7 +34,7 @@ export default function HomeOurMission() {
           <span className="font-normal text-md">
             10x faster <span className="text-sm font-light ">compared to</span>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -56,14 +56,14 @@ export default function HomeBreakThrough() {
           <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
             <div className="flex flex-col items-center gap-12 basis-1/4">
               <span className="flex flex-col text-sm font-light w-[150px]">
-                <Image
+                {/* <Image
                   src="/assets/home/ixana-quote-pattern.svg"
                   alt="Ixana Pattern"
                   width={20}
                   height={20}
                   className="flex"
                   priority
-                />
+                /> */}
                 <span className="text-gray-400 hover:text-white transition-all ease-in-out">
                   Touch to securely pay, unlock doors and workstations
                 </span>
@@ -80,7 +80,7 @@ export default function HomeBreakThrough() {
               alt="Ixana chip icon"
               width={500}
               height={300}
-              className="flex w-[300px]"
+              className="flex w-[300px] m-10"
               priority
             />
             <div className="flex flex-col items-center gap-12 basis-1/4">
