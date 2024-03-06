@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function TechnologyTopHeader() {
   return (
     <div className="bg-iblack w-full">
-      <div className="container mx-auto overflow-hidden relative flex flex-col w-full min-h-[600px] lg:min-h-[100vh] grow">
+      <div className="container mx-auto overflow-hidden relative flex flex-col w-full min-h-[600px] lg:min-h-[80vh] grow">
         <div className="absolute top-0 bottom-0 -left-[5%] -right-[5%] flex items-end  gap-5 justify-end">
           <Image
             src="/assets/home/ixana-headset-pattern.png"
@@ -21,7 +21,7 @@ export default function TechnologyTopHeader() {
             {/* Wireless for Human-Computer Network */}
             {`Wireless for Body Area Network`}
           </h1>
-          <h3 className="text-sm text-white font-light">{`AI Copilot for physical world`}</h3>
+          {/* <h3 className="text-sm text-white font-light">{`AI Copilot for physical world`}</h3> */}
         </div>
       </div>
     </div>

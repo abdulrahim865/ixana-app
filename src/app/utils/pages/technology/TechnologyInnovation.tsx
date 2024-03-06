@@ -9,12 +9,12 @@ export default function TechnologyInnovation() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-12">
+    <div className="flex min-h-[80vh] w-full flex-col  items-center container justify-center py-24">
       <div className="flex flex-col items-center w-full gap-16">
         <div className="flex flex-col items-center gap-5 py-10">
           <span className="primary-chip bg-[#6A6665] text-white w-fit">The Innovation</span>
-          <h2 className="flex text-4xl font-light max-w-[800px] text-center">
-            {`Security and performance of wired connectivity for Body Area Networks.`}
+          <h2 className="flex text-3xl font-light max-w-[800px] text-center">
+            {`Security and performance of wired communication with the convenience of wireless`}
           </h2>
         </div>
 
