@@ -65,15 +65,21 @@ export const PNavBar = ({ isHomeView, isProductView }: { isHomeView?: boolean; i
                 <div className={`grid ${path !== "/" ? "grid-cols-4" : "grid-cols-3"} gap-5`}>
                   {path !== "/" && (
                     <div className="flex flex-col gap-5 grow-0">
-                      <a className={`text-xs text-[rgba(16, 15, 15, 1)] text-right`} href="/">
+                      <a className={`text-xs text-[rgba(16, 15, 15, 1)] text-center`} href="/">
                         Home
                       </a>
                     </div>
                   )}
 
                   <div className="flex flex-col gap-5 grow-0">
-                    <a className={`text-xs text-[rgba(16, 15, 15, 1)] text-center`} href="/about-us">
+                    <a className={`text-xs text-[rgba(16, 15, 15, 1)]`} href="/about-us">
                       About us
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/contact">
+                      Contact Us
+                    </a>
+                    <a className={`text-xs text-gray-500`} href="/join-us">
+                      Join Us
                     </a>
                   </div>
                   <div className="flex flex-col gap-5 grow">

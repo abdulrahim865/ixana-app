@@ -94,6 +94,9 @@ export const PFooter = () => {
           <Link href="/privacy-policy" className="text-sm font-light text-black border-b-2 border-black border-solid">
             Privacy Policy
           </Link>
+          <Link href="/tos" className="text-sm font-light text-black border-b-2 border-black border-solid">
+            T&C
+          </Link>
           <a
             href="https://www.linkedin.com/company/ixanahq"
             className="text-sm font-light text-black border-b-2 border-black border-solid"
