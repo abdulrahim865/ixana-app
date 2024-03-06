@@ -13,7 +13,7 @@ export default function Home() {
       <ProductsTopHeader />
       <ProductWhyUse />
       <ProductStoriesSection />
-      <div className="flex flex-col items-center w-full px-2 md:px-0">
+      <div className="flex flex-col items-center w-full px-2 md:px-0" id="products">
         <TechnologyProducts />
         <TechnologyFutureProducts />
       </div>

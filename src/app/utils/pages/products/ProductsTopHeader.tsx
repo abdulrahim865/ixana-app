@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ProductsTopHeader() {
   return (
     <div
-      className=" overflow-hidden relative flex flex-col w-full min-h-[100vh] grow bg-right  "
+      className=" overflow-hidden relative flex flex-col w-full min-h-[90vh] grow bg-right  "
       style={{
         backgroundImage: 'url("/assets/products/header.png")',
         backgroundSize: "cover",

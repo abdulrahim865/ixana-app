@@ -27,7 +27,7 @@ export default function ProductWhyUse() {
   ];
 
   return (
-    <div className="container w-full min-h-[70vh] relative px-0 md:px-12 mx-auto">
+    <div className="container w-full md:w-[85vw] lg:w-[1000px] relative px-0 mx-auto">
       <div className="w-full bg-left-top py-12 justify-center bg-[#FF6320] md:rounded-3xl text-white">
         <Chip title="Technology" bgColor="white" textColor="black" />
         <div className="flex flex-col justify-center">
@@ -39,7 +39,7 @@ export default function ProductWhyUse() {
               <div className="flex flex-col p-3 rounded-xl">
                 <span className="flex items-center gap-3 text-md">
                   <Image src={why.image} alt="Search Button" width={24} height={24} priority />
-                  <span>{why.title}</span>
+                  <span className="text-2xl">{why.title}</span>
                 </span>
                 <span className="text-xs font-light md:max-w-[300px] pl-[36px] pt-2">{why.desc}</span>
               </div>

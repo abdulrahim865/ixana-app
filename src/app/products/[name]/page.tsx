@@ -75,7 +75,7 @@ export default function IndividualProductPage() {
     <div className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
 
-      <div className="container mx-auto py-12 pt-20 px-5 lg:px-0">
+      <div className="container mx-auto py-12 pt-20 px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center order-2 lg:order-1">
             <div className="flex flex-col gap-10">
@@ -92,9 +92,12 @@ export default function IndividualProductPage() {
                   </span>
                 ))}
               </div>
-              <div>
+              <div className="flex items-center gap-5">
                 <Link href="/contact">
                   <Pbutton text="Order Now" icon={<ToprightArrow />} />
+                </Link>
+                <Link href="/products#products">
+                  <span className="text-sm text-gray-500 underline">All Products</span>
                 </Link>
               </div>
             </div>
