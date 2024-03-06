@@ -34,9 +34,9 @@ export default function ApplicationsWhyUse() {
 
   return (
     <div className="flex flex-col w-full min-h-[70vh] ">
-      <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-12 gap-14 relative overflow-hidden md:px-12 justify-center">
+      <div className="  flex  flex-col w-full lg:w-[calc(100%-6rem)] grow bg-contain bg-no-repeat lg:ml-24 bg-left-top py-24 gap-14 relative overflow-hidden justify-center">
         <div className="flex flex-col justify-center md:flex-row">
-          <h2 className="flex text-4xl ">Wi-R Applications</h2>
+          <h2 className="flex text-4xl">Wi-R Applications</h2>
         </div>
         <div className="flex flex-col flex-wrap justify-center gap-5 md:flex-row">
           {applications.map((application) => (
@@ -46,7 +46,7 @@ export default function ApplicationsWhyUse() {
             >
               <span className="flex items-center gap-1.5 text-md">
                 <Image src="/assets/products/bullet-icon.svg" alt="Search Button" width={24} height={24} priority />
-                <span>{application.title}</span>
+                <span className="text-2xl">{application.title}</span>
               </span>
               <span className="text-xs font-light md:max-w-[300px]">{application.description}</span>
               {/* <button className="primary-chip bg-[#262727] text-white">Read more</button> */}

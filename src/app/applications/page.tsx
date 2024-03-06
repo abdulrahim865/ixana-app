@@ -1,5 +1,6 @@
 import { PFooter } from "../utils/components/PFooter";
 import { PNavBar } from "../utils/components/PNavBar";
+import ApplicationsDemoVideos from "../utils/pages/applications/ApplicationsDemoVideos";
 import ApplicationsExamples from "../utils/pages/applications/ApplicationsExamples";
 import ApplicationsHighlighted from "../utils/pages/applications/ApplicationsHighlighted";
 import ApplicationsTopHeader from "../utils/pages/applications/ApplicationsTopHeader";
@@ -11,7 +12,7 @@ export default function Applications() {
     <main className="flex flex-col items-center min-h-screen grow">
       <PNavBar isProductView />
       <ApplicationsTopHeader />
-      <div className="max-w-full md:max-w-[70%] flex flex-col items-center px-12 md:px-0">
+      <div className="max-w-full md:max-w-[70%] lg:w-[1200px] flex flex-col items-center px-12 md:px-0">
         <ApplicationsWhyUse />
       </div>
       <ApplicationsHighlighted />
@@ -21,6 +22,8 @@ export default function Applications() {
       <div className="flex flex-col items-center md:px-0">
         <ApplicationsWhitePaperSection />
       </div>
+
+      <ApplicationsDemoVideos />
 
       <PFooter />
     </main>

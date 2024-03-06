@@ -20,7 +20,7 @@ export default function ApplicationsTopHeader() {
       ></div> */}
       <div className="absolute flex flex-col items-start gap-3 top-20 lg:top-auto left-5 lg:left-20 lg:bottom-20 w-[70%] lg:w-[50%] md:w-full">
         <h1 className="flex text-2xl md:text-6xl ">AI co-pilot for the physical world</h1>
-        <Link href="/contact">
+        <Link href="/blog/wi-r-enables-wearables-to-harness-ai-capabilities-via-distributed-computation">
           <Pbutton text="How?" icon={<ToprightArrow />} />
         </Link>
       </div>
