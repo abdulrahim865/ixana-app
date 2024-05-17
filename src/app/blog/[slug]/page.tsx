@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PFooter } from "../../utils/components/PFooter";
 import { PNavBar } from "../../utils/components/PNavBar";
 import { parseHtml } from "../../utils/api/parsers";
+import type { Metadata, ResolvingMetadata } from "next";
 
 import {
   getAllBlogPostSlugs,
@@ -19,6 +20,30 @@ export async function generateStaticParams() {
   return posts.map((post: any) => {
     return { slug: post.slug };
   });
+}
+
+export async function generateMetadata(
+  { params, searchParams }: { params: any; searchParams: any },
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const { slug } = params;
+
+  const posts = await getBlogPostBySlug(slug);
+  const post = posts[0];
+
+  return {
+    title: post.title.rendered,
+    openGraph: {
+      type: "website",
+      title: post.title.rendered,
+      images: ["https://ixana-blog.s3.us-east-1.amazonaws.com/2024/05/news-ixana_1000x750-1.jpg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title.rendered,
+      images: ["https://ixana-blog.s3.us-east-1.amazonaws.com/2024/05/news-ixana_1000x750-1.jpg"],
+    },
+  };
 }
 
 export default async function BlogDetail({ params }: { params: any }) {
