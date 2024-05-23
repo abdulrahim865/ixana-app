@@ -45,7 +45,7 @@ export async function getUserById(id: Number) {
     name: data.name,
     link: data.url,
     description: data.description,
-    image: data.avatar_urls["48"],
+    image: data.avatar_urls["96"],
   };
 }
 
